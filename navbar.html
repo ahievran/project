@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <style>
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      color: rgb(0, 0, 0);
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+      color: #00c71b;
+    }
+
+    .navbar .navbar-nav .active>.nav-link {
+      color: #00c71b;
+    }
+
+    .nav-item {
+      min-width: 95px;
+      margin-right: 20px;
+    }
+
+    .nav-item a {
+      width: inherit;
+      text-align: center;
+    }
+
+    #yazi1 {
+      font-size: medium;
+      color: #2e2e2e;
+    }
+
+    #yazi2 {
+      font-size: small;
+      color: #636363;
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    #logo-c {
+      width: 100px;
+      height: 100px;
+      margin-left: 0px;
+    }
+    .navbar
+    {
+      box-shadow: 10px 10px 10px grey;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #yazi1 {
+        font-size: 12px;
+      }
+
+      #yazi2 {
+        font-size: 10px;
+      }
+
+      #logo {
+        width: 50px;
+        height: 50px;
+      }
+      #logo-c
+      {
+        width: 50px;
+        height: 50px;
+      }
+      .fa-user-plus
+      {
+        font-size: 14px;
+      }
+      .navbar-toggler-icon
+      {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="container" id="logo-c">
+          <img src="logo.jpg" id="logo">
+        </div>
+        <div class="container" style="width: auto; float: left; margin-left: 0px;">
+          <div class="col-sm-1">
+            <a class="navbar-brand" id="yazi1" href="#">Mühendislik Mimarlık Fakültesi</a>
+          </div>
+          <div class="col-sm-1">
+            <a class="navbar-brand" href="#"><i class="fa fa-graduation-cap fa-lg mr-2" id="yazi2">Bilgisayar
+                Mühendisliği</i></a>
+          </div>
+        </div>
+        <button class="navbar-toggler" style="float: left;" type="button" data-toggle="collapse"
+          data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <span style="background-image: url(icon.jpg);" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nvbCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1">Ana Sayfa</i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1">Hakkımızda</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1">S.S.S</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1">MENÜ3</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1">MENÜ 4</i></a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+</body>
+
+</html>
