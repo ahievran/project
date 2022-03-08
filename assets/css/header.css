@@ -1,0 +1,73 @@
+#navbar
+{
+    box-shadow: 7px 7px 7px #5e5e5e;
+}
+#ul
+{
+    padding-right: 10px;
+}
+#ul .nav-item .nav-link
+{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+#ul .nav-item
+{
+    text-align: center;
+    padding-left:7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: max-content;
+
+}
+#ul .nav-item .nav-link:hover
+{
+    font-size: 14.1px;
+    font-weight: 800;
+}
+#logo-sag-yazi1
+{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #5e5e5e;
+}
+#logo-sag-yazi2
+{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #5e5e5e;
+}
+.col
+{
+    padding: 0px;
+    float: left;
+}
+#logo
+{
+    width: 57px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #logo
+    {
+        width: 40px;
+        margin-right: 2px;
+    }
+    #logo-sag-yazi1
+{
+    font-size: 14px;
+}
+#logo-sag-yazi2
+{
+    font-size: 12px;
+    
+ }
+
+}

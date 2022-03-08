@@ -1,10 +1,10 @@
 <?php 
 include 'header.php'; ?>
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(9, 162, 255, 0.85);">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/mmf.jpg&quot;);color:rgba(0,0,0, 0.6);">
             <div class="text">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-light btn-lg" type="button">Learn More</button>
+                <h2 style="font-size:34px;color:white; font-family:sans-serif;text-shadow:5px 5px 5px black;">Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği</h2>
+                <p style="font-size:29px;color:#cfcfcf;font-family:sans-serif;text-shadow:1px 1px 1px black;">Mühendislik Mimarlık Fakültesi</p><button class="btn btn-outline-light btn-lg" type="button">Hakkımızda</button>
             </div>
         </section>
         <section class="clean-block clean-info dark">
@@ -110,5 +110,5 @@ include 'header.php'; ?>
         </section>
     </main>
     <?php
-    include 'footer.php';
-?>
+    include 'footer.php';?>
+    

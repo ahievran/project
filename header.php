@@ -15,22 +15,36 @@
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/header.css"/>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><img src="assets/img/pnglogo.png" style="width: 57px;max-width: 100%;min-width: 70px;" width="50PX"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" id="navbar">
+        <div class="container-fluid">
+            
+            <img src="assets/img/pnglogo.png" id="logo">
+            <div class="col-sm-3">
+                <h1 id="logo-sag-yazi1">Mühendislik Mimarlık Fakültesi</h1>
+                <h2 id="logo-sag-yazi2">Bilgisayar Mühendisliği</h2>
+                </div>
+        
+
+
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        
             <div class="collapse navbar-collapse" id="navcol-1" style="height: -21.8px;">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="index.php" style="padding: 5px;">anasayfa</a></li>
-                    <li class="nav-item" style="padding: 1px;"><a class="nav-link" href="hakkimizda.php" style="padding: 5px;">hakkımızda</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="hedeflerimiz.php" style="padding: 5px;">hedeflerimiz</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view" style="padding: 5px;" target="_blank">Ders içerikleri</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="labs.php" style="padding: 5px;">laboratuvarlarımız</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="akademik.php" style="padding: 5px;">akademik personel</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="events.php" style="padding: 5px;">etkinlikler</a></li>
-                    <li class="nav-item" style="padding: 1px;"><a class="nav-link" href="galeri.php" style="padding: 5px;">galeri</a></li>
-                    <li class="nav-item" style="padding: 0px;"><a class="nav-link" href="iletisim.php" style="padding: 5px;">iletişim</a></li>
+                <ul class="navbar-nav ms-auto" id="ul">
+                    <li class="nav-item" ><a class="nav-link"  href="index.php" >Anasayfa</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="hakkimizda.php" >Hakkımızda</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="hedeflerimiz.php" >hedeflerimiz</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view"  target="_blank">Ders İçerikleri</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="labs.php" >Laboratuvarlarımız</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="akademik.php" >Akademik Personel</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="events.php" >Etkinlikler</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="galeri.php" >Galeri</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="iletisim.php" >İletişim</a></li>
                 </ul>
             </div>
         </div>
