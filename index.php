@@ -57,14 +57,14 @@ include 'header.php'; ?>
                         <p>“Çağın gözdesi olan yazılım ve robotik alanlarında faaliyet göstermek amacıyla Haziran 2019’da üniversitemizden kuruluş onayını almış ve çalışmalarına başlamıştır. Kulübümüz ilgili alanlarda sunum, konferans, teknik gezi gibi faaliyetlerle öğrencilerin bilgi edinmesini ve ayrıca takım çalışmaları ile öğrenciler arasında işbirliğini artırmayı amaçlamaktadır. </p>
                     </div>
                     <div class="col-md-6 feature-box">
-                        <img src="assets/img/yazilim-robotik.jpg" style="width:100%;height:100%;">
+                        <img src="assets/img/yazilim-robotik.jpg" style="width:100%;height:100%;box-shadow:10px 10px 10px grey;">
                     </div>
                     <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
                         <h4>Siber Güvenlik Kulübü</h4>
                         <p>“Çağın gözdesi olan yazılım ve robotik alanlarında faaliyet göstermek amacıyla Haziran 2019’da üniversitemizden kuruluş onayını almış ve çalışmalarına başlamıştır. Kulübümüz ilgili alanlarda sunum, konferans, teknik gezi gibi faaliyetlerle öğrencilerin bilgi edinmesini ve ayrıca takım çalışmaları ile öğrenciler arasında işbirliğini artırmayı amaçlamaktadır. ”</p>
                     </div>
                     <div class="col-md-6 feature-box">
-                        <img src="assets/img/siber-guvenlik.jpg" style="width:100%;height:100%;">
+                        <img src="assets/img/siber-guvenlik.jpg" style="width:100%;height:100%; box-shadow:10px 10px 10px grey;">
                     </div>
                 </div>
             </div>
