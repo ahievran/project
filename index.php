@@ -70,7 +70,7 @@ include 'header.php'; ?>
             </div>
         </section>
         <section class="clean-block slider dark">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="block-heading">
                     <h2 class="text-info">Slider</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>

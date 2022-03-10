@@ -1,6 +1,7 @@
 #navbar
 {
     box-shadow: 7px 7px 7px #5e5e5e;
+    background-color: #ffffff;
 }
 #ul
 {
@@ -10,7 +11,7 @@
 {
     text-transform: capitalize;
     font-size: 14px;
-    color: #1a1a1a;
+    color: #070068;
     font-weight: 600;
 }
 #ul .nav-item
@@ -26,21 +27,21 @@
 #ul .nav-item .nav-link:hover
 {
     font-size: 14.1px;
-    font-weight: 800;
+    color: #c78802;
+    font-style: oblique;
 }
 #logo-sag-yazi1
 {
-    font-size: 15px;
+    font-size: 17px;
     font-family: sans-serif;
-    font-weight: 500;
-    color: #5e5e5e;
+   color: #c78802;
 }
 #logo-sag-yazi2
 {
-    font-size: 13px;
-    font-family: sans-serif;
-    font-weight: 500;
-    color: #5e5e5e;
+    font-size: 14px;
+    font-family:sans-serif;
+    font-style: italic;
+   color: #00a508;
 }
 .col
 {

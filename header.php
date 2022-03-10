@@ -22,7 +22,7 @@
 
 <body>
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" id="navbar">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
         <div class="container-fluid">
             
             <img src="assets/img/pnglogo.png" id="logo">
