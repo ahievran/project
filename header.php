@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
     <link rel="stylesheet" href="assets/css/header.css"/>
     <link rel="stylesheet" href="assets/css/anasayfa.css"/>
+    <link rel="stylesheet" href="assets/css/akademik.css"/>
 
 </head>
 
