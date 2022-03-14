@@ -20,7 +20,7 @@
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Telefon:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>E-posta:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><i class="fa fa-link fs-6"></i><a class="fs-5" href="https://akademik.ahievran.edu.tr/personel/dce4744b-51fe-4518-b580-ac14b49a524e" style="margin-left: 3px;color: var(--bs-gray-900);" target="_blank">Doç. Dr. Mustafa Yağcı</a></div>
-                                <div class="col-lg-auto offset-md-11 offset-lg-7 offset-xl-10 offset-xxl-10 text-center"><button id="videobuton" class="btn" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Video Mesajı<i class="fa fa-play-circle" id="butonicon"></i></button></div>
+                                <div class="col-lg-auto offset-md-11 offset-lg-7 offset-xl-10 offset-xxl-10 text-center">   </div>
                             </div>
                         </div>
                     </div>
