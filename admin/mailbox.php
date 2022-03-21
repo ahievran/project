@@ -1,5 +1,7 @@
-<?php require_once 'header.php';
+<?php
+require_once '../admin/header.php';
 require_once 'sidebar.php';
+include '../baglanti.php';
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

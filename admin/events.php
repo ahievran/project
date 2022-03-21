@@ -1,6 +1,8 @@
 <?php
-require_once 'header.php';
-require_once 'sidebar.php'; ?>
+require_once '../admin/header.php';
+require_once 'sidebar.php';
+include '../baglanti.php';
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
