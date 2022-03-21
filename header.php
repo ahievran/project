@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+<?php include 'baglanti.php'; ?>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
         <div class="container-fluid">
             
