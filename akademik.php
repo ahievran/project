@@ -15,7 +15,7 @@
                                     <h1>Doç. Dr. Mustafa Yağcı(Bölüm Başkanı)<br></h1>
                                 </div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Fakülte:</strong><span style="margin-left: 5px;">Mimarlık-Mühendislik Fakültesi</span></div>
-                                <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Bölüm:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
+                                <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Ana Bilim Dalı:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Ofis:</strong><span style="margin-left: 5px;">--------------------</span></div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Telefon:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
                                 <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>E-posta:</strong><span style="margin-left: 5px;">Bilgisayar Mühendisliği</span></div>
