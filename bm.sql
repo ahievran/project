@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2022 at 10:25 PM
+-- Generation Time: Mar 22, 2022 at 10:40 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -79,6 +79,13 @@ CREATE TABLE `ders_icerik` (
   `dersicerik_id` int(11) NOT NULL,
   `dersicerik_url` text COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `ders_icerik`
+--
+
+INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
+(1, 'https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view');
 
 -- --------------------------------------------------------
 
@@ -336,7 +343,7 @@ ALTER TABLE `akademik_personel`
 -- AUTO_INCREMENT for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
-  MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `duyuru`
