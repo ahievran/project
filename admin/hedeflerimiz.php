@@ -52,25 +52,26 @@ include '../baglanti.php';
                                     </th>
                                 </tr>
                                 </thead>
+                                <?php
+                                $sql = "SELECT * FROM hedeflerimiz ORDER BY hedef_id ASC";
+                                $result = $db->query($sql);
+                                while($row = $result->fetch_array()){ ?>
                                 <tbody>
                                 <tr>
-                                    <td>1.</td>
+                                    <td><?php echo $row["hedef_id"]; ?></td>
                                     <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                    <td>Update softwareUpdate softwareUpdate softwareUpdate softwareUpdate software</td>
+                                    <td><?php echo $row["hedef_baslik"]; ?></td>
                                     <td>
                                         <a>
-                                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#exampleModal">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                                 Görüntüle
                                             </button>
-                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
@@ -78,8 +79,8 @@ include '../baglanti.php';
                                                             Hedeflerimiz İçeriği
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-dismiss="modal">Kapat
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                                Kapat
                                                             </button>
                                                         </div>
                                                     </div>
@@ -89,11 +90,14 @@ include '../baglanti.php';
                                     </td>
                                     <td>
                                         <a>
-                                            <button class="btn btn-danger">Sil</button>
+                                            <button class="btn btn-danger">
+                                                Sil
+                                            </button>
                                         </a>
                                     </td>
                                 </tr>
                                 </tbody>
+                                <?php } ?>
                             </table>
                         </div>
                     </div>
