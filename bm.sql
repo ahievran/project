@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2022 at 10:24 PM
+-- Generation Time: Mar 23, 2022 at 11:05 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -115,6 +115,14 @@ CREATE TABLE `etkinlikler` (
   `etkinlik_tarih` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
+--
+-- Dumping data for table `etkinlikler`
+--
+
+INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_tarih`) VALUES
+(1, 'etkinlik1', 'icerik1', '2022-03-23 22:58:45'),
+(2, 'etkinlik2', 'icerik2', '2022-03-23 22:58:45');
+
 -- --------------------------------------------------------
 
 --
@@ -125,6 +133,13 @@ CREATE TABLE `galeri` (
   `galeri_id` int(11) NOT NULL,
   `galeri_resim` text COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `galeri`
+--
+
+INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
+(1, 'resim');
 
 -- --------------------------------------------------------
 
@@ -201,6 +216,14 @@ CREATE TABLE `laboratuvar` (
   `lab_ad` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `lab_aciklama` text COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `laboratuvar`
+--
+
+INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALUES
+(1, '', 'lab1', 'lab1 aciklama'),
+(2, '', 'lab2', 'lab2 aciklama');
 
 -- --------------------------------------------------------
 
@@ -365,13 +388,13 @@ ALTER TABLE `duyuru`
 -- AUTO_INCREMENT for table `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
-  MODIFY `etkinlik_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `etkinlik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `hakkimizda`
@@ -395,7 +418,7 @@ ALTER TABLE `iletisim`
 -- AUTO_INCREMENT for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
-  MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `mesaj`
