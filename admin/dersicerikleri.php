@@ -25,12 +25,14 @@ include '../baglanti.php';
     <?php
     if (isset($_POST["gonder"])){
         $link = $_POST["link"];
+        $sql = "INSERT INTO ders_icerik (dersicerik_url) VALUE ('$link')";
+        $result = $db->query($sql);
+        mysqli_query($result);
+//        header("location: dersicerikleri.php ");
+        echo '<script type ="text/JavaScript">';
+        echo 'alert("Link veritabanına eklendi")';
+        echo '</script>';
     }
-
-//    $sql = "INSERT INTO ders_icerik (ders_icerik_url) VALUE ($link)";
-//    $result = $db->query($sql);
-//    while($row = $result->fetch_array()){
-
     ?>
     <section class="content">
         <div class="container-fluid">
@@ -40,7 +42,7 @@ include '../baglanti.php';
                         <div class="card-header">
                             <h3 class="card-title">Ders İçerikleri Linki</h3>
                         </div>
-                        <form method="POST">
+                        <form method="POST" action="dersicerikleri.php">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="link">Link</label>
@@ -56,9 +58,6 @@ include '../baglanti.php';
             </div>
         </div><!-- /.container-fluid -->
     </section>
-    <?php
-//}
-    ?>
     <!-- /.content -->
 </div>
 <?php
