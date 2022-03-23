@@ -55,13 +55,17 @@ include '../baglanti.php';
                                         </th>
                                     </tr>
                                 </thead>
+                                <?php
+                                $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id DESC";
+                                $result = $db->query($sql);
+                                while ($row = $result->fetch_array()){ ?>
                                 <tbody>
                                     <tr>
                                         <td>1.</td>
                                         <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                        <td>Android Eğitimi Etkinliği (15.11.2020)</td>
+                                        <td><?php echo $row["etkinlik_baslik"]; ?></td>
                                         <td>
-                                            Bilgisayar Mühendisliği bölümü hocalarından Arş. Gör. Ceren AKMAN Bursa Teknik Üniversitesi Developer Student Clubs (DSC) tarafından düzenlenen Android Eğitim
+                                            <?php echo $row["etkinlik_icerik"]; ?>
                                         </td>
                                         <td>
                                             <a>
@@ -95,6 +99,7 @@ include '../baglanti.php';
                                         </td>
                                     </tr>
                                 </tbody>
+                                <?php } ?>
                             </table>
                         </div>
                     </div>

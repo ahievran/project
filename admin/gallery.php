@@ -28,9 +28,13 @@ include '../baglanti.php';
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Hedeflerimiz</h3>
+                            <h3 class="card-title">Galeri</h3>
                         </div>
                         <!-- /.card-header -->
+                        <?php
+                        $sql = "SELECT * FROM galeri ORDER BY galeri_id DESC";
+                        $result = $db->query($sql);
+                        while ($row = $result->fetch_array()){ ?>
                         <div class="card-body">
                             <table class="table table-striped projects">
                                 <thead>
@@ -48,8 +52,10 @@ include '../baglanti.php';
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1.</td>
-                                        <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
+                                        <td><?php echo $row["galeri_id"]; ?></td>
+                                        <td>
+                                            <i class="icon ion-android-globe" style="font-size: 40px;"></i> <?php echo $row["galeri_resim"]; ?>
+                                        </td>
                                         <td>
                                             <a>
                                                 <button class="btn btn-danger">Sil</button>
@@ -59,6 +65,7 @@ include '../baglanti.php';
                                 </tbody>
                             </table>
                         </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
