@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2022 at 10:40 PM
+-- Generation Time: Mar 23, 2022 at 10:24 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -85,7 +85,8 @@ CREATE TABLE `ders_icerik` (
 --
 
 INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
-(1, 'https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view');
+(10, 'tesssst'),
+(11, 'https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view');
 
 -- --------------------------------------------------------
 
@@ -212,8 +213,17 @@ CREATE TABLE `mesaj` (
   `mesaj_isim_soyisim` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `mesaj_konu` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `mesaj_email` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `mesaj_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL,
+  `mesaj_date` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `mesaj`
+--
+
+INSERT INTO `mesaj` (`mesaj_id`, `mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`, `mesaj_date`) VALUES
+(1, 'Kutluhan Azaflı', 'Test', 'test@test.com', 'test', '2022-03-24 00:22:44'),
+(2, 'Kutluhan', 'testt', 'testt@test.com', 'testtt', '2022-03-24 00:23:20');
 
 -- --------------------------------------------------------
 
@@ -343,7 +353,7 @@ ALTER TABLE `akademik_personel`
 -- AUTO_INCREMENT for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
-  MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `duyuru`
@@ -391,7 +401,7 @@ ALTER TABLE `laboratuvar`
 -- AUTO_INCREMENT for table `mesaj`
 --
 ALTER TABLE `mesaj`
-  MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `slider`

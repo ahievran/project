@@ -73,7 +73,7 @@ include '../baglanti.php';
                                                     class="mailbox-subject"><b><?php echo $row["mesaj_konu"]; ?></b>
                                             </td>
                                             <td
-                                                    class="mailbox-date">5 mins ago
+                                                    class="mailbox-date"><?php echo $row["mesaj_date"]; ?>
                                             </td>
                                         </tr>
                                         </tbody>
