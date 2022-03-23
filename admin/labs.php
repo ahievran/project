@@ -52,11 +52,17 @@ include '../baglanti.php';
                                         </th>
                                     </tr>
                                 </thead>
+                                <?php
+                                $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";
+                                $result = $db->query($sql);
+                                while ($row = $result->fetch_array()){ ?>
                                 <tbody>
                                     <tr>
-                                        <td>1.</td>
-                                        <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                        <td>Update softwareUpdate softwareUpdate softwareUpdate softwareUpdate software</td>
+                                        <td><?php echo $row["lab_id"]; ?></td>
+                                        <td>
+                                            <i class="icon ion-android-globe" style="font-size: 40px;"></i><?php echo $row["lab_resim"]; ?>
+                                        </td>
+                                        <td><?php echo $row["lab_ad"]; ?></td>
                                         <td>
                                             <a>
                                                 <button type="button" class="btn btn-primary">
@@ -71,8 +77,10 @@ include '../baglanti.php';
                                         </td>
                                     </tr>
                                 </tbody>
+                                <?php } ?>
                             </table>
                         </div>
+
                     </div>
                 </div>
             </div>
