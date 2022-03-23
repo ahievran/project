@@ -55,11 +55,11 @@ include '../baglanti.php';
                                         </th>
                                     </tr>
                                 </thead>
+                                <tbody>
                                 <?php
-                                $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id DESC";
+                                $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
                                 $result = $db->query($sql);
                                 while ($row = $result->fetch_array()){ ?>
-                                <tbody>
                                     <tr>
                                         <td>1.</td>
                                         <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
