@@ -44,27 +44,11 @@ include '../baglanti.php';
                                         <th>
                                             İsim Soyisim
                                         </th>
-                                        <th>
-                                            Fakülte
-                                        </th>
-                                        <th>
-                                            Bölüm
-                                        </th>
-                                        <th>
-                                            Ofis
-                                        </th>
-                                        <th>
-                                            Telefon
-                                        </th>
+
                                         <th>
                                             E-posta
                                         </th>
-                                        <th>
-                                            Hakkında
-                                        </th>
-                                        <th>
-                                            Link
-                                        </th>
+
                                         <th>
                                             Görüntüle
                                         </th>
@@ -79,61 +63,15 @@ include '../baglanti.php';
                                     while($row = $result->fetch_array()){ ?>
                                     <tbody>
                                     <tr>
-                                        <td>1.</td>
+                                        <td><?php echo $row["personel_id"]?>.</td>
                                         <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
                                         <td><?php echo $row["personel_isim_soyisim"]; ?></td>
-                                        <td>
-                                            <?php echo $row["personel_fakülte"]; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $row["personel_bölüm"]; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $row["personel_ofis"]; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $row["personel_telefon"]; ?>
                                         </td>
                                         <td>
                                             <?php echo $row["personel_email"]; ?>
                                         </td>
                                         <td>
-                                            <?php echo $row["personel_hakkında"]; ?>
-                                        </td>
-                                        <td>
-                                            <a>
-                                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#exampleModal">
-                                                    Link
-                                                </button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">
-                                                                    İçerik</h5>
-                                                                <button type="button" class="close" data-dismiss="modal"
-                                                                        aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                https://akademik.ahievran.edu.tr/personel/dce4744b-51fe-4518-b580-ac14b49a524e
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                        data-dismiss="modal">Kapat
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-
-                                        <td>
-                                            <a>
+                                            <a href="personelgoruntule.php?">
                                                 <button type="button" class="btn btn-primary">
                                                     Görüntüle
                                                 </button>
