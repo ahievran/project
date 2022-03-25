@@ -9,7 +9,7 @@ include '../baglanti.php';
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Akademik Personel</h1>
+                    <h1>Etkinlikler</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -28,8 +28,12 @@ include '../baglanti.php';
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Akademik Personel</h3>
+                            <h3 class="card-title">Etkinlikler</h3>
+                            <a href="eventsadd.php">
+                                <button style="float:right" class="btn btn-success ">Etkinlik Ekle</button>
+                            </a>
                         </div>
+
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table class="table table-striped projects">
@@ -56,50 +60,50 @@ include '../baglanti.php';
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-                                $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
-                                $result = $db->query($sql);
-                                while ($row = $result->fetch_array()){ ?>
-                                    <tr>
-                                        <td>1.</td>
-                                        <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                        <td><?php echo $row["etkinlik_baslik"]; ?></td>
-                                        <td>
-                                            <?php echo $row["etkinlik_icerik"]; ?>
-                                        </td>
-                                        <td>
-                                            <a>
-                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                                    Görüntüle
-                                                </button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                içerik
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                                    <?php
+                                    $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
+                                    $result = $db->query($sql);
+                                    while ($row = $result->fetch_array()) { ?>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
+                                            <td><?php echo $row["etkinlik_baslik"]; ?></td>
+                                            <td>
+                                                <?php echo $row["etkinlik_icerik"]; ?>
+                                            </td>
+                                            <td>
+                                                <a>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Görüntüle
+                                                    </button>
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    içerik
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a>
-                                                <button class="btn btn-danger">Sil</button>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a>
+                                                    <button class="btn btn-danger">Sil</button>
+                                                </a>
+                                            </td>
+                                        </tr>
                                 </tbody>
-                                <?php } ?>
+                            <?php } ?>
                             </table>
                         </div>
                     </div>

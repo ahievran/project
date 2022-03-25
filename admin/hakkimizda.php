@@ -25,76 +25,75 @@ include '../baglanti.php';
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Hakkımızda</h3>
+                            <a href="aboutadd.php">
+                                <button style="float:right" class="btn btn-success ">Ekle Ekle</button>
+                            </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table class="table table-striped projects">
                                 <thead>
-                                <tr>
-                                    <th>
-                                        #
-                                    </th>
-                                    <th>
-                                        Hakkında İçerik
-                                    </th>
-                                    <th>
-                                        Görüntüle
-                                    </th>
-                                    <th>
-                                        Sil
-                                    </th>
-                                </tr>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>
+                                            Hakkında İçerik
+                                        </th>
+                                        <th>
+                                            Görüntüle
+                                        </th>
+                                        <th>
+                                            Sil
+                                        </th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-                                $sql = "SELECT * FROM hakkimizda ORDER BY hakkinda_id ASC";
-                                $result = $db->query($sql);
-                                while ($row = $result->fetch_array()){ ?>
-                                <tr>
-                                    <td><?php echo $row["hakkinda_id"]; ?></td>
-                                    <td><?php echo $row["hakkinda_icerik"]; ?></td>
-                                    <td>
-                                        <a>
-                                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#exampleModal">
-                                                Görüntüle
-                                            </button>
-                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Hakkında İçeriği
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-dismiss="modal">Kapat
-                                                            </button>
+                                    <?php
+                                    $sql = "SELECT * FROM hakkimizda ORDER BY hakkinda_id ASC";
+                                    $result = $db->query($sql);
+                                    while ($row = $result->fetch_array()) { ?>
+                                        <tr>
+                                            <td><?php echo $row["hakkinda_id"]; ?></td>
+                                            <td><?php echo $row["hakkinda_icerik"]; ?></td>
+                                            <td>
+                                                <a>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Görüntüle
+                                                    </button>
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Hakkında İçeriği
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat
+                                                                    </button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a>
-                                            <button class="btn btn-danger">Sil</button>
-                                        </a>
-                                    </td>
-                                </tr>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a>
+                                                    <button class="btn btn-danger">Sil</button>
+                                                </a>
+                                            </td>
+                                        </tr>
                                 </tbody>
-                                <?php } ?>
+                            <?php } ?>
                             </table>
                         </div>
                     </div>
@@ -106,4 +105,3 @@ include '../baglanti.php';
 </div>
 <?php
 require_once 'footer.php'; ?>
-

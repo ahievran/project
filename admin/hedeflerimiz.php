@@ -29,74 +29,77 @@ include '../baglanti.php';
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Hedeflerimiz</h3>
+                            <a href="hedefadd.php">
+                                <button style="float:right" class="btn btn-success ">Ekle</button>
+                            </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table class="table table-striped projects">
                                 <thead>
-                                <tr>
-                                    <th>
-                                        #
-                                    </th>
-                                    <th>
-                                        İcon
-                                    </th>
-                                    <th>
-                                        Hedeflerimiz Başlık
-                                    </th>
-                                    <th>
-                                        Hedeflerimiz İçerik
-                                    </th>
-                                    <th>
-                                        Sil
-                                    </th>
-                                </tr>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>
+                                            İcon
+                                        </th>
+                                        <th>
+                                            Hedeflerimiz Başlık
+                                        </th>
+                                        <th>
+                                            Hedeflerimiz İçerik
+                                        </th>
+                                        <th>
+                                            Sil
+                                        </th>
+                                    </tr>
                                 </thead>
                                 <?php
                                 $sql = "SELECT * FROM hedeflerimiz ORDER BY hedef_id ASC";
                                 $result = $db->query($sql);
-                                while($row = $result->fetch_array()){ ?>
-                                <tbody>
-                                <tr>
-                                    <td><?php echo $row["hedef_id"]; ?></td>
-                                    <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                    <td><?php echo $row["hedef_baslik"]; ?></td>
-                                    <td>
-                                        <a>
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                                Görüntüle
-                                            </button>
-                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Hedeflerimiz İçeriği
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                                                Kapat
-                                                            </button>
+                                while ($row = $result->fetch_array()) { ?>
+                                    <tbody>
+                                        <tr>
+                                            <td><?php echo $row["hedef_id"]; ?></td>
+                                            <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
+                                            <td><?php echo $row["hedef_baslik"]; ?></td>
+                                            <td>
+                                                <a>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Görüntüle
+                                                    </button>
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">İçerik</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Hedeflerimiz İçeriği
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                                        Kapat
+                                                                    </button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a>
-                                            <button class="btn btn-danger">
-                                                Sil
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </tbody>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a>
+                                                    <button class="btn btn-danger">
+                                                        Sil
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 <?php } ?>
                             </table>
                         </div>
@@ -109,4 +112,3 @@ include '../baglanti.php';
 </div>
 <?php
 require_once 'footer.php'; ?>
-

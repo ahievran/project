@@ -23,14 +23,14 @@ include '../baglanti.php';
 
     <!-- Main content -->
     <?php
-    if (isset($_POST["gonder"])){
+    if (isset($_POST["gonder"])) {
         $link = $_POST["link"];
 
         $sql = "INSERT INTO ders_icerik (dersicerik_url) VALUE ('$link')";
         $result2 = $db->query($sql);
         mysqli_query($result);
 
-//        header("location: dersicerikleri.php ");
+        //        header("location: dersicerikleri.php ");
 
         echo '<script type ="text/JavaScript">';
         echo 'alert("Link veritabanına eklendi")';
@@ -65,4 +65,3 @@ include '../baglanti.php';
 </div>
 <?php
 require_once 'footer.php'; ?>
-

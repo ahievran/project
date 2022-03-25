@@ -9,7 +9,7 @@ include '../baglanti.php';
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Hedeflerimiz</h1>
+                    <h1>Galeri</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -29,6 +29,9 @@ include '../baglanti.php';
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Galeri</h3>
+                            <a href="galleryadd.php">
+                                <button style="float:right" class="btn btn-success ">Görsel Ekle</button>
+                            </a>
                         </div>
                         <!-- /.card-header -->
                         <?php

@@ -29,6 +29,9 @@ include '../baglanti.php';
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Laboratuvarlarımız</h3>
+                            <a href="labadd.php">
+                                <button style="float:right" class="btn btn-success ">Ekle</button>
+                            </a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -55,28 +58,28 @@ include '../baglanti.php';
                                 <?php
                                 $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";
                                 $result = $db->query($sql);
-                                while ($row = $result->fetch_array()){ ?>
-                                <tbody>
-                                    <tr>
-                                        <td><?php echo $row["lab_id"]; ?></td>
-                                        <td>
-                                            <i class="icon ion-android-globe" style="font-size: 40px;"></i><?php echo $row["lab_resim"]; ?>
-                                        </td>
-                                        <td><?php echo $row["lab_ad"]; ?></td>
-                                        <td>
-                                            <a>
-                                                <button type="button" class="btn btn-primary">
-                                                    Görüntüle
-                                                </button>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a>
-                                                <button class="btn btn-danger">Sil</button>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                while ($row = $result->fetch_array()) { ?>
+                                    <tbody>
+                                        <tr>
+                                            <td><?php echo $row["lab_id"]; ?></td>
+                                            <td>
+                                                <i class="icon ion-android-globe" style="font-size: 40px;"></i><?php echo $row["lab_resim"]; ?>
+                                            </td>
+                                            <td><?php echo $row["lab_ad"]; ?></td>
+                                            <td>
+                                                <a>
+                                                    <button type="button" class="btn btn-primary">
+                                                        Görüntüle
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a>
+                                                    <button class="btn btn-danger">Sil</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 <?php } ?>
                             </table>
                         </div>
