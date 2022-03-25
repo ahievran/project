@@ -37,35 +37,19 @@ include '../baglanti.php';
                         <form>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="ad">Adı Soyadı</label>
-                                    <input type="text" class="form-control" id="ad" placeholder="Adı Soyadı Giriniz">
-                                </div>                                <div class="form-group">
-                                    <label for="fakulte">Fakülte</label>
-                                    <input type="text" class="form-control" id="fakulte" placeholder="Fakülteyi Giriniz">
+                                    <label for="baslik">Etkinlik Başlığı</label>
+                                    <input type="text" class="form-control" id="ad" placeholder="Etkinlik Başlığı Giriniz">
                                 </div>
                                 <div class="form-group">
-                                    <label for="bolum">Bölüm</label>
-                                    <input type="text" class="form-control" id="bolum" placeholder="Bölümü Giriniz">
+                                    <label for="icerik">Etkinlik İçeriği</label>
+                                    <input type="text" class="form-control" id="fakulte" placeholder="Etkinlik İçeriği Giriniz">
                                 </div>
                                 <div class="form-group">
-                                    <label for="ofis">Ofis</label>
-                                    <input type="text" class="form-control" id="ofis" placeholder="Adı Soyadı Giriniz">
+                                    <label for="tarih">Etkinlik Tarihi</label>
+                                    <input type="date" class="form-control" id="start" value="01-01-2022" min="01-01-1990" max="01-01-2099" placeholder="Etkinlik Tarihi Giriniz">
                                 </div>
                                 <div class="form-group">
-                                    <label for="tel">Telefon</label>
-                                    <input type="tel" class="form-control" id="tel" placeholder="Telefon Numarası Giriniz">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-Posta</label>
-                                    <input type="mail" class="form-control" id="mail" placeholder="Mail Adresini Giriniz">
-                                </div>
-                                <div class="form-group">
-                                    <label for="url">Hakkında URL</label>
-                                    <input type="text" class="form-control" id="url" placeholder="Url Giriniz">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="video">Video Mesajı</label>
+                                    <label for="gorsel">Etkinlik Görsel</label>
                                     <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -78,7 +62,7 @@ include '../baglanti.php';
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Kaydet</button>
                             </div>
                         </form>
                     </div>
