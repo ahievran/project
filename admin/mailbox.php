@@ -66,6 +66,7 @@ include '../baglanti.php';
                                             <th>Gönderen</th>
                                             <th>Konu</th>
                                             <th>Tarih</th>
+                                            <th>Görüntüle</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -74,11 +75,16 @@ include '../baglanti.php';
                                         $result = $db->query($sql);
                                         while ($row = $result->fetch_array()) { ?>
                                             <tr>
-                                                <td class="mailbox-name"><a href="read-mail.php"><?php echo $row["mesaj_isim_soyisim"]; ?></a>
+                                                <td class="mailbox-name"><?php echo $row["mesaj_isim_soyisim"]; ?>
                                                 </td>
                                                 <td class="mailbox-subject"><b><?php echo $row["mesaj_konu"]; ?></b>
                                                 </td>
                                                 <td class="mailbox-date"><?php echo $row["mesaj_date"]; ?>
+                                                </td>
+                                                <td>
+                                                    <a href="read-mail.php">
+                                                        <button class="btn btn-success">Görüntüle</button>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         <?php } ?>
