@@ -23,6 +23,21 @@ include '../baglanti.php';
     </section>
 
     <!-- Main content -->
+    <?php
+    if (isset($_POST["gonder"])) {
+        $labName = $_POST["labName"];
+        $labAbout = $_POST["labAbout"];
+//        $labImg = $_POST["labImg"];
+
+        $sql = "INSERT INTO laboratuvar(lab_ad, lab_aciklama) VALUES('$labName', '$labAbout')";
+        $result = $db->query($sql);
+
+        echo '<script type ="text/JavaScript">';
+        echo 'alert("Link veritabanına eklendi")';
+        echo '</script>';
+
+    }
+    ?>
     <section class="content">
         <div class="card card-primary">
             <div class="card-header">
@@ -30,21 +45,21 @@ include '../baglanti.php';
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form>
+            <form method="POST" action="labadd.php" enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
                         <label for="labname">Laboratuvar Adı</label>
-                        <input type="text" class="form-control" placeholder="Laboratuvar Adı">
+                        <input type="text" class="form-control" name="labName" placeholder="Laboratuvar Adı">
                     </div>
                     <div class="form-group">
                         <label for="lababout">Laboratuvar Açıklama</label>
-                        <input type="text" class="form-control" placeholder="Laboratuvar Açıklama">
+                        <input type="text" class="form-control" name="labAbout" placeholder="Laboratuvar Açıklama">
                     </div>
                     <div class="form-group">
                         <label for="lablife">Laboratuvar Görsel</label>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input">
+                                <input type="file" class="custom-file-input" name="labImg[]">
                                 <label class="custom-file-label" for="exampleInputFile">Görsel Seçin</label>
                             </div>
                             <div class="input-group-append">
@@ -56,7 +71,7 @@ include '../baglanti.php';
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                    <button type="submit" class="btn btn-primary" name="gonder">Kaydet</button>
                 </div>
             </form>
         </div>
