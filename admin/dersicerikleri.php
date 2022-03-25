@@ -26,11 +26,8 @@ include '../baglanti.php';
     if (isset($_POST["gonder"])) {
         $link = $_POST["link"];
 
-        $sql = "INSERT INTO ders_icerik (dersicerik_url) VALUE ('$link')";
-        $result2 = $db->query($sql);
-        mysqli_query($result);
-
-        //        header("location: dersicerikleri.php ");
+        $sql = "UPDATE ders_icerik SET dersicerik_url = '$link' WHERE dersicerik_id = '1'";
+        $result = $db->query($sql);
 
         echo '<script type ="text/JavaScript">';
         echo 'alert("Link veritabanına eklendi")';
