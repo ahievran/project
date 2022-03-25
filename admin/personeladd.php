@@ -23,41 +23,86 @@ include '../baglanti.php';
 
         <!-- Main content -->
         <?php
-        if (isset($_POST["gonder"])) {
+        //        if (isset($_POST["submit"])) {
+        //            $ad = $_POST["ad"];
+        //            $fakulte = $_POST["fakulte"];
+        //            $bolum = $_POST["bolum"];
+        //            $ofis = $_POST["ofis"];
+        //            $tel = $_POST["tel"];
+        //            $mail = $_POST["mail"];
+        //            $video = $_POST["video"];
+        //            $url = $_POST["url"];
+        //
+        //
+        //            $sql = "INSERT INTO akademik_personel
+        //                                (personel_isim_soyisim,
+        //                                personel_fakülte,
+        //                                personel_bölüm,
+        //                                personel_ofis,
+        //                                personel_telefon,
+        //                                personel_email,
+        //                                personel_video_url,
+        //                                personel_hakkında)
+        //                    VALUES
+        //                                ('$ad',
+        //                                 '$fakulte',
+        //                                 '$bolum',
+        //                                 '$ofis',
+        //                                 '$tel',
+        //                                 '$mail',
+        //                                 '$video',
+        //                                 '$url')";
+        //            $result = $db->query($sql);
+        //
+        //            echo '<script type ="text/JavaScript">';
+        //            echo 'alert("Link veritabanına eklendi")';
+        //            echo '</script>';
+        //
+        //        }
+
+        if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
+            $statusMsg = '';
+
+            $targetDir = "../admin/uploads/personel/";
+            $fileName = basename($_FILES["file"]["name"]);
+            $targetFilePath = $targetDir . $fileName;
+            $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
             $ad = $_POST["ad"];
             $fakulte = $_POST["fakulte"];
             $bolum = $_POST["bolum"];
             $ofis = $_POST["ofis"];
             $tel = $_POST["tel"];
             $mail = $_POST["mail"];
-            $video = $_POST["video"];
             $url = $_POST["url"];
 
-
-            $sql = "INSERT INTO akademik_personel
-                                (personel_isim_soyisim, 
-                                personel_fakülte, 
-                                personel_bölüm, 
-                                personel_ofis, 
-                                personel_telefon, 
-                                personel_email, 
-                                personel_video_url,
-                                personel_hakkında) 
-                    VALUES
-                                ('$ad', 
-                                 '$fakulte',
-                                 '$bolum',
-                                 '$ofis',
-                                 '$tel',
-                                 '$mail',
-                                 '$video',
-                                 '$url')";
-            $result = $db->query($sql);
-
-            echo '<script type ="text/JavaScript">';
-            echo 'alert("Link veritabanına eklendi")';
-            echo '</script>';
-
+            // Allow certain file formats
+            $allowTypes = array('mp4');
+            if (in_array($fileType, $allowTypes)) {
+                // Upload file to server
+                if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+                    // Insert image file name into database
+                    $insert = $db->query(
+                        "INSERT INTO akademik_personel(personel_isim_soyisim,personel_fakülte,personel_bölüm,personel_ofis,personel_telefon,personel_email,personel_video_url,personel_hakkında) VALUES('$ad','$fakulte','$bolum','$ofis','$tel','$mail','$fileName','$url')");
+                    if ($insert) {
+                        echo '<script type ="text/JavaScript">';
+                        echo 'alert("Veritabanına eklendi")';
+                        echo '</script>';
+                    } else {
+                        echo '<script type ="text/JavaScript">';
+                        echo 'alert("File upload failed, please try again.")';
+                        echo '</script>';
+                    }
+                } else {
+                    echo '<script type ="text/JavaScript">';
+                    echo 'alert("Sorry, there was an error uploading your file.")';
+                    echo '</script>';
+                }
+            } else {
+                echo '<script type ="text/JavaScript">';
+                echo 'alert("Sorry, only mp4 files are allowed to upload.")';
+                echo '</script>';
+            }
         }
         ?>
         <section class="content">
@@ -72,7 +117,7 @@ include '../baglanti.php';
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form method="POST" action="personeladd.php">
+                            <form method="POST" action="personeladd.php" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="ad">
@@ -128,7 +173,8 @@ include '../baglanti.php';
                                         <label for="video">Video Mesajı</label>
                                         <div class="input-group">
                                             <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="exampleInputFile" name="video">
+                                                <input type="file" class="custom-file-input" id="exampleInputFile"
+                                                       name="file">
                                                 <label class="custom-file-label" for="exampleInputFile">
                                                     Dosyayı Seçiniz
                                                 </label>
@@ -142,7 +188,7 @@ include '../baglanti.php';
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary" name="gonder">
+                                    <button type="submit" class="btn btn-primary" name="submit">
                                         Gönder
                                     </button>
                                 </div>
