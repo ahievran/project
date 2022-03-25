@@ -31,7 +31,7 @@ include '../baglanti.php';
             $result = $db->query($sql);
 
             echo '<script type ="text/JavaScript">';
-            echo 'alert("Link veritabanına eklendi")';
+            echo 'alert("Veritabanına eklendi")';
             echo '</script>';
         }
         ?>

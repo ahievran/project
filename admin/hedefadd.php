@@ -23,25 +23,38 @@ include '../baglanti.php';
     </section>
 
     <!-- Main content -->
+    <?php
+    if (isset($_POST["gonder"])) {
+        $text1 = $_POST["text1"];
+        $text2 = $_POST["text2"];
+
+        $sql = "INSERT INTO hedeflerimiz(hedef_baslik, hedef_icerik) VALUES('$text1', '$text2')";
+        $result = $db->query($sql);
+
+        echo '<script type ="text/JavaScript">';
+        echo 'alert("Veritabanına eklendi")';
+        echo '</script>';
+    }
+    ?>
     <section class="content">
         <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Hedefler</h3>
             </div>
-            <form>
+            <form method="POST" action="hedefadd.php">
                 <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Hedefler Başlık</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Hedefler Başlık Giriniz.">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="text1" placeholder="Hedefler Başlık Giriniz.">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Hedefler İçerik</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Hedefler İçerik Giriniz.">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="text2" placeholder="Hedefler İçerik Giriniz.">
                     </div>
 
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                    <button type="submit" class="btn btn-primary" name="gonder">Kaydet</button>
                 </div>
             </form>
         </div>
