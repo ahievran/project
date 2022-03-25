@@ -24,18 +24,44 @@ include '../baglanti.php';
 
     <!-- Main content -->
     <?php
-    if (isset($_POST["gonder"])) {
+
+    if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+        $statusMsg = '';
+
+        $targetDir = "../admin/uploads/labs/";
+        $fileName = basename($_FILES["file"]["name"]);
+        $targetFilePath = $targetDir . $fileName;
+        $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
         $labName = $_POST["labName"];
         $labAbout = $_POST["labAbout"];
-//        $labImg = $_POST["labImg"];
 
-        $sql = "INSERT INTO laboratuvar(lab_ad, lab_aciklama) VALUES('$labName', '$labAbout')";
-        $result = $db->query($sql);
-
-        echo '<script type ="text/JavaScript">';
-        echo 'alert("Link veritabanına eklendi")';
-        echo '</script>';
-
+        // Allow certain file formats
+        $allowTypes = array('jpg','png','jpeg','gif');
+        if(in_array($fileType, $allowTypes)){
+            // Upload file to server
+            if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+                // Insert image file name into database
+                $insert = $db->query("INSERT INTO laboratuvar(lab_ad, lab_aciklama, lab_resim) VALUES('$labName', '$labAbout', '".$fileName."')");
+                if($insert){
+                    echo '<script type ="text/JavaScript">';
+                    echo 'alert("Veritabanına eklendi")';
+                    echo '</script>';
+                }else{
+                    echo '<script type ="text/JavaScript">';
+                    echo 'alert("File upload failed, please try again.")';
+                    echo '</script>';
+                }
+            }else{
+                echo '<script type ="text/JavaScript">';
+                echo 'alert("Sorry, there was an error uploading your file.")';
+                echo '</script>';
+            }
+        }else{
+            echo '<script type ="text/JavaScript">';
+            echo 'alert("Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.")';
+            echo '</script>';
+        }
     }
     ?>
     <section class="content">
@@ -59,7 +85,7 @@ include '../baglanti.php';
                         <label for="lablife">Laboratuvar Görsel</label>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="labImg[]">
+                                <input type="file" class="custom-file-input" name="file">
                                 <label class="custom-file-label" for="exampleInputFile">Görsel Seçin</label>
                             </div>
                             <div class="input-group-append">
@@ -71,7 +97,7 @@ include '../baglanti.php';
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary" name="gonder">Kaydet</button>
+                    <button type="submit" class="btn btn-primary" name="submit">Kaydet</button>
                 </div>
             </form>
         </div>
