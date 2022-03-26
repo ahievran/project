@@ -38,6 +38,7 @@ include '../baglanti.php';
                         $sql = "SELECT * FROM galeri ORDER BY galeri_id DESC";
                         $result = $db->query($sql);
                         while ($row = $result->fetch_array()){ ?>
+                        <form method='post' action='galeri_resim_sil.php'>
                         <div class="card-body">
                             <table class="table table-striped projects">
                                 <thead>
@@ -60,14 +61,16 @@ include '../baglanti.php';
                                             <i class="icon ion-android-globe" style="font-size: 40px;"></i> <?php echo $row["galeri_resim"]; ?>
                                         </td>
                                         <td>
+                                            <input type='hidden' value='<?php echo $row["galeri_id"]; ?>' name='silinecek_id'>
                                             <a>
-                                                <button class="btn btn-danger">Sil</button>
+                                                <button class="btn btn-danger" name='sil'>Sil</button>
                                             </a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        </form>
                         <?php } ?>
                     </div>
                 </div>
