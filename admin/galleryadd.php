@@ -32,13 +32,13 @@ include '../baglanti.php';
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form>
+                        <form enctype="multipart/form-data" method="post" action="resim_yukle.php">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="gorsel">Görsel</label>
                                     <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <input type="file" name="file" class="custom-file-input" id="exampleInputFile">
                                             <label class="custom-file-label" for="exampleInputFile">Dosyayı Seçiniz</label>
                                         </div>
                                         <div class="input-group-append">
@@ -48,7 +48,7 @@ include '../baglanti.php';
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                <button type="submit" class="btn btn-primary" value="yukle" name="yukle">Kaydet</button>
                             </div>
                         </form>
                     </div>
