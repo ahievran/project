@@ -30,6 +30,7 @@ include '../baglanti.php';
 
         $targetDir = "../admin/uploads/labs/";
         $fileName = basename($_FILES["file"]["name"]);
+        $VeriTabaninaEklenecekYolluResim = "admin/uploads/labs/".$fileName;
         $targetFilePath = $targetDir . $fileName;
         $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
@@ -42,7 +43,7 @@ include '../baglanti.php';
             // Upload file to server
             if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
                 // Insert image file name into database
-                $insert = $db->query("INSERT INTO laboratuvar(lab_ad, lab_aciklama, lab_resim) VALUES('$labName', '$labAbout', '".$fileName."')");
+                $insert = $db->query("INSERT INTO laboratuvar(lab_ad, lab_aciklama, lab_resim) VALUES('$labName', '$labAbout', '".$VeriTabaninaEklenecekYolluResim."')");
                 if($insert){
                     echo '<script type ="text/JavaScript">';
                     echo 'alert("Veritabanına eklendi")';
