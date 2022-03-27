@@ -59,27 +59,31 @@ include '../baglanti.php';
                                 $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";
                                 $result = $db->query($sql);
                                 while ($row = $result->fetch_array()) { ?>
+                                <form method="post" action="lab-goruntule-sil.php">
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["lab_id"]; ?></td>
                                             <td>
-                                                <i class="icon ion-android-globe" style="font-size: 40px;"></i><?php echo $row["lab_resim"]; ?>
+                                                <i class="icon ion-android-globe" style="font-size: 40px;"></i>
                                             </td>
                                             <td><?php echo $row["lab_ad"]; ?></td>
                                             <td>
-                                                <a>
-                                                    <button type="button" class="btn btn-primary">
+                                                <input type="hidden" name="sil_id" value="<?php echo $row["lab_id"];  ?>">
+                                                <input type="hidden" name="goruntulencek_resim" value="<?php echo $row["lab_resim"];  ?>">
+                                                
+                                                    <button name="see"  class="btn btn-primary">
                                                         Görüntüle
                                                     </button>
-                                                </a>
+                                                
                                             </td>
                                             <td>
                                                 <a>
-                                                    <button class="btn btn-danger">Sil</button>
+                                                    <button class="btn btn-danger" name="sil">Sil</button>
                                                 </a>
                                             </td>
                                         </tr>
                                     </tbody>
+                                </form>
                                 <?php } ?>
                             </table>
                         </div>
