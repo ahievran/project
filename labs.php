@@ -13,7 +13,7 @@
                     <div class="col-lg-4">
                         <div class="card clean-testimonial-item border-0 rounded-0">
                             <div class="card-body">
-                                <div><img class="img-fluid" src="<?php echo $row["lab_resim"];  ?>" style="width: 400px; height:350px;"></div>
+                                <div><img class="img-fluid" src="<?php echo $row["lab_resim"];  ?>" style="width: 400px; height:300px;"></div>
                                 <h3 style="text-align: center;margin-top: 28px;margin-bottom: 0px;"><?php echo $row["lab_ad"]; ?></h3>
                                 <p style="text-align: center;margin-top: 15px;margin-bottom: 0px;"><?php echo $row["lab_aciklama"] ?> </p>
                             </div>
