@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 23, 2022 at 11:05 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Anamakine: 127.0.0.1
+-- Üretim Zamanı: 28 Mar 2022, 10:45:48
+-- Sunucu sürümü: 10.4.21-MariaDB
+-- PHP Sürümü: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bm`
+-- Veritabanı: `bm`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_giris`
+-- Tablo için tablo yapısı `admin_giris`
 --
 
 CREATE TABLE `admin_giris` (
@@ -36,7 +36,7 @@ CREATE TABLE `admin_giris` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `akademik_personel`
+-- Tablo için tablo yapısı `akademik_personel`
 --
 
 CREATE TABLE `akademik_personel` (
@@ -48,31 +48,32 @@ CREATE TABLE `akademik_personel` (
   `personel_telefon` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `personel_email` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `personel_video_url` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_hakkında` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `personel_hakkında` text COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_img` varchar(80) COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `akademik_personel`
+-- Tablo döküm verisi `akademik_personel`
 --
 
-INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `personel_fakülte`, `personel_bölüm`, `personel_ofis`, `personel_telefon`, `personel_email`, `personel_video_url`, `personel_hakkında`) VALUES
-(1, 'Doç. Dr. Mustafa Yağcı(Bölüm Başkanı)\r\n', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı	', '-------', '--------', 'mustafayagci@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/dce4744b-51fe-4518-b580-ac14b49a524e'),
-(2, 'Dr. Öğr. Üyesi Mustafa AKSU', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı	', '-----', '------', 'mustafa.aksu@ahievran.edu.tr', '', '#'),
-(3, 'Dr.Öğr. Üyesi Gülsüm AKKUZU KAYA	', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '-----', '------', 'gulsum.akkuzukaya@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-7efdb36d-017f-43f3087a-000d'),
-(4, 'Dr. Öğr. Üyesi Mehmet Ali YALÇINKAYA', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '------', 'mehmetyalcinkaya@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/d745db4d-28b4-430a-8fdd-4fb21681ebc0'),
-(5, 'Dr. Öğr. Üyesi Murat IŞIK', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '-----', '-----', 'muratisik@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/e6bba358-b78c-4e0d-849c-90fac5d50f82'),
-(6, 'Dr. Öğr. Üyesi Volkan GÜNEŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '-------', 'volkan.gunes@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-6afe0e72-016b-4f8d8475-0000'),
-(7, 'Dr. Öğr. Üyesi Ayla KAYABAŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '------', '------', '', '----'),
-(8, 'Araş. Gör. Abdurrahman Yavuz ASLANTAŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '----', '------', 'a.aslantas@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-76cdd752-0177-7121ae31-0012'),
-(9, 'Araş. Gör. İbrahim ŞANLIALP', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '----', '------', 'ibrahim.sanlialp@ahievran.edu.tr\r\n', '', 'https://akademik.ahievran.edu.tr/personel/bbf6ed7e-c2d7-42f9-b064-54b23f3fae86'),
-(10, 'Araş. Gör. Ahmet ÖZDİL', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '----', '----', 'ahmet.ozdil@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-68b92809-0168-db3a7c17-0001'),
-(11, 'Araş. Gör. Ceren AKMAN', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '-----', '------', 'ceren.akman@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-6a96d815-016a-9b510e89-0001'),
-(12, 'Araş. Gör. Sümeyye Sena ÜNALDI', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '-----', 'sena.unaldi@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-76cdd752-0177-710ccc80-0011');
+INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `personel_fakülte`, `personel_bölüm`, `personel_ofis`, `personel_telefon`, `personel_email`, `personel_video_url`, `personel_hakkında`, `personel_img`) VALUES
+(1, 'Doç. Dr. Mustafa Yağcı(Bölüm Başkanı)\r\n', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı	', '-------', '--------', 'mustafayagci@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/dce4744b-51fe-4518-b580-ac14b49a524e', 'assets/img/akademik-1.jpg'),
+(2, 'Dr. Öğr. Üyesi Mustafa AKSU', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı	', '-----', '------', 'mustafa.aksu@ahievran.edu.tr', '', '----', 'assets/img/akademik-null.jpg'),
+(3, 'Dr.Öğr. Üyesi Gülsüm AKKUZU KAYA	', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '-----', '------', 'gulsum.akkuzukaya@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-7efdb36d-017f-43f3087a-000d', 'assets/img/akademik-null.jpg'),
+(4, 'Dr. Öğr. Üyesi Mehmet Ali YALÇINKAYA', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '------', 'mehmetyalcinkaya@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/d745db4d-28b4-430a-8fdd-4fb21681ebc0', 'assets/img/akademik-4.jpg'),
+(5, 'Dr. Öğr. Üyesi Murat IŞIK', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '-----', '-----', 'muratisik@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/e6bba358-b78c-4e0d-849c-90fac5d50f82', 'assets/img/akademik-5.jpg'),
+(6, 'Dr. Öğr. Üyesi Volkan GÜNEŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '-------', 'volkan.gunes@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-6afe0e72-016b-4f8d8475-0000', 'assets/img/akademik-6.jpg'),
+(7, 'Dr. Öğr. Üyesi Ayla KAYABAŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '------', '------', '', '----', 'assets/img/akademik-null.jpg'),
+(8, 'Araş. Gör. Abdurrahman Yavuz ASLANTAŞ', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '----', '------', 'a.aslantas@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-76cdd752-0177-7121ae31-0012', 'assets/img/akademik-null.jpg'),
+(9, 'Araş. Gör. İbrahim ŞANLIALP', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Donanımı', '----', '------', 'ibrahim.sanlialp@ahievran.edu.tr\r\n', '', 'https://akademik.ahievran.edu.tr/personel/bbf6ed7e-c2d7-42f9-b064-54b23f3fae86', 'assets/img/akademik-9.jpg'),
+(10, 'Araş. Gör. Ahmet ÖZDİL', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '----', '----', 'ahmet.ozdil@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-68b92809-0168-db3a7c17-0001', 'assets/img/akademik-10.jpg'),
+(11, 'Araş. Gör. Ceren AKMAN', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '-----', '------', 'ceren.akman@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-6a96d815-016a-9b510e89-0001', 'assets/img/akademik-11.jpg'),
+(12, 'Araş. Gör. Sümeyye Sena ÜNALDI', 'Mühendislik-Mimarlık Fakültesi', 'Bilgisayar Yazılımı', '------', '-----', 'sena.unaldi@ahievran.edu.tr', '', 'https://akademik.ahievran.edu.tr/personel/cffb52c6-76cdd752-0177-710ccc80-0011', 'assets/img/akademik-12.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ders_icerik`
+-- Tablo için tablo yapısı `ders_icerik`
 --
 
 CREATE TABLE `ders_icerik` (
@@ -81,7 +82,7 @@ CREATE TABLE `ders_icerik` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `ders_icerik`
+-- Tablo döküm verisi `ders_icerik`
 --
 
 INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
@@ -91,7 +92,7 @@ INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `duyuru`
+-- Tablo için tablo yapısı `duyuru`
 --
 
 CREATE TABLE `duyuru` (
@@ -105,7 +106,7 @@ CREATE TABLE `duyuru` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `etkinlikler`
+-- Tablo için tablo yapısı `etkinlikler`
 --
 
 CREATE TABLE `etkinlikler` (
@@ -116,7 +117,7 @@ CREATE TABLE `etkinlikler` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `etkinlikler`
+-- Tablo döküm verisi `etkinlikler`
 --
 
 INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_tarih`) VALUES
@@ -126,7 +127,7 @@ INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri`
+-- Tablo için tablo yapısı `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -135,16 +136,24 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `galeri`
+-- Tablo döküm verisi `galeri`
 --
 
 INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
-(1, 'resim');
+(2, 'assets/img/scenery/gallery-1.jpg'),
+(3, 'assets/img/scenery/gallery-2.jpg'),
+(4, 'assets/img/scenery/gallery-3.jpg'),
+(5, 'assets/img/scenery/gallery-4.jpg'),
+(6, 'assets/img/scenery/gallery-5.jpg'),
+(7, 'assets/img/scenery/gallery-6.jpg'),
+(8, 'assets/img/scenery/gallery-7.jpg'),
+(9, 'assets/img/scenery/gallery-8.jpg'),
+(22, 'assets/img/scenery/gallery-9.jpg	\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hakkimizda`
+-- Tablo için tablo yapısı `hakkimizda`
 --
 
 CREATE TABLE `hakkimizda` (
@@ -154,7 +163,7 @@ CREATE TABLE `hakkimizda` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `hakkimizda`
+-- Tablo döküm verisi `hakkimizda`
 --
 
 INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) VALUES
@@ -170,7 +179,7 @@ INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hedeflerimiz`
+-- Tablo için tablo yapısı `hedeflerimiz`
 --
 
 CREATE TABLE `hedeflerimiz` (
@@ -181,7 +190,7 @@ CREATE TABLE `hedeflerimiz` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `hedeflerimiz`
+-- Tablo döküm verisi `hedeflerimiz`
 --
 
 INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_baslik`) VALUES
@@ -193,7 +202,7 @@ INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_bas
 -- --------------------------------------------------------
 
 --
--- Table structure for table `iletisim`
+-- Tablo için tablo yapısı `iletisim`
 --
 
 CREATE TABLE `iletisim` (
@@ -207,7 +216,7 @@ CREATE TABLE `iletisim` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `laboratuvar`
+-- Tablo için tablo yapısı `laboratuvar`
 --
 
 CREATE TABLE `laboratuvar` (
@@ -218,17 +227,22 @@ CREATE TABLE `laboratuvar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dumping data for table `laboratuvar`
+-- Tablo döküm verisi `laboratuvar`
 --
 
 INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALUES
-(1, '', 'lab1', 'lab1 aciklama'),
-(2, '', 'lab2', 'lab2 aciklama');
+(4, 'admin/uploads/labs/lab-1.jpg', 'Yazılım Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin web, masaüstü ve mobil tabanlı yazılım geliştirme amaçlı kullanabilecekleri 40 ve 25 bilgisayar kapasiteli 2 adet bilgisayar laboratuvarı bulunmaktadır.'),
+(5, 'admin/uploads/labs/lab-4.jpg', 'Sayısal Sistemler Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin analog (AC-DC) ve digital devreler ile ilgili uygulamalar yapabileceği sayısal sistemler laboratuvarı bulunmaktadır.'),
+(6, 'admin/uploads/labs/lab-2.jpg', 'Yazılım Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin web, masaüstü ve mobil tabanlı yazılım geliştirme amaçlı kullanabilecekleri 40 ve 25 bilgisayar kapasiteli 2 adet bilgisayar laboratuvarı bulunmaktadır.'),
+(7, 'admin/uploads/labs/lab-3.jpg', 'Donanım Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin lojik devreler gibi çeşitli uygulamaları yapabileceği dc güç kaynağı, osiloskop, multimetre, dijital uygulamalar eğitim seti gibi bileşenleri içeren donanım laboratuvarı bulunmaktadır. '),
+(8, 'admin/uploads/labs/lab-5.jpg', 'Mikroişlemci ve Mikrodenetleyici Laboratuvarı ', 'Bölümümüz bünyesinde, öğrencilerimizin mikrodenetleyici programlama ve devre tasarımları gibi uygulamaları içeren mikrodenetleyici laboratuvarı bulunmaktadır. '),
+(9, 'admin/uploads/labs/lab-6.jpg', 'Bilgisayar Ağları Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin çeşitli ağ uygulamalarını gerçekleştirebilecekleri, hub, switch, firewall, bridge gibi cihazların bulunduğu bilgisayar ağları laboratuvarı bulunmaktadır. '),
+(10, 'admin/uploads/labs/lab-7.jpg', 'Robotik Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin çeşitli robotik uygulamalarını gerçekleştirebilecekleri, sensör(ivme,ısı vb.), drone uçuş kartı, ardunio ve raspberry gibi malzemelerin bulunduğu robotik laboratuvarı bulunmaktadır. ');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mesaj`
+-- Tablo için tablo yapısı `mesaj`
 --
 
 CREATE TABLE `mesaj` (
@@ -236,22 +250,13 @@ CREATE TABLE `mesaj` (
   `mesaj_isim_soyisim` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `mesaj_konu` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `mesaj_email` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_date` datetime DEFAULT current_timestamp()
+  `mesaj_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
-
---
--- Dumping data for table `mesaj`
---
-
-INSERT INTO `mesaj` (`mesaj_id`, `mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`, `mesaj_date`) VALUES
-(1, 'Kutluhan Azaflı', 'Test', 'test@test.com', 'test', '2022-03-24 00:22:44'),
-(2, 'Kutluhan', 'testt', 'testt@test.com', 'testtt', '2022-03-24 00:23:20');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slider`
+-- Tablo için tablo yapısı `slider`
 --
 
 CREATE TABLE `slider` (
@@ -265,7 +270,7 @@ CREATE TABLE `slider` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `soru_cevap`
+-- Tablo için tablo yapısı `soru_cevap`
 --
 
 CREATE TABLE `soru_cevap` (
@@ -275,165 +280,165 @@ CREATE TABLE `soru_cevap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Indexes for dumped tables
+-- Dökümü yapılmış tablolar için indeksler
 --
 
 --
--- Indexes for table `admin_giris`
+-- Tablo için indeksler `admin_giris`
 --
 ALTER TABLE `admin_giris`
   ADD PRIMARY KEY (`admin_id`);
 
 --
--- Indexes for table `akademik_personel`
+-- Tablo için indeksler `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
   ADD PRIMARY KEY (`personel_id`);
 
 --
--- Indexes for table `ders_icerik`
+-- Tablo için indeksler `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
   ADD PRIMARY KEY (`dersicerik_id`);
 
 --
--- Indexes for table `duyuru`
+-- Tablo için indeksler `duyuru`
 --
 ALTER TABLE `duyuru`
   ADD PRIMARY KEY (`duyuru_id`);
 
 --
--- Indexes for table `etkinlikler`
+-- Tablo için indeksler `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
   ADD PRIMARY KEY (`etkinlik_id`);
 
 --
--- Indexes for table `galeri`
+-- Tablo için indeksler `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`galeri_id`);
 
 --
--- Indexes for table `hakkimizda`
+-- Tablo için indeksler `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
   ADD PRIMARY KEY (`hakkinda_id`);
 
 --
--- Indexes for table `hedeflerimiz`
+-- Tablo için indeksler `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
   ADD PRIMARY KEY (`hedef_id`);
 
 --
--- Indexes for table `iletisim`
+-- Tablo için indeksler `iletisim`
 --
 ALTER TABLE `iletisim`
   ADD PRIMARY KEY (`iletisim_id`);
 
 --
--- Indexes for table `laboratuvar`
+-- Tablo için indeksler `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
   ADD PRIMARY KEY (`lab_id`);
 
 --
--- Indexes for table `mesaj`
+-- Tablo için indeksler `mesaj`
 --
 ALTER TABLE `mesaj`
   ADD PRIMARY KEY (`mesaj_id`);
 
 --
--- Indexes for table `slider`
+-- Tablo için indeksler `slider`
 --
 ALTER TABLE `slider`
   ADD PRIMARY KEY (`slider_id`);
 
 --
--- Indexes for table `soru_cevap`
+-- Tablo için indeksler `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
   ADD PRIMARY KEY (`soru_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
 --
 
 --
--- AUTO_INCREMENT for table `admin_giris`
+-- Tablo için AUTO_INCREMENT değeri `admin_giris`
 --
 ALTER TABLE `admin_giris`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `akademik_personel`
+-- Tablo için AUTO_INCREMENT değeri `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
   MODIFY `personel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `ders_icerik`
+-- Tablo için AUTO_INCREMENT değeri `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
   MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `duyuru`
+-- Tablo için AUTO_INCREMENT değeri `duyuru`
 --
 ALTER TABLE `duyuru`
   MODIFY `duyuru_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `etkinlikler`
+-- Tablo için AUTO_INCREMENT değeri `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
   MODIFY `etkinlik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `galeri`
+-- Tablo için AUTO_INCREMENT değeri `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT for table `hakkimizda`
+-- Tablo için AUTO_INCREMENT değeri `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
   MODIFY `hakkinda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `hedeflerimiz`
+-- Tablo için AUTO_INCREMENT değeri `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
   MODIFY `hedef_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `iletisim`
+-- Tablo için AUTO_INCREMENT değeri `iletisim`
 --
 ALTER TABLE `iletisim`
   MODIFY `iletisim_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `laboratuvar`
+-- Tablo için AUTO_INCREMENT değeri `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
-  MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `mesaj`
+-- Tablo için AUTO_INCREMENT değeri `mesaj`
 --
 ALTER TABLE `mesaj`
-  MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `slider`
+-- Tablo için AUTO_INCREMENT değeri `slider`
 --
 ALTER TABLE `slider`
   MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `soru_cevap`
+-- Tablo için AUTO_INCREMENT değeri `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
   MODIFY `soru_id` int(11) NOT NULL AUTO_INCREMENT;
