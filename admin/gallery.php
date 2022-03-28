@@ -58,8 +58,7 @@ include '../baglanti.php';
                                     <tr>
                                         <td><?php echo $row["galeri_id"]; ?></td>
                                         <td>
-                                            <i class="icon ion-android-globe" style="font-size: 40px;"></i> <?php echo $row["galeri_resim"]; ?>
-                                        </td>
+                                            <img src="../<?php echo $row["galeri_resim"];?>" width="20%">                                        </td>
                                         <td>
                                             <input type='hidden' value='<?php echo $row["galeri_id"]; ?>' name='silinecek_id'>
                                             <a>
