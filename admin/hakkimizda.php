@@ -57,6 +57,7 @@ include '../baglanti.php';
                                     $sql = "SELECT * FROM hakkimizda ORDER BY hakkinda_id ASC";
                                     $result = $db->query($sql);
                                     while ($row = $result->fetch_array()) { ?>
+                                    <form method='post' action='hakkimizda_sil.php'>
                                         <tr>
                                             <td><?php echo $row["hakkinda_id"]; ?></td>
                                             <td><?php echo $row["hakkinda_icerik"]; ?></td>
@@ -68,12 +69,14 @@ include '../baglanti.php';
                                                 </a>
                                             </td>
                                             <td>
+                                                <input type='hidden' value='<?php echo $row["hakkinda_id"]; ?>' name='silinecek_id'>
                                                 <a>
-                                                    <button class="btn btn-danger">Sil</button>
+                                                    <button class="btn btn-danger" name="sil">Sil</button>
                                                 </a>
                                             </td>
                                         </tr>
                                 </tbody>
+                                </form>
                             <?php } ?>
                             </table>
                         </div>

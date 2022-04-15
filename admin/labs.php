@@ -75,16 +75,18 @@ include '../baglanti.php';
                                                     <button name="see"  class="btn btn-primary">
                                                         Görüntüle
                                                     </button>
-                                                
+                                </form>
+                                    <form method="post" action="labs_sil.php">
                                             </td>
                                             <td>
+                                                <input type='hidden' value='<?php echo $row["lab_id"]; ?>' name='silinecek_id'>
                                                 <a>
                                                     <button class="btn btn-danger" name="sil">Sil</button>
                                                 </a>
                                             </td>
                                         </tr>
                                     </tbody>
-                                </form>
+                                    </form>
                                 <?php } ?>
                             </table>
                         </div>

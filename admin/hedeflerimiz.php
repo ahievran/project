@@ -59,6 +59,7 @@ include '../baglanti.php';
                                 $sql = "SELECT * FROM hedeflerimiz ORDER BY hedef_id ASC";
                                 $result = $db->query($sql);
                                 while ($row = $result->fetch_array()) { ?>
+                                <form method='post' action='hedeflerimiz_sil.php'>
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["hedef_id"]; ?></td>
@@ -72,14 +73,16 @@ include '../baglanti.php';
                                                 </a>
                                             </td>
                                             <td>
+                                                <input type='hidden' value='<?php echo $row["hedef_id"]; ?>' name='silinecek_id'>
                                                 <a>
-                                                    <button class="btn btn-danger">
+                                                    <button class="btn btn-danger" name='sil'>
                                                         Sil
                                                     </button>
                                                 </a>
                                             </td>
                                         </tr>
                                     </tbody>
+                                </form>
                                 <?php } ?>
                             </table>
                         </div>

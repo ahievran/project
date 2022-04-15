@@ -64,8 +64,9 @@ include '../baglanti.php';
                                     $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
                                     $result = $db->query($sql);
                                     while ($row = $result->fetch_array()) { ?>
+                                    <form method='post' action='events_sil.php'>
                                         <tr>
-                                            <td>1.</td>
+                                            <td><?php echo $row["etkinlik_id"]; ?></td>
                                             <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
                                             <td><?php echo $row["etkinlik_baslik"]; ?></td>
                                             <td>
@@ -97,12 +98,14 @@ include '../baglanti.php';
                                                 </a>
                                             </td>
                                             <td>
+                                                <input type='hidden' value='<?php echo $row["etkinlik_id"]; ?>' name='silinecek_id'>
                                                 <a>
-                                                    <button class="btn btn-danger">Sil</button>
+                                                    <button class="btn btn-danger" name="sil">Sil</button>
                                                 </a>
                                             </td>
                                         </tr>
                                 </tbody>
+                            </form>
                             <?php } ?>
                             </table>
                         </div>
