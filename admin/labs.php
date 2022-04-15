@@ -59,7 +59,7 @@ include '../baglanti.php';
                                 $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";
                                 $result = $db->query($sql);
                                 while ($row = $result->fetch_array()) { ?>
-                                <form method="post" action="lab-goruntule-sil.php">
+                                <form method="post" action="labgoruntule.php">
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["lab_id"]; ?></td>
@@ -70,7 +70,8 @@ include '../baglanti.php';
                                             <td>
                                                 <input type="hidden" name="sil_id" value="<?php echo $row["lab_id"];  ?>">
                                                 <input type="hidden" name="goruntulencek_resim" value="<?php echo $row["lab_resim"];  ?>">
-                                                
+                                                <input type="hidden" name="labAdi" value="<?php echo $row["lab_ad"]; ?>"></input>
+                                                <input type="hidden" name="labAciklama" value="<?php echo $row["lab_aciklama"]; ?>"></input>
                                                     <button name="see"  class="btn btn-primary">
                                                         Görüntüle
                                                     </button>
