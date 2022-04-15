@@ -58,32 +58,46 @@ include '../baglanti.php';
                                         </th>
                                     </tr>
                                 </thead>
+                                <?php
+                                $sql = "SELECT * FROM duyuru ORDER BY duyuru_id ASC";
+                                $result = $db->query($sql);
+                                while ($row = $result->fetch_array()) { ?>
+                                <form method="post" action="duyurugoruntule.php">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            1
+                                            <?php echo $row["duyuru_id"]; ?>
                                         </td>
                                         <td>
-                                            Resim
+                                            <?php echo $row["duyuru_resim"]; ?>
                                         </td>
                                         <td>
-                                            Başlık
+                                            <?php echo $row["duyuru_baslik"]; ?>
                                         </td>
                                         <td>
-                                            Açıklama
+                                            <?php echo $row["duyuru_aciklama"]; ?>
                                         </td>
                                         <td>
-                                            <a href="duyurugoruntule.php">
-                                                <button class="btn btn-primary">Görüntüle</button>
+                                            <input type="hidden" name="sil_id" value="<?php echo $row["duyuru_id"];  ?>">
+                                            <input type="hidden" name="goruntulencek_resim" value="<?php echo $row["duyuru_resim"];  ?>">
+                                            <input type="hidden" name="duyuruBaslik" value="<?php echo $row["duyuru_baslik"]; ?>"></input>
+                                            <input type="hidden" name="duyuruAciklama" value="<?php echo $row["duyuru_aciklama"]; ?>"></input>
+                                            <button name="see"  class="btn btn-primary">
+                                                Görüntüle
+                                            </button>
+                                        </td>
+                                    </form>
+                                    <form method="post" action="duyuru_sil.php">
+                                        <td>
+                                            <input type='hidden' value='<?php echo $row["duyuru_id"]; ?>' name='silinecek_id'>
+                                            <a>
+                                                <button class="btn btn-danger" name="sil">Sil</button>
                                             </a>
                                         </td>
-                                        <td>
-                                            <a href="">
-                                                <button class="btn btn-danger">Sil</button>
-                                            </a>
-                                        </td>
+                                    </form>
                                     </tr>
                                 </tbody>
+                                <?php } ?>
                             </table>
                         </div>
                     </div>
