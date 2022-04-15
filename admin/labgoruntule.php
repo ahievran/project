@@ -33,7 +33,7 @@ include '../baglanti.php';
           <div class="row">
             <div class="col-12 col-sm-6">
               <div class="col-12">
-                <img src="<?php echo $resimUrl; ?>" class="product-image" alt="Laboratuvar Resim">
+                <img src="<?php echo $resimUrl; ?>" class="product-image" alt="Laboratuvar Resim" style="max-width: 100%;height: 100%;width: auto;display: block;margin: 0 auto;">
               </div>
 
             </div>
