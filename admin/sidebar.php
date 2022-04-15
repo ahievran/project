@@ -86,6 +86,14 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="duyuru.php" class="nav-link">
+          <i class="nav-icon fas fa-bullhorn"></i>
+            <p>
+              Duyurular
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="gallery.php" class="nav-link">
             <i class="nav-icon fas fa-image"></i>
             <p>
