@@ -75,7 +75,7 @@ include '../baglanti.php';
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Hakkında İçeriği
+                                                                <?php echo $row["hakkinda_icerik"]; ?>
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat
