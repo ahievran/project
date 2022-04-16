@@ -7,14 +7,14 @@
                 <div class="block-heading">
                     <h2 class="text-info">İletişim</h2>
                     <p>Bölümümüz hakkındaki sorularınızı sağ tarafta verilen telefon numarası, e-posta adresleri ve iletişim formu üzerinden iletebilirsiniz. Ayrıca evrak gönderimi için açık adresimiz de verilmiştir.<br></p>
-                    <div class="row" style="padding-top: 18px;" >
+                    <div class="row" style="padding-top: 38px;" >
                         <div class="col-sm-6">
-                            <form class="text-start" style="max-width: 550px;"  action="iletisimform.php" method="POST">
-                                <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" type="text" id="name"  name="name"></div>
-                                <div class="mb-3"><label class="form-label" for="subject">Subject</label><input class="form-control" type="text" id="subject"  name="subject"></div>
-                                <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="text" id="email" name="email"></div>
-                                <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" type="text" id="message"  name="message"></textarea></div>
-                                <div class="mb-3"><button class="btn btn-primary" value="send" name="send"  type="submit">Send</button></div>
+                            <form class="text-start bg-light" style="max-width: 550px;box-shadow:5px 5px 5px grey;"  action="iletisimform.php" method="POST">
+                                <div class="mb-3"><label class="form-label" for="name">İsim</label><input class="form-control" type="text" id="name"  name="name"></div>
+                                <div class="mb-3"><label class="form-label" for="subject">Konu</label><input class="form-control" type="text" id="subject"  name="subject"></div>
+                                <div class="mb-3"><label class="form-label" for="email">E-Mail</label><input class="form-control" type="text" id="email" name="email"></div>
+                                <div class="mb-3"><label class="form-label" for="message">Mesaj</label><textarea class="form-control" type="text" id="message"  name="message"></textarea></div>
+                                <div class="mb-3"><button class="btn btn-success" value="send" name="send"  type="submit">Gönder</button></div>
                                 
                             </form>
                         </div>
