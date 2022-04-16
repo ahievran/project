@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: 127.0.0.1
--- Üretim Zamanı: 28 Mar 2022, 10:45:48
--- Sunucu sürümü: 10.4.21-MariaDB
--- PHP Sürümü: 7.3.30
+-- Host: 127.0.0.1
+-- Generation Time: Apr 16, 2022 at 03:12 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `bm`
+-- Database: `bm`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `admin_giris`
+-- Table structure for table `admin_giris`
 --
 
 CREATE TABLE `admin_giris` (
@@ -36,7 +36,7 @@ CREATE TABLE `admin_giris` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `akademik_personel`
+-- Table structure for table `akademik_personel`
 --
 
 CREATE TABLE `akademik_personel` (
@@ -53,7 +53,7 @@ CREATE TABLE `akademik_personel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `akademik_personel`
+-- Dumping data for table `akademik_personel`
 --
 
 INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `personel_fakülte`, `personel_bölüm`, `personel_ofis`, `personel_telefon`, `personel_email`, `personel_video_url`, `personel_hakkında`, `personel_img`) VALUES
@@ -73,7 +73,7 @@ INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `person
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `ders_icerik`
+-- Table structure for table `ders_icerik`
 --
 
 CREATE TABLE `ders_icerik` (
@@ -82,7 +82,7 @@ CREATE TABLE `ders_icerik` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `ders_icerik`
+-- Dumping data for table `ders_icerik`
 --
 
 INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
@@ -92,7 +92,7 @@ INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `duyuru`
+-- Table structure for table `duyuru`
 --
 
 CREATE TABLE `duyuru` (
@@ -106,28 +106,29 @@ CREATE TABLE `duyuru` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `etkinlikler`
+-- Table structure for table `etkinlikler`
 --
 
 CREATE TABLE `etkinlikler` (
   `etkinlik_id` int(11) NOT NULL,
   `etkinlik_baslik` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
   `etkinlik_icerik` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `etkinlik_tarih` datetime NOT NULL
+  `etkinlik_tarih` datetime NOT NULL,
+  `etkinlik_resim` text COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `etkinlikler`
+-- Dumping data for table `etkinlikler`
 --
 
-INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_tarih`) VALUES
-(1, 'etkinlik1', 'icerik1', '2022-03-23 22:58:45'),
-(2, 'etkinlik2', 'icerik2', '2022-03-23 22:58:45');
+INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_tarih`, `etkinlik_resim`) VALUES
+(1, 'etkinlik1', 'icerik1', '2022-03-23 22:58:45', ''),
+(2, 'etkinlik2', 'icerik2', '2022-03-23 22:58:45', '');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `galeri`
+-- Table structure for table `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -136,7 +137,7 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `galeri`
+-- Dumping data for table `galeri`
 --
 
 INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
@@ -153,7 +154,7 @@ INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `hakkimizda`
+-- Table structure for table `hakkimizda`
 --
 
 CREATE TABLE `hakkimizda` (
@@ -163,7 +164,7 @@ CREATE TABLE `hakkimizda` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `hakkimizda`
+-- Dumping data for table `hakkimizda`
 --
 
 INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) VALUES
@@ -179,7 +180,7 @@ INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) V
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `hedeflerimiz`
+-- Table structure for table `hedeflerimiz`
 --
 
 CREATE TABLE `hedeflerimiz` (
@@ -190,7 +191,7 @@ CREATE TABLE `hedeflerimiz` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `hedeflerimiz`
+-- Dumping data for table `hedeflerimiz`
 --
 
 INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_baslik`) VALUES
@@ -202,7 +203,7 @@ INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_bas
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `iletisim`
+-- Table structure for table `iletisim`
 --
 
 CREATE TABLE `iletisim` (
@@ -216,7 +217,7 @@ CREATE TABLE `iletisim` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `laboratuvar`
+-- Table structure for table `laboratuvar`
 --
 
 CREATE TABLE `laboratuvar` (
@@ -227,7 +228,7 @@ CREATE TABLE `laboratuvar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `laboratuvar`
+-- Dumping data for table `laboratuvar`
 --
 
 INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALUES
@@ -242,7 +243,7 @@ INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALU
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `mesaj`
+-- Table structure for table `mesaj`
 --
 
 CREATE TABLE `mesaj` (
@@ -256,7 +257,7 @@ CREATE TABLE `mesaj` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `slider`
+-- Table structure for table `slider`
 --
 
 CREATE TABLE `slider` (
@@ -270,7 +271,7 @@ CREATE TABLE `slider` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `soru_cevap`
+-- Table structure for table `soru_cevap`
 --
 
 CREATE TABLE `soru_cevap` (
@@ -280,165 +281,165 @@ CREATE TABLE `soru_cevap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dökümü yapılmış tablolar için indeksler
+-- Indexes for dumped tables
 --
 
 --
--- Tablo için indeksler `admin_giris`
+-- Indexes for table `admin_giris`
 --
 ALTER TABLE `admin_giris`
   ADD PRIMARY KEY (`admin_id`);
 
 --
--- Tablo için indeksler `akademik_personel`
+-- Indexes for table `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
   ADD PRIMARY KEY (`personel_id`);
 
 --
--- Tablo için indeksler `ders_icerik`
+-- Indexes for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
   ADD PRIMARY KEY (`dersicerik_id`);
 
 --
--- Tablo için indeksler `duyuru`
+-- Indexes for table `duyuru`
 --
 ALTER TABLE `duyuru`
   ADD PRIMARY KEY (`duyuru_id`);
 
 --
--- Tablo için indeksler `etkinlikler`
+-- Indexes for table `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
   ADD PRIMARY KEY (`etkinlik_id`);
 
 --
--- Tablo için indeksler `galeri`
+-- Indexes for table `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`galeri_id`);
 
 --
--- Tablo için indeksler `hakkimizda`
+-- Indexes for table `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
   ADD PRIMARY KEY (`hakkinda_id`);
 
 --
--- Tablo için indeksler `hedeflerimiz`
+-- Indexes for table `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
   ADD PRIMARY KEY (`hedef_id`);
 
 --
--- Tablo için indeksler `iletisim`
+-- Indexes for table `iletisim`
 --
 ALTER TABLE `iletisim`
   ADD PRIMARY KEY (`iletisim_id`);
 
 --
--- Tablo için indeksler `laboratuvar`
+-- Indexes for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
   ADD PRIMARY KEY (`lab_id`);
 
 --
--- Tablo için indeksler `mesaj`
+-- Indexes for table `mesaj`
 --
 ALTER TABLE `mesaj`
   ADD PRIMARY KEY (`mesaj_id`);
 
 --
--- Tablo için indeksler `slider`
+-- Indexes for table `slider`
 --
 ALTER TABLE `slider`
   ADD PRIMARY KEY (`slider_id`);
 
 --
--- Tablo için indeksler `soru_cevap`
+-- Indexes for table `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
   ADD PRIMARY KEY (`soru_id`);
 
 --
--- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `admin_giris`
+-- AUTO_INCREMENT for table `admin_giris`
 --
 ALTER TABLE `admin_giris`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `akademik_personel`
+-- AUTO_INCREMENT for table `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
   MODIFY `personel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- Tablo için AUTO_INCREMENT değeri `ders_icerik`
+-- AUTO_INCREMENT for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
   MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- Tablo için AUTO_INCREMENT değeri `duyuru`
+-- AUTO_INCREMENT for table `duyuru`
 --
 ALTER TABLE `duyuru`
   MODIFY `duyuru_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `etkinlikler`
+-- AUTO_INCREMENT for table `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
   MODIFY `etkinlik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Tablo için AUTO_INCREMENT değeri `galeri`
+-- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
   MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Tablo için AUTO_INCREMENT değeri `hakkimizda`
+-- AUTO_INCREMENT for table `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
   MODIFY `hakkinda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- Tablo için AUTO_INCREMENT değeri `hedeflerimiz`
+-- AUTO_INCREMENT for table `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
   MODIFY `hedef_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Tablo için AUTO_INCREMENT değeri `iletisim`
+-- AUTO_INCREMENT for table `iletisim`
 --
 ALTER TABLE `iletisim`
   MODIFY `iletisim_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `laboratuvar`
+-- AUTO_INCREMENT for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
   MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- Tablo için AUTO_INCREMENT değeri `mesaj`
+-- AUTO_INCREMENT for table `mesaj`
 --
 ALTER TABLE `mesaj`
   MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `slider`
+-- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
   MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `soru_cevap`
+-- AUTO_INCREMENT for table `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
   MODIFY `soru_id` int(11) NOT NULL AUTO_INCREMENT;
