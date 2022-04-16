@@ -37611,9 +37611,11 @@ a.disabled.mailbox-attachment-close {
   border-color: #6c757d;
 }
 .product-image {
-  max-width: 200%;
-  height: 450px;
-  width: 200%;
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: auto;
 
 }
 .product-image-thumbs {
