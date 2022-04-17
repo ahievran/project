@@ -45,10 +45,10 @@ include '../baglanti.php';
                                             İcon
                                         </th>
                                         <th>
-                                            Hedeflerimiz Başlık
+                                            Başlık
                                         </th>
                                         <th>
-                                            Hedeflerimiz İçerik
+                                            Görüntüle
                                         </th>
                                         <th>
                                             Sil
@@ -66,7 +66,7 @@ include '../baglanti.php';
                                             <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
                                             <td><?php echo $row["hedef_baslik"]; ?></td>
                                             <td>
-                                                <a>
+                                                <a href="hedeflerimizicerik.php">
                                                     <button type="button" class="btn btn-primary">
                                                         Görüntüle
                                                     </button>
