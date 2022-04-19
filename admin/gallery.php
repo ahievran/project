@@ -36,41 +36,43 @@ include '../baglanti.php';
                         <!-- /.card-header -->
                         <?php
                         $sql = "SELECT * FROM galeri ORDER BY galeri_id DESC";
-                        $result = $db->query($sql);
-                        while ($row = $result->fetch_array()){ ?>
-                        <form method='post' action='galeri_resim_sil.php'>
-                        <div class="card-body">
-                            <table class="table table-striped projects">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            #
-                                        </th>
-                                        <th>
-                                            Resim
-                                        </th>
-                                        <th>
-                                            Sil
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><?php echo $row["galeri_id"]; ?></td>
-                                        <td>
-                                            <img src="../<?php echo $row["galeri_resim"];?>" width="20%">                                        </td>
-                                        <td>
-                                            <input type='hidden' value='<?php echo $row["galeri_id"]; ?>' name='silinecek_id'>
-                                            <a>
-                                                <button class="btn btn-danger" name='sil'>Sil</button>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        </form>
-                        <?php } ?>
+                        $result = $db->query($sql);?>
+                            <form method='post' action='galeri_resim_sil.php'>
+                                <div class="card-body">
+                                    <table class="table table-striped projects">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    #
+                                                </th>
+                                                <th>
+                                                    Resim
+                                                </th>
+                                                <th>
+                                                    Sil
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                       <?php while ($row = $result->fetch_array()) { ?>
+                                        <tbody>
+                                            <tr>
+                                                <td><?php echo $row["galeri_id"]; ?></td>
+                                                <td>
+                                                    <img src="../<?php echo $row["galeri_resim"]; ?>" width="20%">
+                                                </td>
+                                                <td>
+                                                    <input type='hidden' value='<?php echo $row["galeri_id"]; ?>' name='silinecek_id'>
+                                                    <a>
+                                                        <button class="btn btn-danger" name='sil'>Sil</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <?php } ?>
+
+                                    </table>
+                                </div>
+                            </form>
                     </div>
                 </div>
             </div>
