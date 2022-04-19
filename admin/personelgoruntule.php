@@ -29,7 +29,7 @@ include '../baglanti.php';
                 <div class="col-12 w-100">
                     <div class="card bg-light d-flex flex-fill">
                         <div class="card-header text-muted border-bottom-0">
-                            Digital Strategist
+                            Akademisyen
                         </div>
                         <div class="card-body pt-0">
                             <div class="row">
