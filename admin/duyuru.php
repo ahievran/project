@@ -86,6 +86,8 @@ include '../baglanti.php';
                                                            value="<?php echo $row["duyuru_baslik"]; ?>">
                                                     <input type="hidden" name="duyuruAciklama"
                                                            value="<?php echo $row["duyuru_aciklama"]; ?>">
+                                                    <input type="hidden" name="duyuruTarih"
+                                                           value="<?php echo $row["duyuru_tarih"]; ?>">
                                                     <button name="see" class="btn btn-primary">
                                                         Görüntüle
                                                     </button>

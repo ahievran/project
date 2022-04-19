@@ -7,6 +7,7 @@ include '../baglanti.php';
     $resimUrl = $_POST["goruntulencek_resim"];
     $duyurubaslik = $_POST["duyuruBaslik"];
     $duyuruaciklama = $_POST["duyuruAciklama"];
+    $duyurutarih = $_POST["duyuruTarih"];
     ?>
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -41,7 +42,7 @@ include '../baglanti.php';
                         <div class="col-12 col-sm-6">
                             <h3 class="my-3"><?php echo $duyurubaslik ?></h3>
                             <p><?php echo $duyuruaciklama ?></p>
-                            <p>Tarih:</p>
+                            <p>Tarih: <?php echo $duyurutarih ?></p>
                         </div>
                     </div>
                 </div>
