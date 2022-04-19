@@ -30,7 +30,7 @@ include '../baglanti.php';
                         <div class="card-header">
                             <h3 class="card-title">Hakkımızda</h3>
                             <a href="aboutadd.php">
-                                <button style="float:right" class="btn btn-success ">Ekle Ekle</button>
+                                <button style="float:right" class="btn btn-success ">Hakkımızda Ekle</button>
                             </a>
                         </div>
                         <!-- /.card-header -->
