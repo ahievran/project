@@ -3,41 +3,41 @@ require_once '../admin/header.php';
 require_once 'sidebar.php';
 include '../baglanti.php';
 ?>
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Etkinlikler</h1>
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Etkinlikler</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Simple Tables</li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Simple Tables</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
+            </div><!-- /.container-fluid -->
+        </section>
 
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Etkinlikler</h3>
-                            <a href="eventsadd.php">
-                                <button style="float:right" class="btn btn-success ">Etkinlik Ekle</button>
-                            </a>
-                        </div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Etkinlikler</h3>
+                                <a href="eventsadd.php">
+                                    <button style="float:right" class="btn btn-success ">Etkinlik Ekle</button>
+                                </a>
+                            </div>
 
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table class="table table-striped projects">
-                                <thead>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table class="table table-striped projects">
+                                    <thead>
                                     <tr>
                                         <th>
                                             #
@@ -58,8 +58,8 @@ include '../baglanti.php';
                                             Sil
                                         </th>
                                     </tr>
-                                </thead>
-                                <tbody>
+                                    </thead>
+                                    <tbody>
                                     <?php
                                     $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
                                     $result = $db->query($sql);
@@ -74,29 +74,31 @@ include '../baglanti.php';
                                             </td>
                                             <td>
                                                 <a href="eventgoruntule.php">
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                            data-target="#exampleModal">
                                                         Görüntüle
                                                     </button>
                                                 </a>
                                             </td>
                                             <td>
-                                                <input type='hidden' value='<?php echo $row["etkinlik_id"]; ?>' name='silinecek_id'>
+                                                <input type='hidden' value='<?php echo $row["etkinlik_id"]; ?>'
+                                                       name='silinecek_id'>
                                                 <a>
                                                     <button class="btn btn-danger" name="sil">Sil</button>
                                                 </a>
                                             </td>
                                         </tr>
-                                </tbody>
-                            </form>
-                            <?php } ?>
-                            </table>
+                                    </tbody>
+                                    </form>
+                                    <?php } ?>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
 <?php
 require_once 'footer.php'; ?>

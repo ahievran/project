@@ -23,55 +23,55 @@ include '../baglanti.php';
 
         <!-- Main content -->
         <?php
-//        if (isset($_POST["submit"])) {
-//            $ad = $_POST["ad"];
-//            $icerik = $_POST["icerik"];
-//            $date = $_POST["date"];
-//            $img = $_POST["img"];
-//
-//            $sql = "INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih) VALUES('$ad', '$icerik', '$date')";
-//            $result = $db->query($sql);
-//
-//            echo '<script type ="text/JavaScript">';
-//            echo 'alert("Link veritabanına eklendi")';
-//            echo '</script>';
-//
-//        }
+        //        if (isset($_POST["submit"])) {
+        //            $ad = $_POST["ad"];
+        //            $icerik = $_POST["icerik"];
+        //            $date = $_POST["date"];
+        //            $img = $_POST["img"];
+        //
+        //            $sql = "INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih) VALUES('$ad', '$icerik', '$date')";
+        //            $result = $db->query($sql);
+        //
+        //            echo '<script type ="text/JavaScript">';
+        //            echo 'alert("Link veritabanına eklendi")';
+        //            echo '</script>';
+        //
+        //        }
 
-        if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+        if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
             $statusMsg = '';
 
             $targetDir = "../admin/uploads/events/";
             $fileName = basename($_FILES["file"]["name"]);
             $targetFilePath = $targetDir . $fileName;
-            $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+            $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
             $ad = $_POST["ad"];
             $icerik = $_POST["icerik"];
             $date = $_POST["date"];
 
             // Allow certain file formats
-            $allowTypes = array('jpg','png','jpeg','gif');
-            if(in_array($fileType, $allowTypes)){
+            $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
+            if (in_array($fileType, $allowTypes)) {
                 // Upload file to server
-                if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+                if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
                     // Insert image file name into database
                     $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih) VALUES('$ad', '$icerik', '$date')");
-                    if($insert){
+                    if ($insert) {
                         echo '<script type ="text/JavaScript">';
                         echo 'alert("Veritabanına eklendi")';
                         echo '</script>';
-                    }else{
+                    } else {
                         echo '<script type ="text/JavaScript">';
                         echo 'alert("File upload failed, please try again.")';
                         echo '</script>';
                     }
-                }else{
+                } else {
                     echo '<script type ="text/JavaScript">';
                     echo 'alert("Sorry, there was an error uploading your file.")';
                     echo '</script>';
                 }
-            }else{
+            } else {
                 echo '<script type ="text/JavaScript">';
                 echo 'alert("Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.")';
                 echo '</script>';
@@ -115,7 +115,8 @@ include '../baglanti.php';
                                         <label for="gorsel">Etkinlik Görsel</label>
                                         <div class="input-group">
                                             <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+                                                <input type="file" class="custom-file-input" id="exampleInputFile"
+                                                       name="file">
                                                 <label class="custom-file-label" for="exampleInputFile">
                                                     Dosyayı Seçiniz
                                                 </label>
