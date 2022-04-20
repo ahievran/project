@@ -7,6 +7,86 @@ include 'header.php'; ?>
                 <p id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
             </div>
         </section>
+<section class="wrapper container">
+    <div class="container-fostrap">
+        <div class="row">
+            <img class="col-md-2" src="assets/img/pnglogo.png" class="fostrap-logo"/>
+            <h1 class="col-md-8" style="margin-top:4%; ">
+               Güncel Duyurular & Haberler & Etkinlikler
+            </h1>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="#">
+                            <img src="assets/img/bm-1.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="#"> Duyuru Başlığı Linkler vs.
+                                  </a>
+                                </h4>
+                                <p class="">
+                                Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                   Devamını Oku
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="#">
+                            <img src="assets/img/bm-1.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="#"> Duyuru Başlığı Linkler vs.
+                                  </a>
+                                </h4>
+                                <p class="">
+                                Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                   Devamını Oku
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="#">
+                            <img src="assets/img/bm-1.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="#">Duyuru Başlığı Linkler vs.
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                   Devamını Oku
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <section class="clean-block clean-info dark" id="hakkinda">
             <div class="container">
                 <div class="row">
