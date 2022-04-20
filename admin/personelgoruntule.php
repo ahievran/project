@@ -75,7 +75,7 @@ include '../baglanti.php';
                                     <?php } ?>
                                 </div>
                                 <div class="col-4 text-right">
-                                    <img src="<?php echo $personel_img ?>" alt="user-avatar" class="img-fluid">
+                                    <img src="../<?php echo $personel_img?>" alt="Personel-Foto" class="img-fluid" width="50%">
                                 </div>
                             </div>
                         </div>
