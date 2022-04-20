@@ -32,8 +32,8 @@ include 'header.php'; ?>
                                 Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
                                 </p>
                             </div>
-                            <div class="card-read-more">
-                                <a href="#" class="btn btn-link btn-block">
+                            <div class="card-read-more btn-warning">
+                                <a href="#" class="btn btn-link btn-block text-light">
                                    Devamını Oku
                                 </a>
                             </div>
@@ -53,8 +53,8 @@ include 'header.php'; ?>
                                 Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
                                 </p>
                             </div>
-                            <div class="card-read-more">
-                                <a href="#" class="btn btn-link btn-block">
+                            <div class="card-read-more btn-warning">
+                                <a href="#" class="btn btn-link btn-block text-light">
                                    Devamını Oku
                                 </a>
                             </div>
@@ -74,8 +74,8 @@ include 'header.php'; ?>
                                     Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
                                 </p>
                             </div>
-                            <div class="card-read-more">
-                                <a href="#" class="btn btn-link btn-block">
+                            <div class="card-read-more btn-warning">
+                                <a href="#" class="btn btn-link btn-block text-light">
                                    Devamını Oku
                                 </a>
                             </div>
