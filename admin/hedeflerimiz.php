@@ -75,9 +75,9 @@ include '../baglanti.php';
                                                            value='<?php echo $row["hedef_icerik"]; ?>'>
                                                     <input type='hidden' name="hedef_icon"
                                                            value='<?php echo $row["hedef_icon"]; ?>'>
-                                                        <button name="see" class="btn btn-primary">
-                                                            Görüntüle
-                                                        </button>
+                                                    <button name="see" class="btn btn-primary">
+                                                        Görüntüle
+                                                    </button>
                                                 </td>
                                             </form>
                                             <form method='post' action='hedeflerimiz_sil.php'>
