@@ -14,7 +14,10 @@ if(isset($_POST['send'])){
         $dkayit="INSERT INTO `mesaj` (`mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`) VALUES ('$ad', '$konu', '$mail', '$message')";
         $dsonuc=mysqli_query($db,$dkayit);
         if (isset ($dkayit)){
-            echo '<script type="text/javascript">alert("MESAJINIZ GÖNDERİLDİ");</script>';
+          $_SESSION["isim"] = $ad;
+          $_SESSION["konu"]  = $konu;
+          $_SESSION["mesajbilgi"] = "Mesajınız başarı ile gönderilmiştir.";
+           // echo '<script type="text/javascript">alert("MESAJINIZ GÖNDERİLDİ");</script>';
             echo '<meta http-equiv="refresh" content="0;URL=iletisim.php">';
             }
             else{
