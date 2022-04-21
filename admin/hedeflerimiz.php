@@ -59,19 +59,28 @@ include '../baglanti.php';
                                     $sql = "SELECT * FROM hedeflerimiz ORDER BY hedef_id ASC";
                                     $result = $db->query($sql);
                                     while ($row = $result->fetch_array()) { ?>
-                                        <form method='post' action='hedeflerimiz_sil.php'>
-                                            <tbody>
-                                            <tr>
-                                                <td><?php echo $row["hedef_id"]; ?></td>
-                                                <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
-                                                <td><?php echo $row["hedef_baslik"]; ?></td>
+
+                                        <tbody>
+                                        <tr>
+                                            <td><?php echo $row["hedef_id"]; ?></td>
+                                            <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
+                                            <td><?php echo $row["hedef_baslik"]; ?></td>
+                                            <form method='post' action='hedeflerimizicerik.php'>
                                                 <td>
-                                                    <a href="hedeflerimizicerik.php">
-                                                        <button type="button" class="btn btn-primary">
+                                                    <input type='hidden' name="hedef_id"
+                                                           value='<?php echo $row["hedef_id"]; ?>'>
+                                                    <input type='hidden' name="hedef_baslik"
+                                                           value='<?php echo $row["hedef_baslik"]; ?>'>
+                                                    <input type='hidden' name="hedef_icerik"
+                                                           value='<?php echo $row["hedef_icerik"]; ?>'>
+                                                    <input type='hidden' name="hedef_icon"
+                                                           value='<?php echo $row["hedef_icon"]; ?>'>
+                                                        <button name="see" class="btn btn-primary">
                                                             Görüntüle
                                                         </button>
-                                                    </a>
                                                 </td>
+                                            </form>
+                                            <form method='post' action='hedeflerimiz_sil.php'>
                                                 <td>
                                                     <input type='hidden' value='<?php echo $row["hedef_id"]; ?>'
                                                            name='silinecek_id'>
@@ -81,9 +90,9 @@ include '../baglanti.php';
                                                         </button>
                                                     </a>
                                                 </td>
-                                            </tr>
-                                            </tbody>
-                                        </form>
+                                            </form>
+                                        </tr>
+                                        </tbody>
                                     <?php } ?>
                                 </table>
                             </div>
