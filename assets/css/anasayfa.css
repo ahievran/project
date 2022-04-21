@@ -19,7 +19,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-    
+  #haber-logo{
+    margin-top:5px;
+    margin-left:35%;
+    width: 170px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom:15px
+}
 #bolum-uni-yazi
 {
     font-size:20px;
@@ -73,12 +80,14 @@
     h1.heading {
       font-size: 3.05em;
     }
+    
   }
   @media (min-width: 900px) {
     h1.heading {
       font-size: 3.25em;
       margin: 0 0 0.3em;
     }
+    
   } 
   .card {
     display: block; 

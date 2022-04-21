@@ -10,7 +10,7 @@ include 'header.php'; ?>
 <section class="wrapper container">
     <div class="container-fostrap">
         <div class="row">
-            <img class="col-md-2" src="assets/img/pnglogo.png" class="fostrap-logo"/>
+            <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo"/>
             <h1 class="col-md-8 text-info" style="margin-top:4%;">
                Güncel Duyurular & Haberler & Etkinlikler
             </h1>

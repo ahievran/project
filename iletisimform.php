@@ -21,7 +21,10 @@ if(isset($_POST['send'])){
             echo '<meta http-equiv="refresh" content="0;URL=iletisim.php">';
             }
             else{
-                echo '<script type="text/javascript">alert("MESAJINIZ GÖNDERİLMEDİ");</script>';
+              $_SESSION["isim"] = $ad;
+              $_SESSION["konu"]  = $konu;
+              $_SESSION["mesajbilgi"] = "Mesaj gönderilemedi. Tekrar deneyiniz.";
+                //echo '<script type="text/javascript">alert("MESAJINIZ GÖNDERİLMEDİ");</script>';
                 echo '<meta http-equiv="refresh" content="0;URL=iletisim.php">';
                 }
 
