@@ -7,6 +7,95 @@ include 'header.php'; ?>
             <p id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
         </div>
     </section>
+    <div class="main-banner header-text" id='duyuru'>
+        <h3 id='duyuruyazi'> Güncel Duyurular & Haberler & Etkinlikler</h3>
+      <div class="container-fluid">
+        <div class="owl-banner owl-carousel" style='padding-top:50px;'>
+        <div class="item">
+            <img src="assets/img/labs/lab-6.jpg" alt="">
+            <div class="item-content">
+              <div class="main-content">
+                <div class="meta-category">
+                  <span>ANA Başlık</span>
+                </div>
+                <a href="#"><h4>AÇIKLAMA AÇIKLAMA</h4></a>
+                <ul class="post-info">
+                  <li><a href="#">İlgili Birim</a></li>
+                  <li><a href="#">Tarih</a></li>
+                  <li><a href="#">Bilgisayar Mühendisliği</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/labs/lab-1.jpg" alt="">
+            <div class="item-content">
+              <div class="main-content">
+                <div class="meta-category">
+                  <span>ANA Başlık</span>
+                </div>
+                <a href="#"><h4>AÇIKLAMA AÇIKLAMA</h4></a>
+                <ul class="post-info">
+                  <li><a href="#">İlgili Birim</a></li>
+                  <li><a href="#">Tarih</a></li>
+                  <li><a href="#">Bilgisayar Mühendisliği</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/labs/lab-2.jpg" alt="">
+            <div class="item-content">
+              <div class="main-content">
+                <div class="meta-category">
+                  <span>ANA Başlık</span>
+                </div>
+                <a href="#"><h4>AÇIKLAMA AÇIKLAMA</h4></a>
+                <ul class="post-info">
+                  <li><a href="#">İlgili Birim</a></li>
+                  <li><a href="#">Tarih</a></li>
+                  <li><a href="#">Bilgisayar Mühendisliği</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/labs/lab-3.jpg" alt="">
+            <div class="item-content">
+              <div class="main-content">
+                <div class="meta-category">
+                  <span>ANA Başlık</span>
+                </div>
+                <a href="#"><h4>AÇIKLAMA AÇIKLAMA</h4></a>
+                <ul class="post-info">
+                  <li><a href="#">İlgili Birim</a></li>
+                  <li><a href="#">Tarih</a></li>
+                  <li><a href="#">Bilgisayar Mühendisliği</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/labs/lab-4.jpg" alt="">
+            <div class="item-content">
+              <div class="main-content">
+                <div class="meta-category">
+                  <span>ANA Başlık</span>
+                </div>
+                <a href="#"><h4>AÇIKLAMA AÇIKLAMA</h4></a>
+                <ul class="post-info">
+                  <li><a href="#">İlgili Birim</a></li>
+                  <li><a href="#">Tarih</a></li>
+                  <li><a href="#">Bilgisayar Mühendisliği</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
     <section class="wrapper container">
         <div class="container-fostrap">
             <div class="row">
@@ -208,6 +297,9 @@ include 'header.php'; ?>
         </div>
     </section>
 </main>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
 <?php
 include 'footer.php';?>
     
