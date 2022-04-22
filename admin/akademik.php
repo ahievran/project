@@ -70,7 +70,7 @@ include '../baglanti.php';
                                         <tbody>
                                         <tr>
                                             <td><?php echo $row["personel_id"] ?>.</td>
-                                            <td><i class="icon ion-android-globe" style="font-size: 40px;"></i></td>
+                                            <td><img src="" alt=""></td>
                                             <td><?php echo $row["personel_isim_soyisim"]; ?></td>
                                             </td>
                                             <td>
