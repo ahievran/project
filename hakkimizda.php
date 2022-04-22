@@ -14,9 +14,9 @@
                         $sql = "SELECT * FROM hakkimizda ORDER BY hakkinda_id ASC";
                         $result = $db->query($sql);
                         while ($row = $result->fetch_array()) { ?>
-                        <ul class="list-unstyled">
-                            <li style="position: relative"><i class="icon ion-android-checkmark-circle" style="font-size: 20px;color: var(--bs-teal);"></i> <?php echo $row["hakkinda_icerik"]; ?><br></li>
-                        </ul>
+                            <ul class="list-unstyled">
+                                <li style="position: relative"><i class="icon ion-android-checkmark-circle" style="font-size: 20px;color: var(--bs-teal);"></i> <?php echo $row["hakkinda_icerik"]; ?><br></li>
+                            </ul>
                         <?php } ?>
                     </div>
                 </div>

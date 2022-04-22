@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include 'header.php'; ?>
 
@@ -32,10 +32,10 @@ include 'header.php'; ?>
             </div>
             <?php if(($_SESSION["isim"] != "") && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
                 <div class="container">
-                <div class="row mt-5">
-                    <div class="col-md-2"></div>
-                                   <div class="alert alert-success col-md-8 text-dark" style="text-align:center;box-shadow:5px 5px 5px grey;" role="alert"><?php echo "Merhaba <strong>" .$_SESSION["isim"]. " , ". $_SESSION["konu"]. "</strong> konulu <strong>".$_SESSION["mesajbilgi"]." </strong>"; ?></div>
-                                </div><div class="col-md-2"> </div></div></div> <?php } ?>
+                    <div class="row mt-5">
+                        <div class="col-md-2"></div>
+                        <div class="alert alert-success col-md-8 text-dark" style="text-align:center;box-shadow:5px 5px 5px grey;" role="alert"><?php echo "Merhaba <strong>" .$_SESSION["isim"]. " , ". $_SESSION["konu"]. "</strong> konulu <strong>".$_SESSION["mesajbilgi"]." </strong>"; ?></div>
+                    </div><div class="col-md-2"> </div></div></div> <?php } ?>
         </section>
     </main>
 <?php include 'footer.php'; ?>
