@@ -24,6 +24,8 @@
 <script src="assets/js/vanilla-zoom.js"></script>
 <script src="assets/js/theme.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="assets/js/loadanim.js"></script>
+
 </body>
 
 </html>

@@ -25,6 +25,13 @@
 </head>
 
 <body>
+<div id="preloader">
+        <div class="jumper">
+            <div>
+                <img src='assets/img/pnglogo.png' id='yuklenmelogo'></img>
+          </div>
+        </div>
+    </div> 
 <?php include 'baglanti.php'; ?>
 <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
     <div class="container-fluid">
