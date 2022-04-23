@@ -31,7 +31,7 @@ include 'header.php'; ?>
                     </div>
                 </div>
             </div>
-            <?php if(($_SESSION["isim"] != "") && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
+            <?php if(!empty(($_SESSION["isim"])) && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
                 <div class="container">
                     <div class="row mt-5">
                         <div class="col-md-2"></div>
