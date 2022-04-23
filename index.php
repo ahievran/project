@@ -160,6 +160,85 @@ include 'header.php'; ?>
             </div>
         </div>
     </section>
+    <section class="wrapper container">
+        <div class="container-fostrap">
+            <div class="row">
+                <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo"/>
+                <h1 class="col-md-8 text-info" style="margin-top:4%;">
+                  Erasmus & Farabi & Mevlana Değişim Programları
+                </h1>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus">
+                                    <img src="assets/img/erasmus.png" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus"> Erasmus Programı
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                       Üniversitemiz Erasmus programını desteklemektedir. Detaylı bilgi için Tıklayınız
+                                    </p>
+                                </div>
+                                <div class="card-read-more btn-warning">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus" class="btn btn-link btn-block text-light">
+                                        Detaylı Bilgi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim">
+                                    <img src="assets/img/farabi.png" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim"> Farabi Programı
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                    Üniversitemiz Farabi programını desteklemektedir. Detaylı bilgi için Tıklayınız
+                                    </p>
+                                </div>
+                                <div class="card-read-more btn-warning">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim" class="btn btn-link btn-block text-light">
+                                        Detaylı Bilgi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir">
+                                    <img src="assets/img/mevlana.png" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir">Mevlana Programı
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                    Üniversitemiz Mevlana programını desteklemektedir. Detaylı bilgi için Tıklayınız
+                                    </p>
+                                </div>
+                                <div class="card-read-more btn-warning">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir" class="btn btn-link btn-block text-light">
+                                      Detaylı Bilgi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="clean-block slider dark">
         <div class="container-fluid">
             <div class="block-heading">
