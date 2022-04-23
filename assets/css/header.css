@@ -12,7 +12,8 @@
     text-transform: capitalize;
     font-size: 14px;
     color: #070068;
-    font-weight: 600;
+    font-weight: 500;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 #ul .nav-item
 {
@@ -80,5 +81,13 @@
 #ul .nav-item .active {
     font-size: 14.1px;
     color: #c78802;
+    
+}
+#ul .active{
+    font-size: 14.1px;
+    color: #c78802;
     font-style: inherit;
+    border:solid 1px  rgba(241, 241, 241, 0.947);
+    background-color: rgba(241, 241, 241, 0.947);
+    border-radius: 10px 10px 10px 10px;
 }

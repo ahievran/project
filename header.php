@@ -48,15 +48,15 @@
 
         <div class="collapse navbar-collapse" id="navcol-1" style="height: -21.8px;">
             <ul class="navbar-nav ms-auto" id="ul">
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='index'){echo 'active';}?>"  href="index.php" >Ana Sayfa</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='hakkimizda'){echo 'active';}?>" href="hakkimizda.php" >Hakkımızda</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='hedeflerimiz'){echo 'active';}?>" href="hedeflerimiz.php" >hedeflerimiz</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='what'){echo 'active';}?>" href="https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view"  target="_blank">Ders İçerikleri</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='labs'){echo 'active';}?>" href="labs.php" >Laboratuvarlarımız</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='akademik'){echo 'active';}?>" href="akademik.php" >Akademik Personel</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='etkinlikler'){echo 'active';}?>" href="events.php" >Etkinlikler</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='galeri'){echo 'active';}?>" href="galeri.php" >Galeri</a></li>
-                <li class="nav-item" ><a class="nav-link <?php if($_SESSION["sayfa"]=='iletisim'){echo 'active';}?>" href="iletisim.php" >İletişim</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='index'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='index'){echo 'active';}?>"  href="index.php" >Ana Sayfa</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='hakkimizda'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='hakkimizda'){echo 'active';}?>" href="hakkimizda.php" >Hakkımızda</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='hedeflerimiz'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='hedeflerimiz'){echo 'active';}?>" href="hedeflerimiz.php" >hedeflerimiz</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='what'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='what'){echo 'active';}?>" href="https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view"  target="_blank">Ders İçerikleri</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='labs'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='labs'){echo 'active';}?>" href="labs.php" >Laboratuvarlarımız</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='akademik'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='akademik'){echo 'active';}?>" href="akademik.php" >Akademik Personel</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='etkinlikler'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='etkinlikler'){echo 'active';}?>" href="events.php" >Etkinlikler</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='galeri'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='galeri'){echo 'active';}?>" href="galeri.php" >Galeri</a></li>
+                <li class="nav-item <?php if($_SESSION["sayfa"]=='iletisim'){echo 'active';}?>" ><a class="nav-link <?php if($_SESSION["sayfa"]=='iletisim'){echo 'active';}?>" href="iletisim.php" >İletişim</a></li>
             </ul>
         </div>
     </div>
