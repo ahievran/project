@@ -110,8 +110,10 @@ include 'header.php'; ?>
             <div class="row justify-content-center">
                 <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
                     <h4>Ağ ve Siber Güvenlik Topluluğu</h4>
+                    </br>
                     <p>“Nesnelerin İnterneti dünyasında her geçen gün kurum ve insanlara yönelik
-                        gerçekleştirilen siber saldırılarda ciddi oranda artış meydana gelmiştir. Bu sebeple siber güvenlik
+                        gerçekleştirilen siber saldırılarda ciddi oranda artış meydana gelmiştir. Bu sebeple siber
+                        güvenlik
                         alanında uzmanlaşmış kişilere duyulan ihtiyaç ciddi oranda artmıştır. Ağ ve Siber Güvenlik
                         Topluluğunun en temel amacı ülkemize bu alanda hizmet verecek nitelikli ağ ve siber güvenlik
                         uzmanlarının yetiştirilmesidir. ”</p>
@@ -122,6 +124,7 @@ include 'header.php'; ?>
                 </div>
                 <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
                     <h4>Yazılım ve Robotik Topluluğu</h4>
+                    </br>
                     <p>“Çağın gözdesi olan yazılım ve robotik alanlarında faaliyet göstermek amacıyla Haziran 2019’da
                         üniversitemizden kuruluş onayını almış ve çalışmalarına başlamıştır. Kulübümüz ilgili alanlarda
                         sunum, konferans, teknik gezi gibi faaliyetlerle öğrencilerin bilgi edinmesini ve ayrıca takım
