@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+session_start();
+$_SESSION["sayfa"] = "etkinlikler";
+include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list dark">
             <div class="container-fluid">

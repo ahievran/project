@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+session_start();
+$_SESSION["sayfa"] = "galeri";
+include 'header.php'; ?>
     <main class="page gallery-page">
         <section class="clean-block clean-gallery dark">
             <div class="container">

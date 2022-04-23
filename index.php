@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION["sayfa"] = "index";
 include 'header.php'; ?>
 <main class="page landing-page">
     <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/mmf.jpg&quot;);color:rgba(0,0,0, 0.6);">
@@ -96,86 +98,6 @@ include 'header.php'; ?>
         </div>
       </div>
     </div>
-    <section class="wrapper container">
-        <div class="container-fostrap">
-            <div class="row">
-                <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo"/>
-                <h1 class="col-md-8 text-info" style="margin-top:4%;">
-                    Güncel Duyurular & Haberler & Etkinlikler
-                </h1>
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="#">
-                                    <img src="assets/img/bm-1.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="#"> Duyuru Başlığı Linkler vs.
-                                        </a>
-                                    </h4>
-                                    <p class="">
-                                        Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
-                                    </p>
-                                </div>
-                                <div class="card-read-more btn-warning">
-                                    <a href="#" class="btn btn-link btn-block text-light">
-                                        Devamını Oku
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="#">
-                                    <img src="assets/img/bm-1.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="#"> Duyuru Başlığı Linkler vs.
-                                        </a>
-                                    </h4>
-                                    <p class="">
-                                        Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
-                                    </p>
-                                </div>
-                                <div class="card-read-more btn-warning">
-                                    <a href="#" class="btn btn-link btn-block text-light">
-                                        Devamını Oku
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="#">
-                                    <img src="assets/img/bm-1.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="#">Duyuru Başlığı Linkler vs.
-                                        </a>
-                                    </h4>
-                                    <p class="">
-                                        Duyuru ile ilgili veri tabanından çekilecek kısa özet (güncel son 3 duyuru o yüzden DESC id baz alınacak)
-                                    </p>
-                                </div>
-                                <div class="card-read-more btn-warning">
-                                    <a href="#" class="btn btn-link btn-block text-light">
-                                        Devamını Oku
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="clean-block clean-info dark" id="hakkinda">
         <div class="container">
             <div class="row">
