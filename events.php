@@ -23,7 +23,7 @@ include 'header.php'; ?>
                 <div class="col-lg-6">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/img/bm-1.jpg" alt="">
+                      <img src="<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
                     </div>
                     <div class="down-content">
                       <span>Kırşehir Ahi Evran Üniversitesi</span>
