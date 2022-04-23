@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+session_start();
+$_SESSION["sayfa"] = "hakkimizda";
+include 'header.php'; ?>
 
     <main class="page">
         <section class="clean-block about-us">

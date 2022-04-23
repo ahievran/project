@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+session_start();
+$_SESSION["sayfa"] = "labs";
+include 'header.php'; ?>
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
             <div class="container-fluid">

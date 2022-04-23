@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+session_start();
+$_SESSION["sayfa"] = "hedeflerimiz";
+include 'header.php'; ?>
     <main class="page">
         <section class="clean-block features">
             <div class="container">
