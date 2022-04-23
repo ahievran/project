@@ -34,7 +34,6 @@ include 'header.php'; ?>
                                     <li><a href="#">Bilgisayar Mühendisliği</a></li>
                                 </ul>
                             </div>
-                            s
                         </div>
                     </div>
                 <?php } ?>
