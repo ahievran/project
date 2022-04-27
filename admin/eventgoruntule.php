@@ -4,50 +4,56 @@ require_once 'sidebar.php';
 include '../baglanti.php';
 ?>
 
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Etkinlik Adı</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                            <li class="breadcrumb-item active">Etkinlik Adı</li>
-                        </ol>
-                    </div>
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                        <li class="breadcrumb-item active">Etkinlik</li>
+                    </ol>
                 </div>
             </div>
-        </section>
-        <section class="content">
+        </div>
+    </section>
+    <section class="content">
 
-            <!-- Default box -->
-            <div class="card card-solid">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-5">
+        <!-- Default box -->
+        <div class="card card-solid">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <?php if (isset($_POST["see"])) {
+                            $etkinlik_baslik = $_POST["etkinlik_baslik"];
+                            $etkinlik_icerik = $_POST["etkinlik_icerik"];
+                            $etkinlik_resim = $_POST["etkinlik_resim"];
+                            $etkinlik_tarih = $_POST["etkinlik_tarih"];
+                        ?>
                             <div class="col-12">
-                                <img src="../assets/img/cerenAkman.jpeg" class="product-image" alt="Laboratuvar Resim">
-                            </div>
-                        </div>
-                        <div class="col-1">
+                                <img src="../<?php echo $etkinlik_resim?>" class="product-image" alt="Laboratuvar Resim">
 
-                        </div>
-                        <div class="col-6">
-                            <h3 class="my-3">Etkinlik Adı:</h3>
-                            <p>Etkinlik Açıklaması:</p>
-                            <p>Etkinlik Tarihi:</p>
-                        </div>
+                            </div>
+                    </div>
+                    <div class="col-1">
 
                     </div>
-                    <!-- /.card-body -->
+                    <div class="col-6">
+                        <h3 class="my-3">Etkinlik Adı: <?php echo $etkinlik_baslik?></h3>
+                        <p>Etkinlik Açıklaması: <?php echo $etkinlik_icerik?></p>
+                        <p>Etkinlik Tarihi: <?php echo $etkinlik_tarih?></p>
+                    </div>
+                <?php } ?>
                 </div>
-                <!-- /.card -->
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
 
-        </section>
-        <!-- /.content -->
-    </div>
+    </section>
+    <!-- /.content -->
+</div>
 
 <?php require_once 'footer.php'; ?>
