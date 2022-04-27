@@ -14,7 +14,7 @@
 
 <body>
     <section class="login-dark">
-        <form method="post" action="">
+        <form method="post" action="adminlogin.php">
             <div class="logo">
                 <img src="../assets/img/ahievran_logo.png" alt="Ahi Evran Üniversitesi">
             </div>
@@ -24,9 +24,9 @@
             <h3>
                 Bilgisayar Mühendisliği
             </h3>
-            <div class="mb-3"><input class="form-control" type="email" name="kullanici_mail" placeholder="Email"></div>
-            <div class="mb-3"><input class="form-control" type="password" name="kullanici_sifre" placeholder="Şifre"></div>
-            <div class="mb-3"><button class="btn btn-primary d-block w-100" name="adminlogin" type="submit">Giriş Yap</button></div>
+            <div class="mb-3"><input class="form-control" type="text" name="admin_kadi" placeholder="Kullanıcı Adı"></div>
+            <div class="mb-3"><input class="form-control" type="password" name="admin_sifre" placeholder="Şifre"></div>
+            <div class="mb-3"><button class="btn btn-primary d-block w-100" name="admin_login" type="submit">Giriş Yap</button></div>
         </form>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

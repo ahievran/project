@@ -1,3 +1,23 @@
+<?php
+require_once 'connection.php';
+session_start();
+
+
+$kullanicisor=$db1->prepare("SELECT * FROM admin_giris WHERE admin_kadi=:kadi");
+$kullanicisor->execute(array(
+  'kadi'=>$_SESSION['admin_kadi']
+));
+$say=$kullanicisor->rowCount();
+$kullanicicek=$kullanicisor->fetch(PDO::FETCH_ASSOC);
+
+
+if($say==0)
+{
+  header("Location:login.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

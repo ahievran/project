@@ -110,6 +110,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="sign-out.php" class="nav-link">
+                        <i class="nav-icon fas fa-times"></i>
+                        <p>
+                            Çıkış Yap
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
