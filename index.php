@@ -1,10 +1,12 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "index";
+$_SESSION["title"] ="Anasayfa";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Anasayfa";
 include 'header.php'; ?>
 <main class="page landing-page">
     <section class="clean-block clean-hero"
-             style="background-image:url(&quot;assets/img/mmf.jpg&quot;);color:rgba(0,0,0, 0.6);">
+             style="background-image:url(&quot;assets/img/aeummf2.jpg&quot;);color:rgba(0,0,0, 0.3);">
         <div class="text">
             <h2 class='animate__animated animate__zoomInDown' id="bolum-uni-yazi">Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği</h2>
             <p class='animate__animated animate__zoomInUp' id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light animate__animated animate__fadeInDownBig" id="hakkimizda-buton" type="button">Hakkımızda</button></a>

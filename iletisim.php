@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "iletisim";
+$_SESSION["title"] ="İletişim Formu";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği İletişim Formu";
 include 'header.php'; ?>
 
 

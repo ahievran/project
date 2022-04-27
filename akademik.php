@@ -1,6 +1,8 @@
 <?php 
 session_start();
 $_SESSION["sayfa"] = "akademik";
+$_SESSION["title"] ="Akademik Kadro";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Akademik Kadrosu";
 include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list">

@@ -1,6 +1,8 @@
 <?php 
 session_start();
 $_SESSION["sayfa"] = "galeri";
+$_SESSION["title"] ="Galeri";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Galeri";
 include 'header.php'; ?>
     <main class="page gallery-page">
         <section class="clean-block clean-gallery">
