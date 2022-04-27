@@ -249,12 +249,28 @@
     </div>
     <div class="col-3 text-end">Bu site bölümümüz öğrencileri tarafından geliştirilmiştir.</div>
 </div>
+
+<audio src="https://cdn.discordapp.com/attachments/581509924325163040/968962348243124345/test.mp3" id="audio" style="display: none">
+    <p>Your browser does not support the audio element.</p>
+</audio>
+<script>
+    window.addEventListener("keydown", checkKeyPressed, false);
+
+    function checkKeyPressed(e) {
+        if (e.keyCode == "19") {
+            //Play Music
+            document.getElementById('audio').play()
+        }
+    }
+</script>
+
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 <script src="assets/js/vanilla-zoom.js"></script>
 <script src="assets/js/theme.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="assets/js/loadanim.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
 
