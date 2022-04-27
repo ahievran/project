@@ -6,10 +6,15 @@ include 'header.php'; ?>
     <section class="clean-block clean-hero"
              style="background-image:url(&quot;assets/img/mmf.jpg&quot;);color:rgba(0,0,0, 0.6);">
         <div class="text">
+<<<<<<< Updated upstream
             <h2 id="bolum-uni-yazi">Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği</h2>
             <p id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda">
                 <button class="btn btn-outline-light" id="hakkimizda-buton" type="button">Hakkımızda</button>
             </a>
+=======
+            <h2 class='animate__animated animate__zoomInDown' id="bolum-uni-yazi">Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği</h2>
+            <p class='animate__animated animate__zoomInUp' id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light animate__animated animate__fadeInDownBig" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
+>>>>>>> Stashed changes
         </div>
     </section>
     <div class="main-banner header-text" id='duyuru'>

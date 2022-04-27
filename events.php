@@ -5,7 +5,7 @@ include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list dark">
             <div class="container-fluid">
-                <div class="block-heading">
+                <div class="block-heading animate__animated animate__zoomIn">
                     <h2 class="text-info">Etkinlikler</h2>
                 </div>
             </div>
@@ -20,7 +20,7 @@ include 'header.php'; ?>
                         $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id DESC";
                         $result = $db->query($sql);
                         while($row = $result->fetch_array()){ ?>
-                <div class="col-lg-6">
+                <div class="col-lg-6 animate__animated animate__zoomIn">
                   <div class="blog-post">
                     <div class="blog-thumb">
                       <img src="<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">

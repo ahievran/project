@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/anasayfaslider.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/etkinlik.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -37,10 +38,10 @@
 <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
     <div class="container-fluid">
 
-        <img src="assets/img/pnglogo.png" id="logo">
+        <img  class='animate__animated animate__fadeInBottomRight' src="assets/img/pnglogo.png" id="logo">
         <div class="col-sm-3">
-            <h1 id="logo-sag-yazi1">Mühendislik Mimarlık Fakültesi</h1>
-            <h2 id="logo-sag-yazi2">Bilgisayar Mühendisliği</h2>
+            <h1 class='animate__animated animate__fadeInBottomRight' id="logo-sag-yazi1">Mühendislik Mimarlık Fakültesi</h1>
+            <h2 class='animate__animated animate__fadeInBottomRight' id="logo-sag-yazi2">Bilgisayar Mühendisliği</h2>
         </div>
 
 

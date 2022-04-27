@@ -10,6 +10,12 @@ include 'header.php'; ?>
                 <div class="block-heading">
                     <h2 class="text-info">İletişim</h2>
                     <p>Bölümümüz hakkındaki sorularınızı sağ tarafta verilen telefon numarası, e-posta adresleri ve iletişim formu üzerinden iletebilirsiniz. Ayrıca evrak gönderimi için açık adresimiz de verilmiştir.<br></p>
+                    <?php if(!empty(($_SESSION["isim"])) && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
+               <br><div class="container animate__animated animate__zoomInDown">
+                    <div class="row mt-5">
+                        <div class="col-md-2"></div>
+                        <div class="alert alert-success col-md-8 text-dark" style="text-align:center;box-shadow:5px 5px 5px grey;" role="alert"><?php echo "Merhaba <strong>" .$_SESSION["isim"]. " , ". $_SESSION["konu"]. "</strong> konulu <strong>".$_SESSION["mesajbilgi"]." </strong>"; ?></div>
+                    </div><div class="col-md-2"> </div></div></div> <?php } ?>
                     <div class="row" style="padding-top: 38px;" >
                         <div class="col-sm-6 mb-4">
                             <form class="text-start bg-light" style="max-width: 550px;box-shadow:8px 8px 8px grey;"  action="iletisimform.php" method="POST">
@@ -31,12 +37,7 @@ include 'header.php'; ?>
                     </div>
                 </div>
             </div>
-            <?php if(!empty(($_SESSION["isim"])) && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-md-2"></div>
-                        <div class="alert alert-success col-md-8 text-dark" style="text-align:center;box-shadow:5px 5px 5px grey;" role="alert"><?php echo "Merhaba <strong>" .$_SESSION["isim"]. " , ". $_SESSION["konu"]. "</strong> konulu <strong>".$_SESSION["mesajbilgi"]." </strong>"; ?></div>
-                    </div><div class="col-md-2"> </div></div></div> <?php } ?>
+           
         </section>
     </main>
 <?php include 'footer.php'; ?>

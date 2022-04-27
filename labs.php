@@ -5,7 +5,7 @@ include 'header.php'; ?>
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
             <div class="container-fluid">
-                <div class="block-heading">
+                <div class="block-heading animate__animated animate__zoomIn">
                     <h2 class="text-info">Laboratuvarlarımız</h2>
                 </div>
                 <div class="row">
@@ -13,7 +13,7 @@ include 'header.php'; ?>
                     $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";
                     $result = $db->query($sql);
                     while($row = $result->fetch_array()){ ?>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 animate__animated animate__zoomIn">
                             <div class="card clean-testimonial-item border-0 rounded-0">
                                 <div class="card-body">
                                     <div><img class="img-fluid rounded mx-auto d-block" src="<?php echo $row["lab_resim"];  ?>" style="width: 400px; height:300px;width: auto;display: block;margin: 0 auto;"></div>

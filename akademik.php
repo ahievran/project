@@ -5,7 +5,7 @@ include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list dark">
             <div class="container-fluid">
-                <div class="block-heading" style="margin-bottom: 53px;">
+                <div class="block-heading animate__animated animate__zoomInRight" style="margin-bottom: 53px;">
                     <h2 class="text-info">Akademik Kadromuz</h2>
                 </div>
                 <div class="block-content">
@@ -14,7 +14,7 @@ include 'header.php'; ?>
                         $sql = "SELECT * FROM akademik_personel ORDER BY personel_id ASC";
                         $result = $db->query($sql);
                         while($row = $result->fetch_array()){ ?>
-                            <div class="row" style="margin-top:40px;box-shadow: 0px 0px 7px var(--bs-gray-400);">
+                            <div class="row  animate__animated animate__fadeInLeft" style="margin-top:40px;box-shadow: 0px 0px 7px var(--bs-gray-400);">
                             <div class="col-md-auto col-lg-auto col-xl-auto"><img class="img-fluid" src="<?php echo $row["personel_img"]; ?>" style="width: 372px;"></div>
                             <div class="col">
                                 <div class="row justify-content-end">
