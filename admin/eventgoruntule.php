@@ -34,7 +34,7 @@ include '../baglanti.php';
                             $etkinlik_tarih = $_POST["etkinlik_tarih"];
                         ?>
                             <div class="col-12">
-                                <img src="../<?php echo $etkinlik_resim?>" class="product-image" alt="Laboratuvar Resim">
+                                <img src="uploads/events/<?php echo $etkinlik_resim?>" class="product-image" alt="Laboratuvar Resim">
 
                             </div>
                     </div>

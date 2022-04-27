@@ -71,7 +71,7 @@ include '../baglanti.php';
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["etkinlik_id"] ?>.</td>
-                                            <td><img src="../<?php echo $row["etkinlik_resim"] ?>" style="max-width: 150px;" alt=""></td>
+                                            <td><img src="uploads/events/<?php echo $row["etkinlik_resim"] ?>" style="max-width: 150px;" alt=""></td>
                                             <td><?php echo $row["etkinlik_baslik"]; ?></td>
                                             </td>
                                             <td>
@@ -95,9 +95,9 @@ include '../baglanti.php';
                                                 </td>
                                             </form>
 
-                                            <form method='post' action='akademik_sil.php'>
+                                            <form method='post' action='events_sil.php'>
                                                 <td>
-                                                    <input type='hidden' value='<?php echo $row["personel_id"]; ?>' name='silinecek_id'>
+                                                    <input type='hidden' value='<?php echo $row["etkinlik_id"]; ?>' name='silinecek_id'>
                                                     <a>
                                                         <button class="btn btn-danger" name="sil">Sil</button>
                                                     </a>
