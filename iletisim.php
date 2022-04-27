@@ -45,8 +45,8 @@ include 'header.php'; ?>
                                 <div class="row">
                                     <div class="row col-xxl-12"><iframe class="col-xxl-12 mt-0" style="box-shadow:5px 5px 5px 5px grey;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8380.935294167457!2d34.12117306916829!3d39.14524954038606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d572d2fa7b2291%3A0x7f5b14385700cd72!2sK%C4%B1r%C5%9Fehir%20Ahi%20Evran%20%C3%9Cniversitesi!5e0!3m2!1str!2sus!4v1646663469798!5m2!1str!2sus" width="inherit" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
                                     <div class="col-xxl-12 mt-4"><i class="icon ion-ios-location" style="font-size: 21px;"></i><span>&nbsp;Ahi Evran Üniversitesi, Bağbaşı Yerleşkesi, Mühendislik-Mimarlık Fakültesi, Merkez/KIRŞEHİR<br></span></div>
-                                    <div class="col-xxl-12"><i class="icon ion-android-mail" style="font-size: 21px;"></i><span>&nbsp;bilmuh@ahievran.edu.tr<br></span></div>
-                                    <div class="col-xxl-12"><i class="icon ion-ios-telephone" style="font-size: 21px;"></i><span>&nbsp;0386 280 38 00<br></span></div>
+                                    <div class="col-xxl-12"><i class="icon ion-android-mail" style="font-size: 21px;"></i><span>&nbsp;<a href="mailto:bilmuh@ahievran.edu.tr">bilmuh@ahievran.edu.tr</a><br></span></div>
+                                    <div class="col-xxl-12"><i class="icon ion-ios-telephone" style="font-size: 21px;"></i><span>&nbsp;<a href="tel:+903862803800">0386 280 38 00</a><br></span></div>
                                 </div>
                             </div>
                         </div>

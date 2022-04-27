@@ -195,22 +195,22 @@
                     <tr>
                         <td>Telefon</td>
                         <td>:</td>
-                        <td style="font-weight: lighter;">+90&nbsp;386 280 38 00</td>
+                        <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 00</a></td>
                     </tr>
                     <tr>
                         <td>Fax</td>
                         <td>:</td>
-                        <td style="font-weight: lighter;">+90 386 280 38 01</td>
+                        <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 01</a></td>
                     </tr>
                     <tr>
                         <td>E-posta</td>
                         <td>:</td>
-                        <td style="font-weight: lighter;">MMF@ahievran.edu.tr</td>
+                        <td style="font-weight: lighter;"><a href="mailto:MMF@ahievran.edu.tr">MMF@ahievran.edu.tr</a></td>
                     </tr>
                     <tr>
                         <td>Adres</td>
                         <td>:</td>
-                        <td style="font-weight: lighter;">&nbsp;Mühendislik-Mimarlık Fakültesi, Bağbaşı
+                        <td style="font-weight: lighter;">Mühendislik-Mimarlık Fakültesi, Bağbaşı
                             Yerleşkesi, KIRŞEHİR
                         </td>
                     </tr>
