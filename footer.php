@@ -170,7 +170,7 @@
                 Geliştirme Ekibi : <a href='https://www.linkedin.com/in/samet-adsan-480981229/' class='ekip'>Samet Adsan</a>,
                 <a href='#' class='ekip'>Kutluhan Azaflı</a>,
                 <a href='#' class='ekip'>Burak Kaynar</a>,
-                <a href='#' class='ekip'>Cemre Deniz Yıldız</a>,
+                <a href='#' class='ekip'>Cemre Deniz Yıldız</a>
                 </div>
         <div class="col-3 text-end">Bu site bölümümüz öğrencileri tarafından geliştirilmiştir.</div>
     </div>
