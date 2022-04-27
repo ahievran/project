@@ -5,10 +5,22 @@ include 'header.php'; ?>
 
     <main class="page">
         <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>Hakkımızda</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
             <div class="container-fluid">
-                <div class="block-heading">
-                    <h2 class="text-info">Hakkımızda</h2>
-                </div>
+               
 
                 <div class="row">
                     <div class="col-xxl-6"><img src="assets/img/about-img.jpg" style="width: 103%;padding-bottom: 14px;padding-top: 14px;"></div>

@@ -158,3 +158,32 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+  .heading-page {
+   
+  }
+  
+  .page-heading {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding: 120px 0px;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/footer.png");
+  }
+  
+  .page-heading .text-content h4 {
+    color: #fcffa0;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  
+  .page-heading .text-content h2 {
+    color: rgb(185, 255, 189);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }

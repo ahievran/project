@@ -4,10 +4,21 @@ $_SESSION["sayfa"] = "galeri";
 include 'header.php'; ?>
     <main class="page gallery-page">
         <section class="clean-block clean-gallery dark">
+        <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>Galeri</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <div class="container">
-                <div class="block-heading animate__animated animate__zoomIn">
-                    <h2 class="text-info">Galeri</h2>
-                </div>
                 <div class="row">
                     <?php
                     $sql = "SELECT * FROM galeri ORDER BY galeri_id ASC";

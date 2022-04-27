@@ -4,10 +4,21 @@ $_SESSION["sayfa"] = "akademik";
 include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list dark">
+        <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>Akademik Kadro</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <div class="container-fluid">
-                <div class="block-heading animate__animated animate__zoomInRight" style="margin-bottom: 53px;">
-                    <h2 class="text-info">Akademik Kadromuz</h2>
-                </div>
                 <div class="block-content">
                     <div class="clean-blog-post">
                         <?php

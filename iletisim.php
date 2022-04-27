@@ -6,9 +6,22 @@ include 'header.php'; ?>
 
     <main class="page contact-us-page">
         <section class="clean-block clean-form dark">
+            <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>İletişim</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">İletişim</h2>
                     <p>Bölümümüz hakkındaki sorularınızı sağ tarafta verilen telefon numarası, e-posta adresleri ve iletişim formu üzerinden iletebilirsiniz. Ayrıca evrak gönderimi için açık adresimiz de verilmiştir.<br></p>
                     <?php if(!empty(($_SESSION["isim"])) && ($_SESSION["konu"] != "") && ($_SESSION["mesajbilgi"] != "")){ ?>
                <br><div class="container animate__animated animate__zoomInDown">

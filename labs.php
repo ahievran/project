@@ -4,10 +4,21 @@ $_SESSION["sayfa"] = "labs";
 include 'header.php'; ?>
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
+        <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>Laboratuvarlarımız</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <div class="container-fluid">
-                <div class="block-heading animate__animated animate__zoomIn">
-                    <h2 class="text-info">Laboratuvarlarımız</h2>
-                </div>
                 <div class="row">
                     <?php
                     $sql = "SELECT * FROM laboratuvar ORDER BY lab_id ASC";

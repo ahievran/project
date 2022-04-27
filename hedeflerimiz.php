@@ -4,9 +4,22 @@ $_SESSION["sayfa"] = "hedeflerimiz";
 include 'header.php'; ?>
     <main class="page">
         <section class="clean-block features">
+        <section class="clean-block about-us">
+        <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</h4>
+                <h2>Hedeflerimiz</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Hedeflerimiz</h2>
                     <div class="row">
                         <div class="col-md-5 col-lg-4"><img src="assets/img/product-features.png" style="width: 100%;">
                         </div>
