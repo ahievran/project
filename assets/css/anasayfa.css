@@ -137,3 +137,42 @@
     font-weight:600;
     text-transform: uppercase
   }
+  body {
+    background-image: url("../img/desen1.svg");
+    background-attachment: fixed;
+    background-size: 60px;
+}
+.call-to-action {
+	margin-top: 100px;
+  text-align: center;
+}
+
+.call-to-action .main-content {
+	padding: 40px;
+	background-image: url("../img/duyurufon.jpg");  
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.call-to-action .main-content span {
+	color: rgb(0, 4, 133);
+	font-size: 18px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+.call-to-action .main-content h4 {
+	margin-bottom: 0px;
+	margin-top: 12px;
+	color: rgb(0, 0, 0);
+	font-size: 26px;
+	font-weight: 900;
+	letter-spacing: 0.25px;
+  text-align: center;
+}
+
+.call-to-action .main-content .main-button {
+	text-align: center;
+	margin-top: 12px;
+}

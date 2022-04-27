@@ -3,7 +3,7 @@ session_start();
 $_SESSION["sayfa"] = "galeri";
 include 'header.php'; ?>
     <main class="page gallery-page">
-        <section class="clean-block clean-gallery dark">
+        <section class="clean-block clean-gallery">
         <section class="clean-block about-us">
         <div class="heading-page header-text">
       <section class="page-heading">

@@ -10,8 +10,29 @@ include 'header.php'; ?>
             <p class='animate__animated animate__zoomInUp' id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light animate__animated animate__fadeInDownBig" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
         </div>
     </section>
-    <div class="main-banner header-text" id='duyuru'>
-        <h3 id='duyuruyazi'> Güncel Duyurular & Haberler & Etkinlikler</h3>
+    <div class="main-banner header-text" style='margin-top:50px;' id='duyuru'>
+    <section class="call-to-action">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main-content">
+              <div class="row">
+              <div class="col-md-4">
+                 <img style='width:auto;height:150px;' src='assets/img/pnglogo.png'>
+                </div>
+                <div class="col-md-4">
+                  <span>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</span>
+                  <h4>Haberler - Etkinlikler - Duyurular</h4>
+                </div>
+                <div class="col-md-4">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
         <div class="container-fluid">
             <div class="owl-banner owl-carousel" style='padding-top:50px;'>
                 <?php
@@ -38,7 +59,7 @@ include 'header.php'; ?>
             </div>
         </div>
     </div>
-    <section class="clean-block clean-info dark" id="hakkinda">
+    <section class="clean-block clean-info" id="hakkinda">
         <div class="container">
             <div class="row">
                 <div class="block-heading col-sm-6">
