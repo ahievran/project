@@ -125,7 +125,7 @@ include 'header.php'; ?>
     <section class="clean-block features">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Kulüpler</h2>
+                <h2 class="text-info">Topluluklar</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
