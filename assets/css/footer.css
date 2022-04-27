@@ -1,0 +1,209 @@
+footer {
+    color: var(--gri);
+    margin-top: 1.5rem;
+    border-top: 2px solid var(--serit);
+    min-height: 475px;
+    background-color: var(--laci);
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer a {
+    color: var(--gri)
+}
+
+ul#altmenu {
+    font-weight: lighter
+}
+
+ul#altmenu>li {
+    display: block;
+    padding: 1rem 0
+}
+
+ul#altmenu>li a {
+    padding: 5px 0;
+    font-size: 0.9rem
+}
+
+ul#altmenu>li a:hover {
+    color: var(--serit)
+}
+
+ul#altmenu>li h4 {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--serit)
+}
+
+ul#altmenu>li ul {
+    padding: 0
+}
+
+.footer_logo {
+    opacity: 0.2;
+    height: 110px
+}
+
+.sosyalcon {}
+
+.sosyalcon a {
+    font-size: 1.8rem;
+    color: var(--kgri)
+}
+
+.sosyalcon a:hover {
+    color: var(--serit)
+}
+
+.sosyalcon i {}
+
+.telif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px;
+    background-color: #3a3e42;
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic
+}
+
+.telif a {
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic
+}
+
+.telif a:hover {
+    color: var(--serit)
+}
+
+::-moz-selection {
+    color: var(--gri);
+    background: var(--laci)
+}
+
+::selection {
+    color: var(--gri);
+    background: var(--laci)
+}
+
+.borderN {
+    border: 0
+}
+
+.borderT {
+    border-top: 1px solid var(--serit)
+}
+
+.borderB {
+    border-bottom: 1px solid var(--serit)
+}
+
+.borderL {
+    border-left: 1px solid var(--serit)
+}
+
+.borderR {
+    border-right: 1px solid var(--serit)
+}
+
+.borderTB {
+    border-top: 1px solid var(--serit);
+    border-bottom: 1px solid var(--serit)
+}
+
+.borderLR {
+    border-left: 1px solid var(--serit);
+    border-right: 1px solid var(--serit)
+}
+
+.borderT2 {
+    border-top: 2px solid var(--serit)
+}
+
+.borderB2 {
+    border-bottom: 2px solid var(--serit)
+}
+
+.borderL2 {
+    border-left: 2px solid var(--serit)
+}
+
+.borderR2 {
+    border-right: 2px solid var(--serit)
+}
+
+.borderTB2 {
+    border-top: 2px solid var(--serit);
+    border-bottom: 2px solid var(--serit)
+}
+
+.borderLR2 {
+    border-left: 2px solid var(--serit);
+    border-right: 2px solid var(--serit)
+}
+
+.tabmenu1 {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.tablinks>div {
+    font-size: 21.5px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    cursor: pointer;
+    background-color: var(--laci)
+}
+
+.tablinks>div:hover {
+    background-color: var(--gri);
+    color: black
+}
+
+.tabcontents>div {
+    height: 540px;
+    overflow: hidden
+}
+.menuyazilari{
+    color:white;
+}
+.hrs{
+    color: yellow;
+    height: 2px;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+    background: #ffffff;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ffffff;
+    color: white;
+}
+
+.fa-twitter {
+    background: #0047fb;
+    color: white;
+}
+.fa-youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 5px;
+}
