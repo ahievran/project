@@ -3,7 +3,7 @@ session_start();
 $_SESSION["sayfa"] = "etkinlikler";
 include 'header.php'; ?>
     <main class="page blog-post-list">
-        <section class="clean-block clean-blog-list dark">
+        <section class="clean-block clean-blog-list">
         <section class="clean-block about-us">
         <div class="heading-page header-text">
       <section class="page-heading">
