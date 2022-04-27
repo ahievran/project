@@ -1,5 +1,8 @@
 #videobuton
 {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     background-color:#fcefbb;
     font-weight:550;
     color:#001296;
@@ -11,8 +14,8 @@
 #butonicon
 {
     font-size:inherit;
-    margin-left:7px;
     color:#18a100;
+    margin-right: 0px;
 }
 #videobuton:hover
 {
