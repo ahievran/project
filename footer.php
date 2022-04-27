@@ -167,10 +167,10 @@
     <div class="telif justify-content-between container-fluid">
         <div class="col-4">© 2022, KAEU-Bilgisayar Mühendislği</div>
         <div class="col-5 text-center">
-                Geliştirme Ekibi : <a href='https://www.linkedin.com/in/samet-adsan-480981229/'>Samet Adsan</a>
-                <a href='#'>Kutluhan Azaflı</a>
-                <a href='#'>Burak Kaynar</a>
-                <a href='#'>Cemre Deniz Yıldız</a>
+                Geliştirme Ekibi : <a href='https://www.linkedin.com/in/samet-adsan-480981229/'>Samet Adsan</a>,
+                <a href='#'>Kutluhan Azaflı</a>,
+                <a href='#'>Burak Kaynar</a>,
+                <a href='#'>Cemre Deniz Yıldız</a>,
                 </div>
         <div class="col-3 text-end">Bu site bölümümüz öğrencileri tarafından geliştirilmiştir.</div>
     </div>
