@@ -99,9 +99,9 @@
                                     target="_blank"  class='menuyazilari' rel="noopener noreferrer">Wi-Fi Kullanım Kılavuzları</a></li>
                             <li class="item-480"><a href="https://bidb.ahievran.edu.tr/icerik/kampusdisindanerisim"
                                     target="_blank"  class='menuyazilari' rel="noopener noreferrer">Proxy Kullanım Kılavuzu</a></li>
-                            <li class="item-394"><a href="https://mf.ahievran.edu.tr/diger/gizlilik-politikasi">Gizlilik
+                            <li class="item-394"><a href="https://mf.ahievran.edu.tr/diger/gizlilik-politikasi" class='menuyazilari'>Gizlilik
                                     Politikası</a></li>
-                            <li class="item-485"><a href="https://mf.ahievran.edu.tr/diger/kvkk-dokumanlari">KVKK
+                            <li class="item-485"><a href="https://mf.ahievran.edu.tr/diger/kvkk-dokumanlari" class='menuyazilari'>KVKK
                                     Dokümanları</a></li>
                             <li class="item-151"><a href="https://sksdb.ahievran.edu.tr/yemeklistesi/" target="_blank"  class='menuyazilari'
                                     rel="noopener noreferrer">Yemek Listesi</a></li>
@@ -166,11 +166,11 @@
     </footer>
     <div class="telif justify-content-between container-fluid">
         <div class="col-4">© 2022, KAEU-Bilgisayar Mühendislği</div>
-        <div class="col-5 text-center">
-                Geliştirme Ekibi : <a href='https://www.linkedin.com/in/samet-adsan-480981229/'>Samet Adsan</a>,
-                <a href='#'>Kutluhan Azaflı</a>,
-                <a href='#'>Burak Kaynar</a>,
-                <a href='#'>Cemre Deniz Yıldız</a>,
+        <div class="col-5 text-center" id='deneme'>
+                Geliştirme Ekibi : <a href='https://www.linkedin.com/in/samet-adsan-480981229/' class='ekip'>Samet Adsan</a>,
+                <a href='#' class='ekip'>Kutluhan Azaflı</a>,
+                <a href='#' class='ekip'>Burak Kaynar</a>,
+                <a href='#' class='ekip'>Cemre Deniz Yıldız</a>,
                 </div>
         <div class="col-3 text-end">Bu site bölümümüz öğrencileri tarafından geliştirilmiştir.</div>
     </div>

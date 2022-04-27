@@ -207,3 +207,6 @@ ul#altmenu>li ul {
     border-radius: 20px;
     margin-right: 5px;
 }
+#deneme :hover{
+color: #ff0000;
+}
