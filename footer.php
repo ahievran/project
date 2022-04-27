@@ -203,17 +203,9 @@
                         <td style="font-weight: lighter;">+90 386 280 38 01</td>
                     </tr>
                     <tr>
-                        <td>E-Posta</td>
-                        <td>:</td> &nbsp;
-                        <span class="cloaked_email">
-                            <span data-ep-bd06a="" data-ep-a048b="MMF@"><span data-ep-bd06a=".tr" data-ep-a048b="ahie">
-                                    <span data-ep-bd06a=".edu" data-ep-a048b="vran">
-
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                        <script>emailProtector.addCloakedMailto("ep_cdcb2dc2", 0);</script>
+                        <td>E-posta</td>
+                        <td>:</td>
+                        <td style="font-weight: lighter;">MMF@ahievran.edu.tr</td>
                     </tr>
                     <tr>
                         <td>Adres</td>

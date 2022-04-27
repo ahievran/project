@@ -34,7 +34,7 @@ ul#altmenu>li a:hover {
 ul#altmenu>li h4 {
     font-size: 1rem;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--serit)
+    margin-top: 50px;
 }
 
 ul#altmenu>li ul {
