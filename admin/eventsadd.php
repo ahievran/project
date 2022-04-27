@@ -56,7 +56,7 @@ include '../baglanti.php';
                 // Upload file to server
                 if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
                     // Insert image file name into database
-                    $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$fileName')");
+                    $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$targetFilePath    ')");
                     if ($insert) {
                         echo '<script type ="text/JavaScript">';
                         echo 'alert("Veritabanına eklendi")';

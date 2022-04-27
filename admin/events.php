@@ -71,7 +71,7 @@ include '../baglanti.php';
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["etkinlik_id"] ?>.</td>
-                                            <td><img src="uploads/events/<?php echo $row["etkinlik_resim"] ?>" style="max-width: 150px;" alt=""></td>
+                                            <td><img src="<?php echo $row["etkinlik_resim"] ?>" style="max-width: 150px;" alt=""></td>
                                             <td><?php echo $row["etkinlik_baslik"]; ?></td>
                                             </td>
                                             <td>
