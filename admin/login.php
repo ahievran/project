@@ -24,7 +24,6 @@
             <h3>
                 Bilgisayar Mühendisliği
             </h3>
-
             <div class="mb-3"><input class="form-control" type="email" name="kullanici_mail" placeholder="Email"></div>
             <div class="mb-3"><input class="form-control" type="password" name="kullanici_sifre" placeholder="Şifre"></div>
             <div class="mb-3"><button class="btn btn-primary d-block w-100" name="adminlogin" type="submit">Giriş Yap</button></div>
