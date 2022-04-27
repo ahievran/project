@@ -5,7 +5,7 @@ include 'header.php'; ?>
 
 
     <main class="page contact-us-page">
-        <section class="clean-block clean-form">
+        <section class="clean-block clean-form dark">
             <section class="clean-block about-us">
         <div class="heading-page header-text">
       <section class="page-heading mb-0">

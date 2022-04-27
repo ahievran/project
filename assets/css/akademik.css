@@ -6,17 +6,13 @@
     box-shadow:5px 5px 5px grey;
     margin-right:10px;
     margin-bottom:10px;
-    border-radius:15px 15px 15px 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+    border-radius:9px 9px 9px 9px;
 }
 #butonicon
 {
     font-size:inherit;
-    margin-left:0px;
+    margin-left:7px;
     color:#18a100;
-    margin-right: 0px;
 }
 #videobuton:hover
 {

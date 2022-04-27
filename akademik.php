@@ -3,7 +3,7 @@ session_start();
 $_SESSION["sayfa"] = "akademik";
 include 'header.php'; ?>
     <main class="page blog-post-list">
-        <section class="clean-block clean-blog-list">
+        <section class="clean-block clean-blog-list dark">
         <section class="clean-block about-us">
         <div class="heading-page header-text">
       <section class="page-heading">
@@ -38,7 +38,8 @@ include 'header.php'; ?>
                                     <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>Telefon:</strong><span style="margin-left: 5px;"><?php echo $row["personel_telefon"]; ?></span></div>
                                     <div class="col-xxl-12" style="padding-bottom: 7px;"><strong>E-posta:</strong><span style="margin-left: 5px;"><?php echo $row["personel_email"]; ?></span></div>
                                     <div class="col-xxl-12" style="padding-bottom: 7px;"><i class="fa fa-link fs-6"></i><a class="fs-5 text-dark" style="font-family:sans-serif;text-shadow:3px 3px 3px #9c9898;" href="<?php echo $row["personel_hakkında"]; ?>" target="_blank"><?php echo $row["personel_isim_soyisim"]; ?></a></div>
-                                    <div class="col-lg-auto offset-md-11 offset-lg-7 offset-xl-10 offset-xxl-10 text-center" id='butondiv'><button id="videobuton" class="btn" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Video Mesajı<i class="fa fa-play-circle" id="butonicon"></i></button></div>
+                                    <div class="col-lg-auto offset-md-11 offset-lg-7 offset-xl-10 offset-xxl-10 text-center"><button id="videobuton" class="btn" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Video Mesajı<i class="fa fa-play-circle" id="butonicon"></i></button></div>
+
                                 </div>
                             </div>
                             </div><?php } ?>

@@ -78,59 +78,44 @@
                         <h4 class='menuyazilari' style='text-align:center;'>Birimler</h4>
                         <hr class='hrs'>
                         <ul class="level-1" style='text-align:center;'>
-                            <li class="item-110">
-                                <a href="http://bap.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    BAP Koordinatörlüğü
-                                </a>
+                            <li class="item-110"><a href="http://bap.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">BAP Koordinatörlüğü</a></li>
+                            <li class="item-368"><a href="https://mf.ahievran.edu.tr/birimler/bilgi-edinme-birimi"
+                                                    class='menuyazilari'>Bilgi
+                                    Edinme Birimi</a></li>
+                            <li class="item-113"><a href="https://eob.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Engelsiz Öğrenci Birimi</a></li>
+                            <li class="item-114"><a href="https://foreignaffairs.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Erasmus - Dış İlişkiler Ofisi</a></li>
+                            <li class="item-117"><a href="https://kalite.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Kalite Koordinatörlüğü</a></li>
+                            <li class="item-481"><a href="https://pilottarim.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Pilot Üniversite Tarım ve Jeotermal
+                                    Koordinatörlüğü</a>
                             </li>
-                            <li class="item-368">
-                                <a href="https://mf.ahievran.edu.tr/birimler/bilgi-edinme-birimi" class='menuyazilari'>
-                                    Bilgi Edinme Birimi
-                                </a>
-                            </li>
-                            <li class="item-113">
-                                <a href="https://eob.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Engelsiz Öğrenci Birimi
-                                </a>
-                            </li>
-                            <li class="item-114">
-                                <a href="https://foreignaffairs.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Erasmus - Dış İlişkiler Ofisi
-                                </a>
-                            </li>
-                            <li class="item-117">
-                                <a href="https://kalite.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Kalite Koordinatörlüğü
-                                </a>
-                            </li>
-                            <li class="item-481">
-                                <a href="https://pilottarim.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Pilot Üniversite Tarım ve Jeotermal Koordinatörlüğü
-                                </a>
-                            </li>
-                            <li class="item-433">
-                                <a href="https://pilotsaglik.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Pilot Üniversite Sağlık Koordinatörlüğü
-                                </a>
-                            </li>
-                            <li class="item-407">
-                                <a class='menuyazilari' href="https://mf.ahievran.edu.tr/birimler/kongre-ve-kultur-merkezi">
-                                    Kongre ve Kültür Merkezi
-                                </a>
-                            </li>
-                            <li class="item-122">
-                                <a href="https://formasyon.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Pedagojik Formasyon Birimi
-                                </a>
-                            </li>
-                            <li class="item-446">
-                                <a href="https://ekgsk.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    Eğitimde Kalite Güvence Sistemi Koordinatörlüğü
-                                </a>
-                            </li>
-                            <li class="item-459"><a href="https://ylsy.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">
-                                    YLSY Burs Programı Koordinatörlüğü
-                                </a>
+                            <li class="item-433"><a href="https://pilotsaglik.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Pilot Üniversite Sağlık
+                                    Koordinatörlüğü</a></li>
+                            <li class="item-407"><a class='menuyazilari'
+                                                    href="https://mf.ahievran.edu.tr/birimler/kongre-ve-kultur-merkezi">Kongre
+                                    ve Kültür
+                                    Merkezi</a></li>
+                            <li class="item-122"><a href="https://formasyon.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Pedagojik Formasyon Birimi</a></li>
+                            <li class="item-446"><a href="https://ekgsk.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">Eğitimde Kalite Güvence Sistemi
+                                    Koordinatörlüğü</a></li>
+                            <li class="item-459"><a href="https://ylsy.ahievran.edu.tr/" target="_blank"
+                                                    class='menuyazilari'
+                                                    rel="noopener noreferrer">YLSY Burs Programı Koordinatörlüğü</a>
                             </li>
                         </ul>
                     </li>
@@ -233,8 +218,8 @@
                     <tr>
                         <td>Adres</td>
                         <td>:</td>
-                        <td style="font-weight: lighter;">
-                            &nbsp;Mühendislik-Mimarlık Fakültesi, Bağbaşı Yerleşkesi, KIRŞEHİR
+                        <td style="font-weight: lighter;">&nbsp;Mühendislik-Mimarlık Fakültesi, Bağbaşı
+                            Yerleşkesi, KIRŞEHİR
                         </td>
                     </tr>
                     </tbody>
@@ -263,7 +248,8 @@
 </footer>
 <div class="telif justify-content-between container-fluid">
     <div class="col-4">© 2022, KAEU-Bilgisayar Mühendislği</div>
-    <div class="col-5 text-center" id='deneme'>Geliştirme Ekibi :
+    <div class="col-5 text-center" id='deneme'>
+        Geliştirme Ekibi :
         <a href='https://www.linkedin.com/in/samet-adsan-480981229/' class='ekip'>Samet Adsan</a>,
         <a href='https://www.linkedin.com/in/kutluhanazafli/' class='ekip'>Kutluhan Azaflı</a>,
         <a href='https://www.linkedin.com/in/burak-kaynar-32398020b/' class='ekip'>Burak Kaynar</a>,
