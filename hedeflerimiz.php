@@ -33,7 +33,10 @@ include 'header.php'; ?>
                                 while ($row = $result->fetch_array()) { ?>
                                     <div class="col-md-6 col-lg-6"><i class="icon ion-android-globe"
                                                                       style="font-size: 40px;"></i>
-                                        <h4><?php echo $row["hedef_baslik"]; ?></h4>
+
+                                        <h4><?php echo $row["hedef_baslik"]; ?>
+                                            <br>
+                                            <br>
                                         <p style="text-align: center;"><?php echo $row["hedef_icerik"]; ?><br></p>
                                     </div>
                                 <?php } ?>
