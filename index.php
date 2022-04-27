@@ -10,7 +10,7 @@ include 'header.php'; ?>
             <p class='animate__animated animate__zoomInUp' id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light animate__animated animate__fadeInDownBig" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
         </div>
     </section>
-    <div class="main-banner header-text" id='duyuru'>
+    <div class="main-banner header-text" style='margin-top:50px;' id='duyuru'>
         <h3 id='duyuruyazi'> Güncel Duyurular & Haberler & Etkinlikler</h3>
         <div class="container-fluid">
             <div class="owl-banner owl-carousel" style='padding-top:50px;'>
@@ -38,7 +38,7 @@ include 'header.php'; ?>
             </div>
         </div>
     </div>
-    <section class="clean-block clean-info dark" id="hakkinda">
+    <section class="clean-block clean-info" id="hakkinda">
         <div class="container">
             <div class="row">
                 <div class="block-heading col-sm-6">
