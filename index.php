@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "index";
+$_SESSION["title"] ="Anasayfa";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Anasayfa";
 include 'header.php'; ?>
 <main class="page landing-page">
     <section class="clean-block clean-hero"

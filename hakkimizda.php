@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "hakkimizda";
+$_SESSION["title"] ="Hakkımızda";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Hakkımızda";
 include 'header.php'; ?>
 
     <main class="page">

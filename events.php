@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "etkinlikler";
+$_SESSION["title"] ="Etkinlikler";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Etkinlikler";
 include 'header.php'; ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list">

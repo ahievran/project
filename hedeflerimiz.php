@@ -1,6 +1,8 @@
 <?php 
 session_start();
 $_SESSION["sayfa"] = "hedeflerimiz";
+$_SESSION["title"] ="Hedeflerimiz";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Hedeflerimiz";
 include 'header.php'; ?>
     <main class="page">
         <section class="clean-block features">

@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "labs";
+$_SESSION["title"] ="Laboratuvarlarımız";
+$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Laboratuvarlarımız";
 include 'header.php'; ?>
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
