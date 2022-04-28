@@ -29,9 +29,7 @@ if (in_array($_FILES['file']['type'], $desteklenenformatlar)) {
         } else {
             echo "veritabanına eklenemedi";
         }
-
     }
-
 }
 
 ?>

@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../assets/css/login.css">
     <link href="https://mf.ahievran.edu.tr/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
-
 </head>
-
 <body>
     <section class="login-dark">
         <form method="post" action="adminlogin.php">

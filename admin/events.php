@@ -4,7 +4,6 @@ require_once 'sidebar.php';
 include '../baglanti.php';
 ?>
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -18,10 +17,8 @@ include '../baglanti.php';
                     </ol>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-
-    <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -33,8 +30,6 @@ include '../baglanti.php';
                                 <button style="float:right" class="btn btn-success ">Etkinlik Ekle</button>
                             </a>
                         </div>
-
-                        <!-- /.card-header -->
                         <div class="card-body">
                             <table class="table table-striped projects">
                                 <thead>
@@ -67,7 +62,6 @@ include '../baglanti.php';
                                 $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id ASC";
                                 $result = $db->query($sql);
                                 while ($row = $result->fetch_array()) { ?>
-
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row["etkinlik_id"] ?>.</td>
@@ -79,7 +73,6 @@ include '../baglanti.php';
                                             </td>
                                             <td> <?php echo $row["etkinlik_tarih"]; ?>
                                             </td>
-
                                             <form method="post" action="eventgoruntule.php">
                                                 <td>
                                                     <input type='hidden' name="etkinlik_id" value='<?php echo $row["etkinlik_id"]; ?>'>
@@ -87,14 +80,11 @@ include '../baglanti.php';
                                                     <input type="hidden" name="etkinlik_baslik" value="<?php echo $row["etkinlik_baslik"]; ?>">
                                                     <input type="hidden" name="etkinlik_icerik" value="<?php echo $row["etkinlik_icerik"]; ?>">
                                                     <input type="hidden" name="etkinlik_tarih" value="<?php echo $row["etkinlik_tarih"]; ?>">
-
-
                                                     <button class="btn btn-primary" name="see">
                                                         Görüntüle
                                                     </button>
                                                 </td>
                                             </form>
-
                                             <form method='post' action='events_sil.php'>
                                                 <td>
                                                     <input type='hidden' value='<?php echo $row["etkinlik_id"]; ?>' name='silinecek_id'>
@@ -105,16 +95,14 @@ include '../baglanti.php';
                                             </form>
                                         </tr>
                                     </tbody>
-
                                 <?php } ?>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-    <!-- /.content -->
 </div>
 <?php
 require_once 'footer.php'; ?>

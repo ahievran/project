@@ -5,7 +5,6 @@ include '../baglanti.php';
 ?>
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -19,10 +18,8 @@ include '../baglanti.php';
                     </ol>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-
-    <!-- Main content -->
     <section class="content">
         <div class="card-body">
             <div class="row">
@@ -44,42 +41,35 @@ include '../baglanti.php';
                                         $personel_email = $_POST["personel_email"];
                                         $personel_hakkinda = $_POST["personel_hakkinda"];
                                         $personel_img = $_POST["personel_img"];
-                                        ?>
+                                    ?>
                                         <h2 class="lead"><b><?php echo $personel_ad ?></b></h2>
                                         <ul class="ml-4 fa-ul text-muted">
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-building"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span>
                                                 Fakülte: <?php echo $personel_fakulte ?>
                                             </li>
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-book"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-book"></i></span>
                                                 Bölüm: <?php echo $personel_bolum ?>
                                             </li>
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-door-closed"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-door-closed"></i></span>
                                                 Ofis: <?php echo $personel_ofis ?>
                                             </li>
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-phone"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
                                                 Telefon: <?php echo $personel_telefon ?>
                                             </li>
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-envelope"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span>
                                                 E-Mail: <?php echo $personel_email ?>
                                             </li>
-                                            <li class="large"><span class="fa-li"><i
-                                                            class="fas fa-lg fa-info-circle"></i></span>
+                                            <li class="large"><span class="fa-li"><i class="fas fa-lg fa-info-circle"></i></span>
                                                 Hakkında: <?php echo $personel_hakkinda ?>
                                             </li>
                                         </ul>
                                     <?php } ?>
                                 </div>
                                 <div class="col-4 text-right">
-                                    <img src="../<?php echo $personel_img?>" alt="Personel-Foto" class="img-fluid" width="50%">
+                                    <img src="../<?php echo $personel_img ?>" alt="Personel-Foto" class="img-fluid" width="50%">
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

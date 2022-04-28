@@ -1,4 +1,3 @@
-
 <?php
 require_once '../admin/header.php';
 require_once 'sidebar.php';
@@ -9,9 +8,8 @@ include '../baglanti.php';
     $duyurubaslik = $_POST["duyuruBaslik"];
     $duyuruaciklama = $_POST["duyuruAciklama"];
     $duyurutarih = $_POST["duyuruTarih"];
-    ?>
+?>
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
@@ -27,8 +25,6 @@ include '../baglanti.php';
             </div>
         </section>
         <section class="content">
-
-            <!-- Default box -->
             <div class="card card-solid">
                 <div class="card-body">
                     <div class="row">
@@ -36,7 +32,6 @@ include '../baglanti.php';
                             <div class="col-12">
                                 <img src="<?php echo $resimUrl; ?>" class="product-image" alt="Duyuru Resim">
                             </div>
-
                         </div>
                     </div>
                     <div class="row">
@@ -47,12 +42,8 @@ include '../baglanti.php';
                         </div>
                     </div>
                 </div>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-
         </section>
-        <!-- /.content -->
     </div>
 <?php } else if (isset($_POST["sil"])) {
     $silinecek_id = $_POST["sil_id"];

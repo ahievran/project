@@ -1,40 +1,39 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "index";
-$_SESSION["title"] ="Anasayfa";
-$_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Anasayfa";
+$_SESSION["title"] = "Anasayfa";
+$_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Anasayfa";
 include 'header.php'; ?>
 <main class="page landing-page">
-    <section class="clean-block clean-hero"
-             style="background-image:url(&quot;assets/img/aeummf2.jpg&quot;);color:rgba(0,0,0, 0.3);">
+    <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/aeummf2.jpg&quot;);color:rgba(0,0,0, 0.3);">
         <div class="text">
             <h2 class='animate__animated animate__zoomInDown' id="bolum-uni-yazi">Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği</h2>
             <p class='animate__animated animate__zoomInUp' id="fak-ismi">Mühendislik Mimarlık Fakültesi</p><a href="#hakkinda"><button class="btn btn-outline-light animate__animated animate__fadeInDownBig" id="hakkimizda-buton" type="button">Hakkımızda</button></a>
         </div>
     </section>
     <div class="main-banner header-text" style='margin-top:50px;' id='duyuru'>
-    <section class="call-to-action">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="main-content">
-              <div class="row">
-              <div class="col-md-4">
-                 <img style='width:auto;height:150px;' src='assets/img/pnglogo.png'>
+        <section class="call-to-action">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-content">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img style='width:auto;height:150px;' src='assets/img/pnglogo.png'>
+                                </div>
+                                <div class="col-md-4">
+                                    <span>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</span>
+                                    <h4>Haberler - Etkinlikler - Duyurular</h4>
+                                </div>
+                                <div class="col-md-4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                  <span>Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği</span>
-                  <h4>Haberler - Etkinlikler - Duyurular</h4>
-                </div>
-                <div class="col-md-4">
-                  
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
         <div class="container-fluid">
             <div class="owl-banner owl-carousel" style='padding-top:50px;'>
                 <?php
@@ -48,7 +47,9 @@ include 'header.php'; ?>
                                 <div class="meta-category">
                                     <span><?php echo $row["etkinlik_baslik"]; ?></span>
                                 </div>
-                                <a href="#"><h4><?php echo $row["etkinlik_icerik"]; ?></h4></a>
+                                <a href="#">
+                                    <h4><?php echo $row["etkinlik_icerik"]; ?></h4>
+                                </a>
                                 <ul class="post-info">
                                     <li><a href="#">İlgili Birim</a></li>
                                     <li><a href="#"><?php echo $row["etkinlik_tarih"]; ?></a></li>
@@ -139,8 +140,7 @@ include 'header.php'; ?>
                         uzmanlarının yetiştirilmesidir. ”</p>
                 </div>
                 <div class="col-md-6 feature-box">
-                    <img src="assets/img/siber-guvenlik.jpg"
-                         style="width:100%;height:100%; box-shadow:10px 10px 10px grey;">
+                    <img src="assets/img/siber-guvenlik.jpg" style="width:100%;height:100%; box-shadow:10px 10px 10px grey;">
                 </div>
                 <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
                     <h4>Yazılım ve Robotik Topluluğu</h4>
@@ -151,8 +151,7 @@ include 'header.php'; ?>
                         çalışmaları ile öğrenciler arasında işbirliğini artırmayı amaçlamaktadır. </p>
                 </div>
                 <div class="col-md-6 feature-box">
-                    <img src="assets/img/yazilim-robotik.jpg"
-                         style="width:100%;height:100%;box-shadow:10px 10px 10px grey;">
+                    <img src="assets/img/yazilim-robotik.jpg" style="width:100%;height:100%;box-shadow:10px 10px 10px grey;">
                 </div>
             </div>
         </div>
@@ -160,7 +159,7 @@ include 'header.php'; ?>
     <section class="wrapper container">
         <div class="container-fostrap">
             <div class="row">
-                <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo"/>
+                <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo" />
                 <h1 class="col-md-8 text-info" style="margin-top:4%;">
                     Erasmus & Farabi & Mevlana Değişim Programları
                 </h1>
@@ -170,9 +169,8 @@ include 'header.php'; ?>
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
-                                <a class="img-card"
-                                   href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus">
-                                    <img src="assets/img/erasmus.png"/>
+                                <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus">
+                                    <img src="assets/img/erasmus.png" />
                                 </a>
                                 <div class="card-content">
                                     <h4 class="card-title">
@@ -185,8 +183,7 @@ include 'header.php'; ?>
                                     </p>
                                 </div>
                                 <div class="card-read-more btn-warning">
-                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus"
-                                       class="btn btn-link btn-block text-light">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus" class="btn btn-link btn-block text-light">
                                         Detaylı Bilgi
                                     </a>
                                 </div>
@@ -195,7 +192,7 @@ include 'header.php'; ?>
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
                                 <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim">
-                                    <img src="assets/img/farabi.png"/>
+                                    <img src="assets/img/farabi.png" />
                                 </a>
                                 <div class="card-content">
                                     <h4 class="card-title">
@@ -208,8 +205,7 @@ include 'header.php'; ?>
                                     </p>
                                 </div>
                                 <div class="card-read-more btn-warning">
-                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim"
-                                       class="btn btn-link btn-block text-light">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim" class="btn btn-link btn-block text-light">
                                         Detaylı Bilgi
                                     </a>
                                 </div>
@@ -218,7 +214,7 @@ include 'header.php'; ?>
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
                                 <a class="img-card" href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir">
-                                    <img src="assets/img/mevlana.png"/>
+                                    <img src="assets/img/mevlana.png" />
                                 </a>
                                 <div class="card-content">
                                     <h4 class="card-title">
@@ -230,8 +226,7 @@ include 'header.php'; ?>
                                     </p>
                                 </div>
                                 <div class="card-read-more btn-warning">
-                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir"
-                                       class="btn btn-link btn-block text-light">
+                                    <a href="https://foreignaffairs.ahievran.edu.tr/icerik/nedir" class="btn btn-link btn-block text-light">
                                         Detaylı Bilgi
                                     </a>
                                 </div>
@@ -251,17 +246,11 @@ include 'header.php'; ?>
             </div>
             <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
                 <div class="carousel-inner">
-                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/scenery/image1.jpg"
-                                                           alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image4.jpg"
-                                                    alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image6.jpg"
-                                                    alt="Slide Image"></div>
+                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/scenery/image1.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image4.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image6.jpg" alt="Slide Image"></div>
                 </div>
-                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span
-                                class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a
-                            class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span
-                                class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a>
+                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a>
                 </div>
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
@@ -280,38 +269,29 @@ include 'header.php'; ?>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-4">
-                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
-                                                                  src="assets/img/avatars/avatar1.jpg">
+                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar1.jpg">
                         <div class="card-body info">
                             <h4 class="card-title">John Smith</h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
-                                            class="icon-social-instagram"></i></a><a href="#"><i
-                                            class="icon-social-twitter"></i></a></div>
+                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
-                                                                  src="assets/img/avatars/avatar2.jpg">
+                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg">
                         <div class="card-body info">
                             <h4 class="card-title">Robert Downturn</h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
-                                            class="icon-social-instagram"></i></a><a href="#"><i
-                                            class="icon-social-twitter"></i></a></div>
+                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
-                                                                  src="assets/img/avatars/avatar3.jpg">
+                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar3.jpg">
                         <div class="card-body info">
                             <h4 class="card-title">Ally Sanders</h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
-                                            class="icon-social-instagram"></i></a><a href="#"><i
-                                            class="icon-social-twitter"></i></a></div>
+                            <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -324,4 +304,3 @@ include 'header.php'; ?>
 <script src="assets/js/owl.js"></script>
 <?php
 include 'footer.php'; ?>
-    

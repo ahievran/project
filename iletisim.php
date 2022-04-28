@@ -4,8 +4,6 @@ $_SESSION["sayfa"] = "iletisim";
 $_SESSION["title"] ="İletişim Formu";
 $_SESSION["description"] ="Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği İletişim Formu";
 include 'header.php'; ?>
-
-
     <main class="page contact-us-page">
         <section class="clean-block clean-form">
             <section class="clean-block about-us">

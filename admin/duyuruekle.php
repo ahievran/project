@@ -20,61 +20,43 @@ include '../baglanti.php';
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
     </section>
-
-       <!-- Main content -->
-       
-       <?php
-
-if(isset($_POST["submit"])){
-   
-
-    $targetDir = "../admin/uploads/duyuru/";
-    $fileName = basename($_FILES["file"]["name"]);
-    $yuklenecekResim = "admin/uploads/duyuru/".$fileName;
-    $targetFilePath = $targetDir . $fileName;
-    $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-
-    $duyurubaslik = $_POST["duyuruBaslik"];
-    $duyuruaciklama = $_POST["duyuruAciklama"];
-   
-    $tarihsaat=date("Y-m-d h:i:s");
-    
-    // Allow certain file formats
-  
-    
-        // Upload file to server
-        if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
-            // Insert image file name into database
-            $insert = $db->query("INSERT INTO duyuru(duyuru_baslik,duyuru_tarih, duyuru_aciklama, duyuru_resim) VALUES('$duyurubaslik', '$tarihsaat','$duyuruaciklama', '".$yuklenecekResim."')");
-            if($insert){
+    <?php
+    if (isset($_POST["submit"])) {
+        $targetDir = "../admin/uploads/duyuru/";
+        $fileName = basename($_FILES["file"]["name"]);
+        $yuklenecekResim = "admin/uploads/duyuru/" . $fileName;
+        $targetFilePath = $targetDir . $fileName;
+        $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+        $duyurubaslik = $_POST["duyuruBaslik"];
+        $duyuruaciklama = $_POST["duyuruAciklama"];
+        $tarihsaat = date("Y-m-d h:i:s");
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+            $insert = $db->query("INSERT INTO duyuru(duyuru_baslik,duyuru_tarih, duyuru_aciklama, duyuru_resim) VALUES('$duyurubaslik', '$tarihsaat','$duyuruaciklama', '" . $yuklenecekResim . "')");
+            if ($insert) {
                 echo '<script type="text/javascript">alert("Duyuru Gönderildi");</script>';
                 echo '<meta http-equiv="refresh" content="0;URL=duyuru.php">';
-            }else{
+            } else {
                 echo '<script type="text/javascript">alert("Duyuru Gönderilmedi");</script>';
                 echo '<meta http-equiv="refresh" content="0;URL=duyuru.php">';
             }
-        }else{
+        } else {
             $insert = $db->query("INSERT INTO duyuru(duyuru_baslik,duyuru_tarih, duyuru_aciklama) VALUES('$duyurubaslik', '$tarihsaat','$duyuruaciklama')");
-            if($insert){
+            if ($insert) {
                 echo '<script type="text/javascript">alert("Duyuru Gönderildi");</script>';
                 echo '<meta http-equiv="refresh" content="0;URL=duyuru.php">';
-            }else{
+            } else {
                 echo '<script type="text/javascript">alert("Duyuru Gönderilmedi");</script>';
                 echo '<meta http-equiv="refresh" content="0;URL=duyuru.php">';
             }
         }
     }
-
-?>
+    ?>
     <section class="content">
         <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Duyurular</h3>
             </div>
-            <!-- /.card-header -->
-            <!-- form start -->
             <form method="POST" action="duyuruekle.php" enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
@@ -85,7 +67,6 @@ if(isset($_POST["submit"])){
                         <label for="duyuruaciklama">Duyuru Açıklama</label>
                         <textarea type="text" class="form-control" name="duyuruAciklama" placeholder="Duyuru Açıklama"></textarea>
                     </div>
-                    
                     <div class="form-group">
                         <label for="lablife">Duyuru Resim</label>
                         <div class="input-group">
@@ -99,8 +80,6 @@ if(isset($_POST["submit"])){
                         </div>
                     </div>
                 </div>
-                <!-- /.card-body -->
-
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary" name="submit">Kaydet</button>
                 </div>

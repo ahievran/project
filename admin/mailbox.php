@@ -3,9 +3,7 @@ require_once '../admin/header.php';
 require_once 'sidebar.php';
 include '../baglanti.php';
 ?>
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
@@ -19,10 +17,8 @@ include '../baglanti.php';
                         </ol>
                     </div>
                 </div>
-            </div><!-- /.container-fluid -->
+            </div>
         </section>
-
-        <!-- Main content -->
         <section class="content">
             <div class="row">
                 <!-- /.col -->
@@ -41,18 +37,14 @@ include '../baglanti.php';
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.card-tools -->
                         </div>
-                        <!-- /.card-header -->
                         <div class="card-body p-0">
                             <div class="mailbox-controls">
-                                <!-- Check all button -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-sm">
                                         <i class="far fa-trash-alt"></i>
                                     </button>
                                 </div>
-                                <!-- /.btn-group -->
                                 <button type="button" class="btn btn-default btn-sm">
                                     <i class="fas fa-sync-alt"></i>
                                 </button>
@@ -90,20 +82,15 @@ include '../baglanti.php';
                                         <?php } ?>
                                         </tbody>
                                     </table>
-                                    <!-- /.table -->
                                 </div>
-                                <!-- /.mail-box-messages -->
                             </div>
-                            <!-- /.card-body -->
                             <div class="card-footer p-0">
                                 <div class="mailbox-controls">
-                                    <!-- Check all button -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default btn-sm">
                                             <i class="far fa-trash-alt"></i>
                                         </button>
                                     </div>
-                                    <!-- /.btn-group -->
                                     <button type="button" class="btn btn-default btn-sm">
                                         <i class="fas fa-sync-alt"></i>
                                     </button>
@@ -117,21 +104,14 @@ include '../baglanti.php';
                                                 <i class="fas fa-chevron-right"></i>
                                             </button>
                                         </div>
-                                        <!-- /.btn-group -->
                                     </div>
-                                    <!-- /.float-right -->
                                 </div>
                             </div>
                         </div>
-                        <!-- /.card -->
                     </div>
-                    <!-- /.col -->
                 </div>
-                <!-- /.row -->
         </section>
-        <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
 <?php
 require_once 'footer.php';
 ?>

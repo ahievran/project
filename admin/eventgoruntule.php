@@ -5,7 +5,6 @@ include '../baglanti.php';
 ?>
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -21,8 +20,6 @@ include '../baglanti.php';
         </div>
     </section>
     <section class="content">
-
-        <!-- Default box -->
         <div class="card card-solid">
             <div class="card-body">
                 <div class="row">
@@ -34,26 +31,20 @@ include '../baglanti.php';
                             $etkinlik_tarih = $_POST["etkinlik_tarih"];
                         ?>
                             <div class="col-12">
-                                <img src="<?php echo $etkinlik_resim?>" class="product-image" alt="Laboratuvar Resim">
-
+                                <img src="<?php echo $etkinlik_resim ?>" class="product-image" alt="Laboratuvar Resim">
                             </div>
                     </div>
                     <div class="col-1">
-
                     </div>
                     <div class="col-6">
-                        <h3 class="my-3">Etkinlik Adı: <?php echo $etkinlik_baslik?></h3>
-                        <p>Etkinlik Açıklaması: <?php echo $etkinlik_icerik?></p>
-                        <p>Etkinlik Tarihi: <?php echo $etkinlik_tarih?></p>
+                        <h3 class="my-3">Etkinlik Adı: <?php echo $etkinlik_baslik ?></h3>
+                        <p>Etkinlik Açıklaması: <?php echo $etkinlik_icerik ?></p>
+                        <p>Etkinlik Tarihi: <?php echo $etkinlik_tarih ?></p>
                     </div>
                 <?php } ?>
                 </div>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-
     </section>
-    <!-- /.content -->
 </div>
 
 <?php require_once 'footer.php'; ?>

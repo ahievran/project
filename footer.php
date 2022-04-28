@@ -48,74 +48,38 @@
                         <h4 class='menuyazilari'>Bilgi Sistemleri</h4>
                         <hr class='hrs'>
                         <ul class="level-1">
-                            <li class="item-121"><a href="https://obs.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Öğrenci Bilgi Sistemi</a></li>
-                            <li class="item-109"><a href="https://akademik.ahievran.edu.tr/birimler" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Akademik Web Sayfaları</a></li>
-                            <li class="item-115"><a href="http://etkinlik.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Etkinlik Bilgi Sistemi</a></li>
-                            <li class="item-118"><a href="https://ebys.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Elektronik Belge Yönetim Sistemi</a></li>
-                            <li class="item-410"><a href="https://bybs.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Bütünleşik Yönetim Bilgi Sistemi</a></li>
-                            <li class="item-376"><a href="https://ekders.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Ek Ders Otomasyonu</a></li>
-                            <li class="item-379"><a href="https://ihale.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">İhale Bilgi Sistemi</a></li>
-                            <li class="item-111"><a href="https://obs.ahievran.edu.tr/oibs/bologna" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Bologna Bilgi Paketi</a></li>
+                            <li class="item-121"><a href="https://obs.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Öğrenci Bilgi Sistemi</a></li>
+                            <li class="item-109"><a href="https://akademik.ahievran.edu.tr/birimler" target="_blank" class='menuyazilari' rel="noopener noreferrer">Akademik Web Sayfaları</a></li>
+                            <li class="item-115"><a href="http://etkinlik.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Etkinlik Bilgi Sistemi</a></li>
+                            <li class="item-118"><a href="https://ebys.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Elektronik Belge Yönetim Sistemi</a></li>
+                            <li class="item-410"><a href="https://bybs.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Bütünleşik Yönetim Bilgi Sistemi</a></li>
+                            <li class="item-376"><a href="https://ekders.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Ek Ders Otomasyonu</a></li>
+                            <li class="item-379"><a href="https://ihale.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">İhale Bilgi Sistemi</a></li>
+                            <li class="item-111"><a href="https://obs.ahievran.edu.tr/oibs/bologna" target="_blank" class='menuyazilari' rel="noopener noreferrer">Bologna Bilgi Paketi</a></li>
                         </ul>
                     </li>
                     <li class="item-157 deeper parent  col-md-3">
                         <h4 class='menuyazilari' style='text-align:center;'>Birimler</h4>
                         <hr class='hrs'>
                         <ul class="level-1" style='text-align:center;'>
-                            <li class="item-110"><a href="http://bap.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">BAP Koordinatörlüğü</a></li>
-                            <li class="item-368"><a href="https://mf.ahievran.edu.tr/birimler/bilgi-edinme-birimi"
-                                                    class='menuyazilari'>Bilgi
+                            <li class="item-110"><a href="http://bap.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">BAP Koordinatörlüğü</a></li>
+                            <li class="item-368"><a href="https://mf.ahievran.edu.tr/birimler/bilgi-edinme-birimi" class='menuyazilari'>Bilgi
                                     Edinme Birimi</a></li>
-                            <li class="item-113"><a href="https://eob.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Engelsiz Öğrenci Birimi</a></li>
-                            <li class="item-114"><a href="https://foreignaffairs.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Erasmus - Dış İlişkiler Ofisi</a></li>
-                            <li class="item-117"><a href="https://kalite.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Kalite Koordinatörlüğü</a></li>
-                            <li class="item-481"><a href="https://pilottarim.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Pilot Üniversite Tarım ve Jeotermal
+                            <li class="item-113"><a href="https://eob.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Engelsiz Öğrenci Birimi</a></li>
+                            <li class="item-114"><a href="https://foreignaffairs.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Erasmus - Dış İlişkiler Ofisi</a></li>
+                            <li class="item-117"><a href="https://kalite.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Kalite Koordinatörlüğü</a></li>
+                            <li class="item-481"><a href="https://pilottarim.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Pilot Üniversite Tarım ve Jeotermal
                                     Koordinatörlüğü</a>
                             </li>
-                            <li class="item-433"><a href="https://pilotsaglik.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Pilot Üniversite Sağlık
+                            <li class="item-433"><a href="https://pilotsaglik.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Pilot Üniversite Sağlık
                                     Koordinatörlüğü</a></li>
-                            <li class="item-407"><a class='menuyazilari'
-                                                    href="https://mf.ahievran.edu.tr/birimler/kongre-ve-kultur-merkezi">Kongre
+                            <li class="item-407"><a class='menuyazilari' href="https://mf.ahievran.edu.tr/birimler/kongre-ve-kultur-merkezi">Kongre
                                     ve Kültür
                                     Merkezi</a></li>
-                            <li class="item-122"><a href="https://formasyon.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Pedagojik Formasyon Birimi</a></li>
-                            <li class="item-446"><a href="https://ekgsk.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">Eğitimde Kalite Güvence Sistemi
+                            <li class="item-122"><a href="https://formasyon.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Pedagojik Formasyon Birimi</a></li>
+                            <li class="item-446"><a href="https://ekgsk.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">Eğitimde Kalite Güvence Sistemi
                                     Koordinatörlüğü</a></li>
-                            <li class="item-459"><a href="https://ylsy.ahievran.edu.tr/" target="_blank"
-                                                    class='menuyazilari'
-                                                    rel="noopener noreferrer">YLSY Burs Programı Koordinatörlüğü</a>
+                            <li class="item-459"><a href="https://ylsy.ahievran.edu.tr/" target="_blank" class='menuyazilari' rel="noopener noreferrer">YLSY Burs Programı Koordinatörlüğü</a>
                             </li>
                         </ul>
                     </li>
@@ -183,6 +147,7 @@
                             </li>
                         </ul>
                     </li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -192,28 +157,28 @@
                 <hr class='hrs'>
                 <table style="font-size: 0.8rem; width: 100%;">
                     <tbody>
-                    <tr>
-                        <td>Telefon</td>
-                        <td>:</td>
-                        <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 00</a></td>
-                    </tr>
-                    <tr>
-                        <td>Fax</td>
-                        <td>:</td>
-                        <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 01</a></td>
-                    </tr>
-                    <tr>
-                        <td>E-posta</td>
-                        <td>:</td>
-                        <td style="font-weight: lighter;"><a href="mailto:MMF@ahievran.edu.tr">MMF@ahievran.edu.tr</a></td>
-                    </tr>
-                    <tr>
-                        <td>Adres</td>
-                        <td>:</td>
-                        <td style="font-weight: lighter;">Mühendislik-Mimarlık Fakültesi, Bağbaşı
-                            Yerleşkesi, KIRŞEHİR
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Telefon</td>
+                            <td>:</td>
+                            <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 00</a></td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>:</td>
+                            <td style="font-weight: lighter;"><a href="tel:+903862803800">+90&nbsp;386 280 38 01</a></td>
+                        </tr>
+                        <tr>
+                            <td>E-posta</td>
+                            <td>:</td>
+                            <td style="font-weight: lighter;"><a href="mailto:MMF@ahievran.edu.tr">MMF@ahievran.edu.tr</a></td>
+                        </tr>
+                        <tr>
+                            <td>Adres</td>
+                            <td>:</td>
+                            <td style="font-weight: lighter;">Mühendislik-Mimarlık Fakültesi, Bağbaşı
+                                Yerleşkesi, KIRŞEHİR
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -225,14 +190,10 @@
             <div class="text-uppercase menuyazilari">Sosyal Medya</div>
             <hr class='hrs'>
             <div class="borderT h-100 d-flex py-2 py-md-0 align-items-center justify-content-md-end">
-                <a href="https://www.instagram.com/ahievranedutr" target="_blank" rel="noopener"
-                   class="fa fa-instagram col-lg-auto text-center"></a>
-                <a href="https://www.youtube.com/ahievranedutr" target="_blank" rel="noopener"
-                   class="fa fa-youtube col-lg-auto text-center"></a>
-                <a href="https://twitter.com/ahievranedutr" target="_blank" rel="noopener"
-                   class="fa fa-twitter col-lg-auto text-center"></a>
-                <a href="https://www.facebook.com/ahievranedutr" target="_blank" rel="noopener"
-                   class="fa fa-facebook col-lg-auto text-center"></a>
+                <a href="https://www.instagram.com/ahievranedutr" target="_blank" rel="noopener" class="fa fa-instagram col-lg-auto text-center"></a>
+                <a href="https://www.youtube.com/ahievranedutr" target="_blank" rel="noopener" class="fa fa-youtube col-lg-auto text-center"></a>
+                <a href="https://twitter.com/ahievranedutr" target="_blank" rel="noopener" class="fa fa-twitter col-lg-auto text-center"></a>
+                <a href="https://www.facebook.com/ahievranedutr" target="_blank" rel="noopener" class="fa fa-facebook col-lg-auto text-center"></a>
             </div>
         </div>
     </div>
