@@ -39,9 +39,6 @@ include '../baglanti.php';
                                             #
                                         </th>
                                         <th>
-                                            Resim
-                                        </th>
-                                        <th>
                                             İsim Soyisim
                                         </th>
                                         <th>
@@ -64,9 +61,6 @@ include '../baglanti.php';
                                         <tr>
                                             <td>
                                                 <?php echo $row["personel_id"] ?>.
-                                            </td>
-                                            <td>
-                                                <img src="" alt="">
                                             </td>
                                             <td>
                                                 <?php echo $row["personel_isim_soyisim"]; ?></td>
