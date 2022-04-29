@@ -66,7 +66,15 @@ include '../baglanti.php';
                                     <?php } ?>
                                 </div>
                                 <div class="col-4 text-right">
-                                    <img src="../<?php echo $personel_img ?>" alt="Personel-Foto" class="img-fluid" width="50%">
+                                    <div class="container"><img src="../<?php echo $personel_img ?>" alt="Personel-Foto" class="img-fluid" width="50%"></div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <a href="personelduzenle.php">
+                                        <button class="btn btn-primary">Düzenle</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
