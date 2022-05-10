@@ -97,6 +97,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="programlar.php" class="nav-link">
+                        <i class="nav-icon fas fa-right-left"></i>
+                        <p>
+                            Programlar
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="iletisim.php" class="nav-link">
                         <i class="nav-icon fas fa-address-book"></i>
                         <p>
