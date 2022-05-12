@@ -41,7 +41,7 @@ include '../baglanti.php';
     if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
         $statusMsg = '';
 
-        $targetDir = "admin/uploads/events/";
+        $targetDir = "../admin/uploads/events/";
         $fileName = basename($_FILES["file"]["name"]);
         $targetFilePath = $targetDir . $fileName;
         $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);

@@ -36,7 +36,7 @@ include 'header.php'; ?>
                 <div class="col-lg-6 animate__animated animate__zoomIn">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
+                      <img src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
                     </div>
                     <div class="down-content">
                       <span>Kırşehir Ahi Evran Üniversitesi</span>
