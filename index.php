@@ -52,7 +52,7 @@ include 'header.php'; ?>
                                 <div class="meta-category">
                                     <span><?php echo $row["etkinlik_baslik"]; ?></span>
                                 </div>
-                                <a href="#">
+                                <a href="<?php echo $row["etkinlik_link"]?>" target="_blank">
                                     <h4><?php echo $row["etkinlik_icerik"]; ?></h4>
                                 </a>
                                 <ul class="post-info">

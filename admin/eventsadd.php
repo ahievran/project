@@ -49,6 +49,7 @@ include '../baglanti.php';
         $ad = $_POST["ad"];
         $icerik = $_POST["icerik"];
         $date = $_POST["date"];
+        $link =$_POST['link'];
 
         // Allow certain file formats
         $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
@@ -56,7 +57,7 @@ include '../baglanti.php';
             // Upload file to server
             if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
                 // Insert image file name into database
-                $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$targetFilePath    ')");
+                $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_link,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$link','$targetFilePath    ')");
                 if ($insert) {
                     echo '<script type ="text/JavaScript">';
                     echo 'alert("Veritabanına eklendi")';
@@ -104,6 +105,10 @@ include '../baglanti.php';
                                 <div class="form-group">
                                     <label for="tarih">Etkinlik Tarihi</label>
                                     <input type="date" class="form-control" id="start" name="date" value="01-01-2022" min="01-01-1990" max="01-01-2099" placeholder="Etkinlik Tarihi Giriniz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="link">Etkinlik Link</label>
+                                    <input type="text" class="form-control" id="link" name="link" placeholder="Etkinlik Linki Giriniz">
                                 </div>
                                 <div class="form-group">
                                     <label for="gorsel">Etkinlik Görsel</label>
