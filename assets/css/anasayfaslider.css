@@ -50,20 +50,21 @@ h1,h2,h3,h4,h5,h6 {
 .owl-banner .item .item-content h4 {
 	font-size: 24px;
 	font-weight: 900;
-	color: #fff;
+	color: #190c90;
 	letter-spacing: 0.5px;
 	text-transform: capitalize;
 	margin: 10px 0px 12px 0px;
 }
 
 .owl-banner .item .item-content ul li {
+	color: #f48840;
 	display: inline-block;
 	margin-right: 8px;
 }
 
 .owl-banner .item .item-content ul li:after {
 	content: '|';
-	color: #fff;
+	color: black;
 	margin-left: 8px;
 }
 
@@ -73,13 +74,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .owl-banner .item .item-content ul li a {
 	font-size: 14px;
-	color: #fff;
-	font-weight: 500;
+	color: #190c90;
+	font-weight: 700;
 	transition: all .3s;
 }
 
 .owl-banner .item .item-content ul li a:hover {
-	color: #f48840;
+	color:black;
 }
 
 .owl-banner .owl-nav {
