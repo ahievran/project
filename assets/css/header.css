@@ -1,93 +1,84 @@
-#navbar
-{
-    box-shadow: 7px 7px 7px #5e5e5e;
-    background-color: #ffffff;
+#navbar {
+  box-shadow: 7px 7px 7px #5e5e5e;
+  background-color: #ffffff;
 }
-#ul
-{
-    padding-right: 10px;
+#ul {
+  padding-right: 10px;
 }
-#ul .nav-item .nav-link
-{
-    text-transform: capitalize;
-    font-size: 14px;
-    color: #070068;
-    font-weight: 500;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+#ul .nav-item .nav-link {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #070068;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#ul .nav-item
-{
-    text-align: center;
-    padding-left:7px;
-    padding-right: 7px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    width: max-content;
-
+#ul .nav-item {
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: max-content;
 }
-#ul .nav-item .nav-link:hover
-{
-    font-size: 14.1px;
-    color: #c78802;
-    font-style: inherit;
+#ul .nav-item .nav-link:hover {
+  font-size: 14.1px;
+  color: #c78802;
+  font-style: inherit;
 }
-#logo-sag-yazi1
-{
-    font-size: 17px;
-    font-family: sans-serif;
-   color: #c78802;
+#logo-sag-yazi1 {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #c78802;
 }
-#logo-sag-yazi2
-{
-    font-size: 14px;
-    font-family:sans-serif;
-    font-style: italic;
-   color: #00a508;
+#logo-sag-yazi2 {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-style: italic;
+  color: #00a508;
 }
-.col
-{
-    padding: 0px;
-    float: left;
+.col {
+  padding: 0px;
+  float: left;
 }
-#logo
-{
-    width: 57px;
-    margin-right: 20px;
+#logo {
+  width: 57px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    #logo
-    {
-        width: 40px;
-        margin-right: 2px;
-    }
-    #logo-sag-yazi1
-{
+  #logo {
+    width: 40px;
+    margin-right: 2px;
+  }
+  #logo-sag-yazi1 {
     font-size: 14px;
-}
-#logo-sag-yazi2
-{
+  }
+  #logo-sag-yazi2 {
     font-size: 12px;
-    
- }
-
+  }
 }
-#yuklenmelogo{
-    width: auto;
-    height: auto;
+#yuklenmelogo {
+  width: auto;
+  height: auto;
 }
 
 #ul .nav-item .active {
-    font-size: 14.1px;
-    color: #c78802;
-    
+  font-size: 14.1px;
+  color: #c78802;
 }
-#ul .active{
-    font-size: 14.1px;
-    color: #c78802;
-    font-style: inherit;
-    border:solid 1px  rgba(241, 241, 241, 0.947);
-    background-color: rgba(241, 241, 241, 0.947);
-    border-radius: 10px 10px 10px 10px;
+#ul .active {
+  font-size: 14.1px;
+  color: #c78802;
+  font-style: inherit;
+  border: solid 1px rgba(241, 241, 241, 0.947);
+  background-color: rgba(241, 241, 241, 0.947);
+  border-radius: 10px 10px 10px 10px;
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
