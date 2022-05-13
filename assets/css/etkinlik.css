@@ -4,18 +4,21 @@
 
 .blog-posts .blog-post {
 	margin-bottom: 30px;
+	padding-top: 50px;	border-top: 4px solid #eee;
+	border-right: 4px solid #eee;
+	border-left: 4px solid #eee;
+	border-bottom:4px solid #eee;
 }
-
+.blog-post .blog-thumb{
+	text-align: center;
+}
 .blog-posts .blog-thumb img {
-	width: 100%;
+	width: 40%;
 	overflow: hidden;
 }
 
 .blog-posts .down-content {
 	padding: 40px;
-	border-right: 1px solid #eee;
-	border-left: 1px solid #eee;
-	border-bottom: 1px solid #eee;
 }
 
 .blog-posts .down-content span {
