@@ -8,7 +8,7 @@ include '../baglanti.php';
     $duyurubaslik = $_POST["duyuruBaslik"];
     $duyuruaciklama = $_POST["duyuruAciklama"];
     $duyurutarih = $_POST["duyuruTarih"];
-?>
+    ?>
     <div class="content-wrapper">
         <section class="content-header">
             <div class="container-fluid">

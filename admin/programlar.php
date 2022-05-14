@@ -43,7 +43,7 @@ include '../baglanti.php';
                                             Resim
                                         </th>
                                         <th>
-                                        Program Adı
+                                            Program Adı
                                         </th>
                                         <th >
                                             Açıklama
@@ -69,7 +69,7 @@ include '../baglanti.php';
                                                 </td>
                                                 <td><?php echo $row["program_ad"]; ?></td>
                                                 <td>
-                                                   <?php echo $row["program_aciklama"]?> 
+                                                    <?php echo $row["program_aciklama"]?>
                                                 </td>
                                                 <td>
                                                     <?php echo $row["program_link"];?>

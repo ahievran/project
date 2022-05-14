@@ -7,7 +7,7 @@ include '../baglanti.php';
     $resimUrl = $_POST["goruntulencek_resim"];
     $labAdi = $_POST["labAdi"];
     $labAciklama = $_POST["labAciklama"];
-?>
+    ?>
     <div class="content-wrapper">
         <section class="content-header">
             <div class="container-fluid">

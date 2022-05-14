@@ -20,12 +20,12 @@ include '../baglanti.php';
                 </div>
             </div><!-- /.container-fluid -->
         </section>
-<?php if (isset($_POST["see"])) {
-    $hedef_id = $_POST["hedef_id"];
-    $hedef_baslik = $_POST["hedef_baslik"];
-    $hedef_icerik = $_POST["hedef_icerik"];
-    $hedef_icon = $_POST["hedef_icon"];
-    ?>
+        <?php if (isset($_POST["see"])) {
+        $hedef_id = $_POST["hedef_id"];
+        $hedef_baslik = $_POST["hedef_baslik"];
+        $hedef_icerik = $_POST["hedef_icerik"];
+        $hedef_icon = $_POST["hedef_icon"];
+        ?>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -51,16 +51,16 @@ include '../baglanti.php';
                                             </div>
                                         </div>
                                     </div>
-<!--                                    <div class="card-footer">-->
-<!--                                        <div class="text-right">-->
-<!--                                            <a href="#" class="btn btn-sm bg-teal">-->
-<!--                                                <i class="fas fa-comments"></i>-->
-<!--                                            </a>-->
-<!--                                            <a href="#" class="btn btn-sm btn-primary">-->
-<!--                                                <i class="fas fa-user"></i> View Profile-->
-<!--                                            </a>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
+                                    <!--                                    <div class="card-footer">-->
+                                    <!--                                        <div class="text-right">-->
+                                    <!--                                            <a href="#" class="btn btn-sm bg-teal">-->
+                                    <!--                                                <i class="fas fa-comments"></i>-->
+                                    <!--                                            </a>-->
+                                    <!--                                            <a href="#" class="btn btn-sm btn-primary">-->
+                                    <!--                                                <i class="fas fa-user"></i> View Profile-->
+                                    <!--                                            </a>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
                                 </div>
                             </div>
                             <?php } ?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 ob_start();
 session_start();
 include 'connection.php';
@@ -13,7 +13,7 @@ if(isset($_POST['admin_login'])){
         'kadi' =>$adminkadi,
         'sifre' =>$adminsifre
     ));
-    
+
     $say=$kullanicisor->rowCount();
     if($say==1){
         $_SESSION['admin_kadi']=$adminkadi;
