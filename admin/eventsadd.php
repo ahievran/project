@@ -48,6 +48,7 @@ include '../baglanti.php';
 
         $ad = $_POST["ad"];
         $icerik = $_POST["icerik"];
+        $text=$_POST["text"];
         $date = $_POST["date"];
         $link =$_POST['link'];
 
@@ -57,7 +58,7 @@ include '../baglanti.php';
             // Upload file to server
             if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
                 // Insert image file name into database
-                $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_link,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$link','$targetFilePath    ')");
+                $insert = $db->query("INSERT INTO etkinlikler(etkinlik_baslik, etkinlik_icerik, etkinlik_tarih,etkinlik_text,etkinlik_link,etkinlik_resim) VALUES('$ad', '$icerik', '$date','$text','$link','$targetFilePath    ')");
                 if ($insert) {
                     echo '<script type ="text/JavaScript">';
                     echo 'alert("Veritabanına eklendi")';
@@ -109,6 +110,10 @@ include '../baglanti.php';
                                 <div class="form-group">
                                     <label for="link">Etkinlik Link</label>
                                     <input type="text" class="form-control" id="link" name="link" placeholder="Etkinlik Linki Giriniz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text">Etkinlik Text</label>
+                                    <textarea name="text" id="editor1" class="ckeditor"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="gorsel">Etkinlik Görsel</label>
