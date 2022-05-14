@@ -192,30 +192,30 @@ include 'header.php'; ?>
                             $sql = "SELECT * FROM programlar order by program_id";
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) { ?>
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="card">
-                                    <a class="img-card" href="<?php echo $row['program_link'] ?>">
-                                        <img src="admin/<?php echo $row['program_img'] ?>">
-                                    </a>
-                                    <div class="card-content">
-                                        <h4 class="card-title">
-                                            <a href="<?php echo $row['program_link'] ?>">
-                                                <?php echo $row['program_ad'] ?>
-                                            </a>
-                                        </h4>
-                                        <p class="">
-                                            <?php echo $row['program_aciklama'] ?>
-                                        </p>
-                                    </div>
-                                    <div class="card-read-more btn-warning">
-                                        <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus" class="btn btn-link btn-block text-light">
-                                            Detaylı Bilgi
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="card">
+                                        <a class="img-card" href="<?php echo $row['program_link'] ?>">
+                                            <img src="admin/<?php echo $row['program_img'] ?>">
                                         </a>
+                                        <div class="card-content">
+                                            <h4 class="card-title">
+                                                <a href="<?php echo $row['program_link'] ?>">
+                                                    <?php echo $row['program_ad'] ?>
+                                                </a>
+                                            </h4>
+                                            <p class="">
+                                                <?php echo $row['program_aciklama'] ?>
+                                            </p>
+                                        </div>
+                                        <div class="card-read-more btn-warning">
+                                            <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus" class="btn btn-link btn-block text-light">
+                                                Detaylı Bilgi
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            <?php } ?>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             </div>
