@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://mf.ahievran.edu.tr/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assets/js/navbar.js"></script>
+    
 
 
 
@@ -42,7 +42,7 @@
         </div>
     </div>
     <?php include 'baglanti.php'; ?>
-    <nav class="autohide navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" id="navbar">
         <div class="container-fluid">
             <img class='animate__animated animate__fadeInBottomRight' src="assets/img/pnglogo.png" id="logo">
             <div class="col-sm-3">

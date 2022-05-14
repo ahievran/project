@@ -45,6 +45,9 @@ if ($say == 0) {
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+    <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed">

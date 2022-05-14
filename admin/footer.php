@@ -48,6 +48,9 @@
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
+
+<script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
 </body>
 
 </html>
