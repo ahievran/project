@@ -221,7 +221,7 @@ include 'header.php'; ?>
         </div>
     </section>
 </main>
-<script src="assets/vendor/jquery/jquery.min.js"></script>
+
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/owl.js"></script>
 <?php
