@@ -36,7 +36,7 @@ include 'header.php'; ?>
                                             <div class="col-lg-6 animate__animated animate__zoomIn">
                                                 <div class="blog-post">
                                                     <div class="blog-thumb">
-                                                        <img src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
+                                                        <img src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi"style="min-width: 300px;max-width: 300px">
                                                     </div>
                                                     <div class="down-content">
                                                         <span>Kırşehir Ahi Evran Üniversitesi</span>
@@ -48,7 +48,7 @@ include 'header.php'; ?>
                                                             <li><?php echo $row["etkinlik_tarih"]; ?></li>
                                                         </ul>
                                                         <p><?php echo $row["etkinlik_icerik"]; ?></p>
-                                                        <form action="event-detail.php">
+                                                        <form action="event-detail.php" method="post">
                                                             <div class="post-options">
                                                                 <div class='row'>
                                                                     <div class="col-lg-12">
@@ -60,12 +60,13 @@ include 'header.php'; ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <input type="hidden" name="event_id" value="<?php echo $row["etkinlik_id"] ?>">
-                                                            <input type="hidden" name="event_baslik" value="<?php echo $row["etkinlik_baslik"] ?>">
-                                                            <input type="hidden" name="event_icerik" value="<?php echo $row["etkinlik_icerik"] ?>">
-                                                            <input type="hidden" name="event_text" value="<?php echo $row["etkinlik_text"] ?>">
-                                                            <input type="hidden" name="event_img" value="<?php echo $row["etkinlik_resim"] ?>">
-                                                            <input type="hidden" name="event_link" value="<?php echo $row["etkinlik_link"] ?>">
+                                                            <input type="hidden" name="etkinlik_id" value='<?php echo $row["etkinlik_id"] ?>'>
+                                                            <input type="hidden" name="etkinlik_baslik" value='<?php echo $row["etkinlik_baslik"] ?>'>
+                                                            <input type="hidden" name="etkinlik_icerik" value='<?php echo $row["etkinlik_icerik"] ?>'>
+                                                            <input type="hidden" name="etkinlik_text" value='<?php echo $row["etkinlik_text"] ?>'>
+                                                            <input type="hidden" name="etkinlik_resim" value='<?php echo $row["etkinlik_resim"] ?>'>
+                                                            <input type="hidden" name="etkinlik_link" value='<?php echo $row["etkinlik_link"] ?>'>
+                                                            <input type="hidden" name="etkinlik_tarih" value='<?php echo $row["etkinlik_tarih"]?>'>
                                                         </form>
                                                     </div>
                                                 </div>
