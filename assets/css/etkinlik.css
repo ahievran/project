@@ -71,8 +71,10 @@
     letter-spacing: 0.25px;
 }
 
-.blog-posts .down-content .event-text {
+.event-text {
     word-break: break-word;
+    max-width: 70%;
+    border: transparent;
 }
 
 .grid-system .down-content ul.post-info li {
@@ -103,6 +105,12 @@
     margin: 25px 0px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+.blog-posts .down-content .event-text p{
+    padding: 25px 0px;
+    margin: 25px 0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .blog-posts .down-content ul.post-share {
