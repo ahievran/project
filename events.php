@@ -60,18 +60,26 @@ include 'header.php'; ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <input type="hidden" name="event_id" value="<?php echo $row["etkinlik_id"]?>">
-                                                            <input type="hidden" name="event_baslik" value="<?php echo $row["etkinlik_baslik"]?>">
-                                                            <input type="hidden" name="event_icerik" value="<?php echo $row["etkinlik_icerik"]?>">
-                                                            <input type="hidden" name="event_text" value="<?php echo $row["etkinlik_text"]?>">
-                                                            <input type="hidden" name="event_img" value="<?php echo $row["etkinlik_resim"]?>">
-                                                            <input type="hidden" name="event_link" value="<?php echo $row["etkinlik_link"]?>">
+                                                            <input type="hidden" name="event_id" value="<?php echo $row["etkinlik_id"] ?>">
+                                                            <input type="hidden" name="event_baslik" value="<?php echo $row["etkinlik_baslik"] ?>">
+                                                            <input type="hidden" name="event_icerik" value="<?php echo $row["etkinlik_icerik"] ?>">
+                                                            <input type="hidden" name="event_text" value="<?php echo $row["etkinlik_text"] ?>">
+                                                            <input type="hidden" name="event_img" value="<?php echo $row["etkinlik_resim"] ?>">
+                                                            <input type="hidden" name="event_link" value="<?php echo $row["etkinlik_link"] ?>">
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div> <?php } ?>
 
                                         <div class="col-lg-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+            </div>
+        </section>
+    </section>
 </main>
 <?php include 'footer.php'; ?>
