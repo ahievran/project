@@ -16,6 +16,14 @@
 	width: 40%;
 	overflow: hidden;
 }
+.blog-post .event-thumb{
+	text-align: center;
+}
+.blog-post .event-thumb img{
+	height: 360px;
+	width: 500px;
+	overflow: hidden;
+}
 
 .blog-posts .down-content {
 	padding: 40px;
