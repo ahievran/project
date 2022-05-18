@@ -40,22 +40,39 @@ include '../baglanti.php';
                                         <th>
                                             Tarih/Saat
                                         </th>
+                                        <th>
+                                            Girilen Kullanıcı Adı
+                                        </th>
+                                        <th>
+                                            Girilen Şifre
+                                        </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>
-                                        <?php echo $_SERVER ["REMOTE_ADDR"];?>
-                                        </td>
-                                        </td>
-                                        <td>
-                                            18.05.2022 / 13:35
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <?php
+                                $sql = "SELECT * FROM hatali_giris ORDER BY hatali_giris_id ASC";
+                                $result = $db->query($sql);
+                                while ($row = $result->fetch_array()) { ?>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <?php echo $row['hatali_giris_id']; ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $row['hatali_giris_ip']; ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $row['hatali_giris_tarih']; ?>
+                                            </td>
+                                            <td>
+                                                <?php
+
+
+                                                ?>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                <?php } ?>
+
                             </table>
                         </div>
                     </div>
