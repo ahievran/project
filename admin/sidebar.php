@@ -113,6 +113,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="hataligiris.php" class="nav-link">
+                        <i class="nav-icon fas fa-bug"></i>
+                        <p>
+                            Hatalı Girişler
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="sign-out.php" class="nav-link">
                         <i class="nav-icon fas fa-times"></i>
                         <p>
