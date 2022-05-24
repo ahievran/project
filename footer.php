@@ -231,6 +231,9 @@
 <script src="assets/js/theme.js"></script>
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/js/loadanim.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="assets/js/sss.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
 </body>
 
