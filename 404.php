@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>- 404 -</title>
+    <title>{ status: 404 }</title>
 <style>
     @import url(https://fonts.googleapis.com/css?family=Gilda+Display);
 
