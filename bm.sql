@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: 127.0.0.1
--- Üretim Zamanı: 19 Nis 2022, 10:56:03
--- Sunucu sürümü: 10.4.22-MariaDB
--- PHP Sürümü: 8.1.2
+-- Host: bdevxikdmuguf3i0fs2i-mysql.services.clever-cloud.com:3306
+-- Generation Time: May 27, 2022 at 08:44 PM
+-- Server version: 8.0.22-13
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,42 +19,49 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `bm`
+-- Database: `bdevxikdmuguf3i0fs2i`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `admin_giris`
+-- Table structure for table `admin_giris`
 --
 
 CREATE TABLE `admin_giris` (
-  `admin_id` int(11) NOT NULL,
-  `admin_kadi` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `admin_sifre` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL
+  `admin_id` int NOT NULL,
+  `admin_kadi` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `admin_sifre` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `admin_giris`
+--
+
+INSERT INTO `admin_giris` (`admin_id`, `admin_kadi`, `admin_sifre`) VALUES
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `akademik_personel`
+-- Table structure for table `akademik_personel`
 --
 
 CREATE TABLE `akademik_personel` (
-  `personel_id` int(11) NOT NULL,
-  `personel_isim_soyisim` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_fakülte` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_bölüm` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_ofis` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_telefon` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_email` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_video_url` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_hakkında` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `personel_img` varchar(80) COLLATE utf8mb4_turkish_ci NOT NULL
+  `personel_id` int NOT NULL,
+  `personel_isim_soyisim` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_fakülte` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_bölüm` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_ofis` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_telefon` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_email` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_video_url` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_hakkında` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `personel_img` varchar(80) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `akademik_personel`
+-- Dumping data for table `akademik_personel`
 --
 
 INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `personel_fakülte`, `personel_bölüm`, `personel_ofis`, `personel_telefon`, `personel_email`, `personel_video_url`, `personel_hakkında`, `personel_img`) VALUES
@@ -73,16 +81,16 @@ INSERT INTO `akademik_personel` (`personel_id`, `personel_isim_soyisim`, `person
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `ders_icerik`
+-- Table structure for table `ders_icerik`
 --
 
 CREATE TABLE `ders_icerik` (
-  `dersicerik_id` int(11) NOT NULL,
-  `dersicerik_url` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `dersicerik_id` int NOT NULL,
+  `dersicerik_url` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `ders_icerik`
+-- Dumping data for table `ders_icerik`
 --
 
 INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
@@ -92,52 +100,54 @@ INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `duyuru`
+-- Table structure for table `duyuru`
 --
 
 CREATE TABLE `duyuru` (
-  `duyuru_id` int(11) NOT NULL,
-  `duyuru_baslik` varchar(255) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `duyuru_aciklama` text COLLATE utf8mb4_turkish_ci NOT NULL,
+  `duyuru_id` int NOT NULL,
+  `duyuru_baslik` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `duyuru_aciklama` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
   `duyuru_tarih` date NOT NULL,
-  `duyuru_resim` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `duyuru_resim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `etkinlikler`
+-- Table structure for table `etkinlikler`
 --
 
 CREATE TABLE `etkinlikler` (
-  `etkinlik_id` int(11) NOT NULL,
-  `etkinlik_baslik` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `etkinlik_icerik` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `etkinlik_tarih` datetime NOT NULL,
-  `etkinlik_resim` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `etkinlik_id` int NOT NULL,
+  `etkinlik_baslik` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `etkinlik_icerik` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `etkinlik_text` text COLLATE utf8mb4_turkish_ci,
+  `etkinlik_tarih` date NOT NULL,
+  `etkinlik_resim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `etkinlik_link` text COLLATE utf8mb4_turkish_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `etkinlikler`
+-- Dumping data for table `etkinlikler`
 --
 
-INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_tarih`, `etkinlik_resim`) VALUES
-(1, 'etkinlik1', 'icerik1', '2022-03-23 22:58:45', ''),
-(2, 'etkinlik2', 'icerik2', '2022-03-23 22:58:45', '');
+INSERT INTO `etkinlikler` (`etkinlik_id`, `etkinlik_baslik`, `etkinlik_icerik`, `etkinlik_text`, `etkinlik_tarih`, `etkinlik_resim`, `etkinlik_link`) VALUES
+(20, 'Sınav Takvimi', 'Bahar Dönemi Sınav Takvimi', '<p>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p>\r\n', '2022-05-17', '../admin/uploads/events/ahievran_logo.png    ', 'https://ahisinav.ahievran.edu.tr/sinavlar/Butunleme/dpgwh5_Butunleme_6.pdf'),
+(21, 'Sınav Takvimi', 'Bahar Dönemi Sınav Takvimi', '<p>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p>\r\n', '2022-05-17', '../admin/uploads/events/aeummf2.jpg    ', 'https://ahisinav.ahievran.edu.tr/sinavlar/Butunleme/dpgwh5_Butunleme_6.pdf');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `galeri`
+-- Table structure for table `galeri`
 --
 
 CREATE TABLE `galeri` (
-  `galeri_id` int(11) NOT NULL,
-  `galeri_resim` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `galeri_id` int NOT NULL,
+  `galeri_resim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `galeri`
+-- Dumping data for table `galeri`
 --
 
 INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
@@ -148,23 +158,22 @@ INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
 (6, 'assets/img/scenery/gallery-5.jpg'),
 (7, 'assets/img/scenery/gallery-6.jpg'),
 (8, 'assets/img/scenery/gallery-7.jpg'),
-(9, 'assets/img/scenery/gallery-8.jpg'),
-(22, 'assets/img/scenery/gallery-9.jpg	\r\n');
+(9, 'assets/img/scenery/gallery-8.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `hakkimizda`
+-- Table structure for table `hakkimizda`
 --
 
 CREATE TABLE `hakkimizda` (
-  `hakkinda_id` int(11) NOT NULL,
-  `hakkinda_baslik` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `hakkinda_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `hakkinda_id` int NOT NULL,
+  `hakkinda_baslik` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `hakkinda_icerik` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `hakkimizda`
+-- Dumping data for table `hakkimizda`
 --
 
 INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) VALUES
@@ -180,18 +189,59 @@ INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) V
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `hedeflerimiz`
+-- Table structure for table `hatali_giris`
+--
+
+CREATE TABLE `hatali_giris` (
+  `hatali_giris_id` int NOT NULL,
+  `hatali_giris_ip` text NOT NULL,
+  `hatali_giris_tarih` text,
+  `admin_kadi` text,
+  `admin_sifre` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `hatali_giris`
+--
+
+INSERT INTO `hatali_giris` (`hatali_giris_id`, `hatali_giris_ip`, `hatali_giris_tarih`, `admin_kadi`, `admin_sifre`) VALUES
+(2, '::1', '18.05.2022 / 13:02:17', 'admin', 'b394c813f6e3fe545d9e968b5b993045'),
+(3, '::1', '18.05.2022 / 13:03:18', 'asdsadsadsadsadsad', NULL),
+(4, '::1', '18.05.2022 / 13:03:45', 'asdsadsadsad', '1111111'),
+(5, '10.1.16.13', '26.05.2022 / 10:51:50', '\'OR=', '\'OR='),
+(6, '10.1.9.254', '26.05.2022 / 10:52:00', '\'OR=\'', '\'OR='),
+(7, '10.1.29.231', '26.05.2022 / 13:54:19', 'sa', 'sa'),
+(8, '10.1.29.231', '26.05.2022 / 13:54:19', '', ''),
+(9, '10.1.29.231', '26.05.2022 / 13:54:23', 'sa', 'sa'),
+(10, '10.1.29.231', '26.05.2022 / 13:54:26', 'asss', 'sa'),
+(11, '10.1.29.231', '26.05.2022 / 13:54:31', 'ssa', 'ass'),
+(12, '10.1.29.231', '26.05.2022 / 13:54:34', 'sasa', 'sasasa'),
+(13, '10.1.29.231', '26.05.2022 / 13:54:39', 'sasas', 'sasasas'),
+(14, '10.1.29.231', '26.05.2022 / 13:54:44', 'sasasasa', 'ssasasas'),
+(15, '10.1.29.231', '26.05.2022 / 13:54:49', 'sasass', 'sasassa'),
+(16, '10.1.29.231', '26.05.2022 / 13:54:55', 'sasasas', 'sasasss'),
+(17, '10.1.29.231', '26.05.2022 / 13:54:59', 'sasasas', 'sasasasa'),
+(18, '10.1.29.231', '26.05.2022 / 13:55:06', 'sasasss', 'asasasassss'),
+(19, '10.1.29.231', '26.05.2022 / 13:55:11', 'sasasa', 'ssasasas'),
+(20, '10.1.29.231', '26.05.2022 / 13:55:17', 'sasass', 'sasasass'),
+(21, '10.1.29.231', '26.05.2022 / 13:55:18', '', ''),
+(22, '10.1.29.231', '26.05.2022 / 13:55:21', 'sasasa', 'sasasa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hedeflerimiz`
 --
 
 CREATE TABLE `hedeflerimiz` (
-  `hedef_id` int(11) NOT NULL,
-  `hedef_icon` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `hedef_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `hedef_baslik` varchar(255) COLLATE utf8mb4_turkish_ci NOT NULL
+  `hedef_id` int NOT NULL,
+  `hedef_icon` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `hedef_icerik` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `hedef_baslik` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `hedeflerimiz`
+-- Dumping data for table `hedeflerimiz`
 --
 
 INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_baslik`) VALUES
@@ -203,32 +253,32 @@ INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_bas
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `iletisim`
+-- Table structure for table `iletisim`
 --
 
 CREATE TABLE `iletisim` (
-  `iletisim_id` int(11) NOT NULL,
-  `maps_url` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `iletisim_adres` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `iletisim_email` char(50) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `iletisim_telefon` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `iletisim_id` int NOT NULL,
+  `maps_url` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `iletisim_adres` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `iletisim_email` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `iletisim_telefon` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `laboratuvar`
+-- Table structure for table `laboratuvar`
 --
 
 CREATE TABLE `laboratuvar` (
-  `lab_id` int(11) NOT NULL,
-  `lab_resim` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `lab_ad` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `lab_aciklama` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `lab_id` int NOT NULL,
+  `lab_resim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `lab_ad` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `lab_aciklama` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Tablo döküm verisi `laboratuvar`
+-- Dumping data for table `laboratuvar`
 --
 
 INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALUES
@@ -238,211 +288,270 @@ INSERT INTO `laboratuvar` (`lab_id`, `lab_resim`, `lab_ad`, `lab_aciklama`) VALU
 (7, 'admin/uploads/labs/lab-3.jpg', 'Donanım Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin lojik devreler gibi çeşitli uygulamaları yapabileceği dc güç kaynağı, osiloskop, multimetre, dijital uygulamalar eğitim seti gibi bileşenleri içeren donanım laboratuvarı bulunmaktadır. '),
 (8, 'admin/uploads/labs/lab-5.jpg', 'Mikroişlemci ve Mikrodenetleyici Laboratuvarı ', 'Bölümümüz bünyesinde, öğrencilerimizin mikrodenetleyici programlama ve devre tasarımları gibi uygulamaları içeren mikrodenetleyici laboratuvarı bulunmaktadır. '),
 (9, 'admin/uploads/labs/lab-6.jpg', 'Bilgisayar Ağları Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin çeşitli ağ uygulamalarını gerçekleştirebilecekleri, hub, switch, firewall, bridge gibi cihazların bulunduğu bilgisayar ağları laboratuvarı bulunmaktadır. '),
-(10, 'admin/uploads/labs/lab-7.jpg', 'Robotik Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin çeşitli robotik uygulamalarını gerçekleştirebilecekleri, sensör(ivme,ısı vb.), drone uçuş kartı, ardunio ve raspberry gibi malzemelerin bulunduğu robotik laboratuvarı bulunmaktadır. ');
+(10, 'admin/uploads/labs/lab-7.jpg', 'Robotik Laboratuvarı', 'Bölümümüz bünyesinde, öğrencilerimizin çeşitli robotik uygulamalarını gerçekleştirebilecekleri, sensör(ivme,ısı vb.), drone uçuş kartı, ardunio ve raspberry gibi malzemelerin bulunduğu robotik laboratuvarı bulunmaktadır. '),
+(16, 'admin/uploads/labs/erasmus.png', 'Test', 'Test'),
+(17, 'admin/uploads/labs/erasmus.png', 'Test', 'Test');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `mesaj`
+-- Table structure for table `mesaj`
 --
 
 CREATE TABLE `mesaj` (
-  `mesaj_id` int(11) NOT NULL,
-  `mesaj_isim_soyisim` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_konu` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_email` varchar(500) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `mesaj_icerik` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `mesaj_id` int NOT NULL,
+  `mesaj_isim_soyisim` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `mesaj_konu` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `mesaj_email` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `mesaj_icerik` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+--
+-- Dumping data for table `mesaj`
+--
+
+INSERT INTO `mesaj` (`mesaj_id`, `mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`) VALUES
+(1, 'Samet Adsan', 'ssl sertifikası kurulumu', 'adsan.samet.06@gmail.com', 'adssda'),
+(2, 'Samet Adsan', 'denemee', 'adsan.samet.06@gmail.com', 'asddas'),
+(3, 'Samet Adsan', 'ssl sertifikası kurulumu', 'ogr.samet.adsan@ahievran.edu.tr', 'sdasda'),
+(4, 'Samet Adsan', 'denemee', 'ogr.samet.adsan@ahievran.edu.tr', 'Sjjsjs');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `slider`
+-- Table structure for table `programlar`
+--
+
+CREATE TABLE `programlar` (
+  `program_id` int NOT NULL,
+  `program_ad` varchar(50) NOT NULL,
+  `program_aciklama` text NOT NULL,
+  `program_img` text NOT NULL,
+  `program_link` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `programlar`
+--
+
+INSERT INTO `programlar` (`program_id`, `program_ad`, `program_aciklama`, `program_img`, `program_link`) VALUES
+(1, 'Erasmus Programı', 'Üniversitemiz Erasmus programını desteklemektedir. Detaylı bilgi için Tıklayınız', 'uploads/program/erasmus.png', 'https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus'),
+(3, 'Farabi Programı', 'Üniversitemiz Farabi programını desteklemektedir. Detaylı bilgi için Tıklayınız', 'uploads/program/farabi.png', 'https://foreignaffairs.ahievran.edu.tr/icerik/farabidegisim'),
+(4, 'Mevlana Programı', 'Üniversitemiz Mevlana programını desteklemektedir. Detaylı bilgi için Tıklayınız', 'uploads/program/mevlana.png', 'https://foreignaffairs.ahievran.edu.tr/icerik/nedir');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider`
 --
 
 CREATE TABLE `slider` (
-  `slider_id` int(11) NOT NULL,
-  `slider_ad` varchar(255) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `slider_resim` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `slider_url` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `slider_sira` varchar(100) COLLATE utf8mb4_turkish_ci NOT NULL DEFAULT '0'
+  `slider_id` int NOT NULL,
+  `slider_ad` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `slider_resim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `slider_url` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `slider_sira` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `soru_cevap`
+-- Table structure for table `soru_cevap`
 --
 
 CREATE TABLE `soru_cevap` (
-  `soru_id` int(11) NOT NULL,
-  `soru_metin` text COLLATE utf8mb4_turkish_ci NOT NULL,
-  `cevap_metin` text COLLATE utf8mb4_turkish_ci NOT NULL
+  `soru_id` int NOT NULL,
+  `soru_metin` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
+  `cevap_metin` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
--- Dökümü yapılmış tablolar için indeksler
+-- Indexes for dumped tables
 --
 
 --
--- Tablo için indeksler `admin_giris`
+-- Indexes for table `admin_giris`
 --
 ALTER TABLE `admin_giris`
   ADD PRIMARY KEY (`admin_id`);
 
 --
--- Tablo için indeksler `akademik_personel`
+-- Indexes for table `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
   ADD PRIMARY KEY (`personel_id`);
 
 --
--- Tablo için indeksler `ders_icerik`
+-- Indexes for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
   ADD PRIMARY KEY (`dersicerik_id`);
 
 --
--- Tablo için indeksler `duyuru`
+-- Indexes for table `duyuru`
 --
 ALTER TABLE `duyuru`
   ADD PRIMARY KEY (`duyuru_id`);
 
 --
--- Tablo için indeksler `etkinlikler`
+-- Indexes for table `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
   ADD PRIMARY KEY (`etkinlik_id`);
 
 --
--- Tablo için indeksler `galeri`
+-- Indexes for table `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`galeri_id`);
 
 --
--- Tablo için indeksler `hakkimizda`
+-- Indexes for table `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
   ADD PRIMARY KEY (`hakkinda_id`);
 
 --
--- Tablo için indeksler `hedeflerimiz`
+-- Indexes for table `hatali_giris`
+--
+ALTER TABLE `hatali_giris`
+  ADD PRIMARY KEY (`hatali_giris_id`);
+
+--
+-- Indexes for table `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
   ADD PRIMARY KEY (`hedef_id`);
 
 --
--- Tablo için indeksler `iletisim`
+-- Indexes for table `iletisim`
 --
 ALTER TABLE `iletisim`
   ADD PRIMARY KEY (`iletisim_id`);
 
 --
--- Tablo için indeksler `laboratuvar`
+-- Indexes for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
   ADD PRIMARY KEY (`lab_id`);
 
 --
--- Tablo için indeksler `mesaj`
+-- Indexes for table `mesaj`
 --
 ALTER TABLE `mesaj`
   ADD PRIMARY KEY (`mesaj_id`);
 
 --
--- Tablo için indeksler `slider`
+-- Indexes for table `programlar`
+--
+ALTER TABLE `programlar`
+  ADD PRIMARY KEY (`program_id`);
+
+--
+-- Indexes for table `slider`
 --
 ALTER TABLE `slider`
   ADD PRIMARY KEY (`slider_id`);
 
 --
--- Tablo için indeksler `soru_cevap`
+-- Indexes for table `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
   ADD PRIMARY KEY (`soru_id`);
 
 --
--- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `admin_giris`
+-- AUTO_INCREMENT for table `admin_giris`
 --
 ALTER TABLE `admin_giris`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `admin_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Tablo için AUTO_INCREMENT değeri `akademik_personel`
+-- AUTO_INCREMENT for table `akademik_personel`
 --
 ALTER TABLE `akademik_personel`
-  MODIFY `personel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `personel_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- Tablo için AUTO_INCREMENT değeri `ders_icerik`
+-- AUTO_INCREMENT for table `ders_icerik`
 --
 ALTER TABLE `ders_icerik`
-  MODIFY `dersicerik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `dersicerik_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- Tablo için AUTO_INCREMENT değeri `duyuru`
+-- AUTO_INCREMENT for table `duyuru`
 --
 ALTER TABLE `duyuru`
-  MODIFY `duyuru_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `duyuru_id` int NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `etkinlikler`
+-- AUTO_INCREMENT for table `etkinlikler`
 --
 ALTER TABLE `etkinlikler`
-  MODIFY `etkinlik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `etkinlik_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- Tablo için AUTO_INCREMENT değeri `galeri`
+-- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `galeri_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Tablo için AUTO_INCREMENT değeri `hakkimizda`
+-- AUTO_INCREMENT for table `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
-  MODIFY `hakkinda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `hakkinda_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- Tablo için AUTO_INCREMENT değeri `hedeflerimiz`
+-- AUTO_INCREMENT for table `hatali_giris`
+--
+ALTER TABLE `hatali_giris`
+  MODIFY `hatali_giris_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `hedeflerimiz`
 --
 ALTER TABLE `hedeflerimiz`
-  MODIFY `hedef_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `hedef_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Tablo için AUTO_INCREMENT değeri `iletisim`
+-- AUTO_INCREMENT for table `iletisim`
 --
 ALTER TABLE `iletisim`
-  MODIFY `iletisim_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `iletisim_id` int NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `laboratuvar`
+-- AUTO_INCREMENT for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
-  MODIFY `lab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `lab_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- Tablo için AUTO_INCREMENT değeri `mesaj`
+-- AUTO_INCREMENT for table `mesaj`
 --
 ALTER TABLE `mesaj`
-  MODIFY `mesaj_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mesaj_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Tablo için AUTO_INCREMENT değeri `slider`
+-- AUTO_INCREMENT for table `programlar`
+--
+ALTER TABLE `programlar`
+  MODIFY `program_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `slider_id` int NOT NULL AUTO_INCREMENT;
 
 --
--- Tablo için AUTO_INCREMENT değeri `soru_cevap`
+-- AUTO_INCREMENT for table `soru_cevap`
 --
 ALTER TABLE `soru_cevap`
-  MODIFY `soru_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `soru_id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
