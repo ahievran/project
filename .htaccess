@@ -9,5 +9,3 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*?)/?$ /$1.php [NC,L]
 
-RewriteCond %{QUERY_STRING} ^$
-RewriteRule ^index\.php$ /? [L]
