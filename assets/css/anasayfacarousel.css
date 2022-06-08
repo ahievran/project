@@ -51,6 +51,26 @@
   transition-delay: 0.5s;
 }
 
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+  position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-nav [class*="owl-"]:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
 
 .owl-carousel .owl-nav {
   left: 50%;
@@ -71,6 +91,8 @@
 .owl-carousel .owl-nav [class*="owl-"]:hover {
   background: transparent;
 }
+
+
 
 @media screen and (max-width: 575px) {
   .owl-carousel .owl-nav {

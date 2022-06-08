@@ -130,7 +130,7 @@ include 'header.php'; ?>
     <div class="carousel__face"><span>Kırşehir</span></div>
     <div class="carousel__face"><span>Ahi Evran</span></div>
     <div class="carousel__face"><span>Üniversitesi</span></div>
-    <div class="carousel__face"><span>Bilgisayar</span></div>
+    <div class="carousel__face"><span>~~~~~~</span></div>
     <div class="carousel__face"><span>Mühendislik</span></div>
     <div class="carousel__face"><span>Mimarlık</span></div>
     <div class="carousel__face"><span>Fakültesi</span></div>
