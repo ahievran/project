@@ -6,74 +6,82 @@ $_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Müh
 include 'baglanti.php';
 include 'header.php'; ?>
     <main class="page landing-page">
-    <div class="owl-carousel owl-carousels owl-theme">
-  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/img/aeummf2.jpg);">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start">
-        <div class="col-10 col-md-6 static">
-          <div class="owl-slide-text">
-            <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-            <div class="owl-slide-animated owl-slide-subtitle mb-3">
-            Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+        <div class="owl-carousel owl-carousels owl-theme">
+            <div class="owl-slide d-flex align-items-center cover"
+                 style="background-image: url(assets/img/aeummf2.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-10 col-md-6 static">
+                            <div class="owl-slide-text">
+                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
+                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+                                </div>
+                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
+                                   role="button">Hakkımızda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"  role="button">Hakkımızda</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/img/aeummf2.jpg);">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start">
-        <div class="col-10 col-md-6 static">
-          <div class="owl-slide-text">
-            <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-            <div class="owl-slide-animated owl-slide-subtitle mb-3">
-            Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+            <div class="owl-slide d-flex align-items-center cover"
+                 style="background-image: url(assets/img/aeummf2.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-10 col-md-6 static">
+                            <div class="owl-slide-text">
+                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
+                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+                                </div>
+                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
+                                   role="button">Hakkımızda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"  role="button">Hakkımızda</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  
-  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/img/aeummf2.jpg);">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start">
-        <div class="col-10 col-md-6 static">
-          <div class="owl-slide-text">
-            <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-            <div class="owl-slide-animated owl-slide-subtitle mb-3">
-            Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+
+            <div class="owl-slide d-flex align-items-center cover"
+                 style="background-image: url(assets/img/aeummf2.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-10 col-md-6 static">
+                            <div class="owl-slide-text">
+                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
+                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+                                </div>
+                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
+                                   role="button">Hakkımızda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"  role="button">Hakkımızda</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(assets/img/aeummf2.jpg);">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start">
-        <div class="col-10 col-md-6 static">
-          <div class="owl-slide-text">
-            <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-            <div class="owl-slide-animated owl-slide-subtitle mb-3">
-            Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+            <div class="owl-slide d-flex align-items-center cover"
+                 style="background-image: url(assets/img/aeummf2.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-10 col-md-6 static">
+                            <div class="owl-slide-text">
+                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
+                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+                                </div>
+                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
+                                   role="button">Hakkımızda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"  role="button">Hakkımızda</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-</div>
+        </div>
         <div class="main-banner header-text" style='margin-top:50px;' id='duyuru'>
             <section class="call-to-action">
                 <div class="container-fluid">
@@ -110,7 +118,7 @@ include 'header.php'; ?>
                                     <div class="meta-category">
                                         <span><?php echo $row["etkinlik_baslik"]; ?></span>
                                     </div>
-                                    <a href="<?php echo $row["etkinlik_link"]?>" target="_blank">
+                                    <a href="<?php echo $row["etkinlik_link"] ?>" target="_blank">
                                         <h4><?php echo $row["etkinlik_icerik"]; ?></h4>
                                     </a>
                                     <ul class="post-info">
@@ -125,20 +133,6 @@ include 'header.php'; ?>
                 </div>
             </div>
         </div>
-        <div class="container" id='caro'>
-  <div class="carousel col-md-12">
-    <div class="carousel__face"><span>Kırşehir</span></div>
-    <div class="carousel__face"><span>Ahi Evran</span></div>
-    <div class="carousel__face"><span>Üniversitesi</span></div>
-    <div class="carousel__face"><span>💻💻💻</span></div>
-    <div class="carousel__face"><span>Mühendislik</span></div>
-    <div class="carousel__face"><span>Mimarlık</span></div>
-    <div class="carousel__face"><span>Fakültesi</span></div>
-    <div class="carousel__face"><span>Bilgisayar Mühendisliği</span></div>
-    <div class="carousel__face"><span>Bölümü</span></div>
-    
-  </div>
-</div>
         <section class="clean-block clean-info" id="hakkinda">
             <div class="container">
                 <div class="row">
@@ -230,7 +224,8 @@ include 'header.php'; ?>
                             uzmanlarının yetiştirilmesidir. ”</p>
                     </div>
                     <div class="col-md-6 feature-box">
-                        <img src="assets/img/siber-guvenlik.jpg" style="width:100%;height:100%; box-shadow:10px 10px 10px grey;">
+                        <img src="assets/img/siber-guvenlik.jpg"
+                             style="width:100%;height:100%; box-shadow:10px 10px 10px grey;">
                     </div>
                     <div class="col-md-6 feature-box"><i class="icon-star icon"></i>
                         <h4>Yazılım ve Robotik Topluluğu</h4>
@@ -244,7 +239,8 @@ include 'header.php'; ?>
                             çalışmaları ile öğrenciler arasında işbirliğini artırmayı amaçlamaktadır. </p>
                     </div>
                     <div class="col-md-6 feature-box">
-                        <img src="assets/img/yazilim-robotik.jpg" style="width:100%;height:100%;box-shadow:10px 10px 10px grey;">
+                        <img src="assets/img/yazilim-robotik.jpg"
+                             style="width:100%;height:100%;box-shadow:10px 10px 10px grey;">
                     </div>
                 </div>
             </div>
@@ -252,7 +248,7 @@ include 'header.php'; ?>
         <section class="wrapper container">
             <div class="container-fostrap">
                 <div class="row">
-                    <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo" />
+                    <img class="col-md-2" src="assets/img/pnglogo.png" id="haber-logo" class="fostrap-logo"/>
                     <h1 class="col-md-8 text-info" style="margin-top:4%;">
                         Erasmus & Farabi & Mevlana Değişim Programları
                     </h1>
@@ -280,7 +276,8 @@ include 'header.php'; ?>
                                             </p>
                                         </div>
                                         <div class="card-read-more btn-warning">
-                                            <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus" class="btn btn-link btn-block text-light">
+                                            <a href="https://foreignaffairs.ahievran.edu.tr/icerik/adimadimerasmus"
+                                               class="btn btn-link btn-block text-light">
                                                 Detaylı Bilgi
                                             </a>
                                         </div>
