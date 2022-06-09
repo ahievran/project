@@ -112,7 +112,7 @@ include 'header.php'; ?>
                     $result = $db->query($sql);
                     while ($row = $result->fetch_array()) { ?>
                         <div class="item">
-                            <img src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
+                            <img style="object-fit: contain" src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
                             <div class="item-content">
                                 <div class="main-content">
                                     <div class="meta-category">
