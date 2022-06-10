@@ -33,6 +33,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="slider.php" class="nav-link">
+                       <i class="fas fa-sliders nav-icon"></i>
+                        <p>
+                            Slider
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="hedeflerimiz.php" class="nav-link">
                         <i class="fas fa-bullseye nav-icon"></i>
                         <p>

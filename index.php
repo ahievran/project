@@ -7,80 +7,27 @@ include 'baglanti.php';
 include 'header.php'; ?>
     <main class="page landing-page">
         <div class="owl-carousel owl-carousels owl-theme">
-            <div class="owl-slide d-flex align-items-center cover"
-                 style="background-image: url(assets/img/aeummf2.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-md-start">
-                        <div class="col-10 col-md-6 static">
-                            <div class="owl-slide-text">
-                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
+            <?php
+            $sql = "SELECT * FROM slider ORDER BY slider_id ASC";
+            $result = $db->query($sql);
+            while ($row = $result->fetch_array()) { ?>
+                <div class="owl-slide d-flex align-items-center cover"
+                     style="background-image: url(admin/<?php echo $row["slider_url"] ?>);">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-10 col-md-6 static">
+                                <div class="owl-slide-text">
+                                    <h2 class="owl-slide-animated owl-slide-title"><?php echo $row["slider_ustmetin"] ?></h2>
+                                    <div class="owl-slide-animated owl-slide-subtitle mb-3"><?php echo $row["slider_altmetin"] ?>
+                                    </div>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
+                                       role="button">Hakkımızda</a>
                                 </div>
-                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
-                                   role="button">Hakkımızda</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="owl-slide d-flex align-items-center cover"
-                 style="background-image: url(assets/img/aeummf2.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-md-start">
-                        <div class="col-10 col-md-6 static">
-                            <div class="owl-slide-text">
-                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
-                                </div>
-                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
-                                   role="button">Hakkımızda</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="owl-slide d-flex align-items-center cover"
-                 style="background-image: url(assets/img/aeummf2.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-md-start">
-                        <div class="col-10 col-md-6 static">
-                            <div class="owl-slide-text">
-                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
-                                </div>
-                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
-                                   role="button">Hakkımızda</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="owl-slide d-flex align-items-center cover"
-                 style="background-image: url(assets/img/aeummf2.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-md-start">
-                        <div class="col-10 col-md-6 static">
-                            <div class="owl-slide-text">
-                                <h2 class="owl-slide-animated owl-slide-title">Kırşehir Ahi Evran Üniversitesi</h2>
-                                <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    Kırşehir Ahi Evran Üniversitesi Bilgisayar Mühendisliği tanıtım için tıklayınız...
-                                </div>
-                                <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
-                                   role="button">Hakkımızda</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <?php } ?>
         </div>
         <div class="main-banner header-text" style='margin-top:50px;' id='duyuru'>
             <section class="call-to-action">
@@ -112,7 +59,8 @@ include 'header.php'; ?>
                     $result = $db->query($sql);
                     while ($row = $result->fetch_array()) { ?>
                         <div class="item">
-                            <img style="object-fit: contain" src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="Etkinlik resmi">
+                            <img style="object-fit: contain" src="admin/<?php echo $row["etkinlik_resim"]; ?>"
+                                 alt="Etkinlik resmi">
                             <div class="item-content">
                                 <div class="main-content">
                                     <div class="meta-category">
