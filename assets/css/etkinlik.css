@@ -306,3 +306,10 @@ ul.page-numbers li a:hover {
     background-color: rgb(255, 220, 175);
 
 }
+#devamiAnasayfa{
+    text-align: center;
+    font-style: normal;
+    height: 50px;
+    font-weight: 400;
+    background-color: rgb(255, 220, 175);
+}

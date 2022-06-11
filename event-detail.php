@@ -1,11 +1,11 @@
 <?php
 session_start();
 $_SESSION["sayfa"] = "etkinlikler";
-$_SESSION["title"] = "Etkinlikler";
 $_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Etkinlikler";
 include 'header.php'; ?>
 
 <?php if (isset($_POST["see"])) {
+    $_SESSION["title"] = $_POST["etkinlik_baslik"];
     $etkinlik_id = $_POST["etkinlik_id"];
     $etkinlik_baslik = $_POST["etkinlik_baslik"];
     $etkinlik_icerik = $_POST["etkinlik_icerik"];
@@ -73,6 +73,13 @@ include 'header.php'; ?>
             </section>
         </section>
     </main>
+<?php } else{   $_SESSION["title"] = "Hata !!!"; ?>
+    
+    <div class="alert alert-danger col-md-7" style='margin:20%;'>
+  <strong>Uyarı !</strong> Aradığınız sayfa bulunamadı.. Site geliştiricileri ile iletişime geçin veya <a class='text-success' href='index.php'> Anasayfaya dönmek için tıklayınız.</a>
+</div>
+    
 <?php } ?>
+
 
 <?php include 'footer.php'; ?>
