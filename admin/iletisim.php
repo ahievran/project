@@ -18,7 +18,6 @@ include '../baglanti.php';
                 </div>
             </div>
         </section>
-
         <section class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -27,27 +26,30 @@ include '../baglanti.php';
                             <div class="card-header">
                                 <h3 class="card-title">İletişim</h3>
                             </div>
-                            <form>
+                            <form method="POST" action="iletisimadd.php" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Google Maps Linki</label>
-                                        <input type="text" class="form-control" id="maps" placeholder="Harita Linki Giriniz">
+                                        <label for="baslik">Google Maps Linki</label>
+                                        <input type="text" class="form-control" name="link" placeholder="Harita Linki Giriniz">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Adres</label>
-                                        <input type="text" class="form-control" id="adres" placeholder="Adres">
+                                        <label for="icerik">Adres</label>
+                                        <input type="text" class="form-control"  name="adres" placeholder="Adres">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="link">Email</label>
+                                        <input type="text" class="form-control"  name="email" placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email ">
+                                        <label for="link">Telefon</label>
+                                        <input type="text" class="form-control"  name="telefon" placeholder="Telefon">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Telefon</label>
-                                        <input type="text" class="form-control" id="telefon" placeholder="Telefon">
-                                    </div>
+                                    
+                                    
                                 </div>
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary">Gönder</button>
+                                    <button type="submit" class="btn btn-primary" name="submit">Kaydet</button>
                                 </div>
                             </form>
                         </div>
