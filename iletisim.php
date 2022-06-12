@@ -41,13 +41,18 @@ include 'header.php'; ?>
                             </div>
                             <div class="col-sm-6 mt-2">
                                 <div class="row">
-                                    <div class="row col-xxl-12"><iframe class="col-xxl-12 mt-0" style="box-shadow:5px 5px 5px 5px grey;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6188.876546779659!2d34.1203697!3d39.1420122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f131464dc8c810c!2zTcO8aGVuZGlzbGlrIE1pbWFybMSxayBGYWvDvGx0ZXNp!5e0!3m2!1str!2str!4v1654990395066!5m2!1str!2str" width="inherit" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                                    <div class="col-xxl-12 mt-4"><i class="icon ion-ios-location" style="font-size: 21px;"></i><span>&nbsp;Ahi Evran Üniversitesi, Bağbaşı Yerleşkesi, Mühendislik-Mimarlık Fakültesi, Merkez/KIRŞEHİR<br></span></div>
-                                    <div class="col-xxl-12"><i class="icon ion-android-mail" style="font-size: 21px;"></i><span>&nbsp;<a href="mailto:bilmuh@ahievran.edu.tr">bilmuh@ahievran.edu.tr</a><br></span></div>
-                                    <div class="col-xxl-12"><i class="icon ion-ios-telephone" style="font-size: 21px;"></i><span>&nbsp;<a href="tel:+903862803800">0386 280 38 00</a><br></span></div>
+                                <?php
+                            $sql = "SELECT * FROM iletisim ORDER BY iletisim_id=1";
+                            $result = $db->query($sql);
+                            while ($row = $result->fetch_array()) { ?>
+                                    <div class="row col-xxl-12"><iframe class="col-xxl-12 mt-0" style="box-shadow:5px 5px 5px 5px grey;" src="<?php echo $row["maps_url"] ?>" width="inherit" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                                    <div class="col-xxl-12 mt-4"><i class="icon ion-ios-location" style="font-size: 21px;"></i><span>&nbsp;<?php echo $row["iletisim_adres"] ?><br></span></div>
+                                    <div class="col-xxl-12"><i class="icon ion-android-mail" style="font-size: 21px;"></i><span>&nbsp;<a href="<?php echo $row["iletisim_email"] ?>"><?php echo $row["iletisim_email"] ?></a><br></span></div>
+                                    <div class="col-xxl-12"><i class="icon ion-ios-telephone" style="font-size: 21px;"></i><span>&nbsp;<a href="t<?php echo $row["iletisim_telefon"] ?>"><?php echo $row["iletisim_telefon"] ?></a><br></span></div>
                                 </div>
                             </div>
                         </div>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
