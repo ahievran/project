@@ -21,8 +21,6 @@ include 'header.php'; ?>
                             <div class="owl-slide-animated owl-slide-subtitle mb-3" style='color:white;text-shadow:2px 2px 2px black;font-size:20px;'>
                                 <?php echo $row["slider_altmetin"] ?>
                             </div>
-                            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="hakkimizda.php"
-                                role="button">Hakkımızda</a>
                         </div>
                     </div>
                 </div>
