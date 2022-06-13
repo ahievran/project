@@ -40,9 +40,7 @@ include 'header.php'; ?>
                                                     </div>
                                                     <div class="down-content">
                                                         <span>Kırşehir Ahi Evran Üniversitesi</span>
-                                                        <a href="<?php echo $row["etkinlik_link"] ?>">
                                                             <h4><?php echo $row["etkinlik_baslik"]; ?></h4>
-                                                        </a>
                                                         <ul class="post-info">
                                                             <li>MMF - Bilgisayar Mühendisliği </li>
                                                             <li><?php echo $row["etkinlik_tarih"]; ?></li>

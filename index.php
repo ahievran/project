@@ -67,11 +67,8 @@ include 'header.php'; ?>
                             <div class="meta-category">
                                 <span><?php echo $row["etkinlik_baslik"]; ?></span>
                             </div>
-                            <a href="<?php echo $row["etkinlik_link"] ?>" target="_blank">
-                                <h4><?php echo $row["etkinlik_icerik"]; ?></h4>
-                            </a>
                             <ul class="post-info">
-                                <li><a href="#">İlgili Birim</a></li>
+                                <li><a href="#">Mühendislik Mimarlık Fakültesi</a></li>
                                 <li><a href="#"><?php echo $row["etkinlik_tarih"]; ?></a></li>
                                 <li><a href="#">Bilgisayar Mühendisliği</a></li>
                             </ul>

@@ -58,6 +58,8 @@
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
     background: none;
+    background-color: #bafeb4;
+    opacity: 0.7;
     color: inherit;
     border: none;
     padding: 0 !important;

@@ -17,14 +17,14 @@ jQuery( document ).ready(function( $ ) {
 
         if ($('.owl-clients').length) {
             $('.owl-clients').owlCarousel({
-                loop: true,
+                loop: false,
                 nav: false,
                 dots: true,
                 items: 1,
                 margin: 30,
                 autoplay: false,
                 smartSpeed: 700,
-                autoplayTimeout: 2000,
+                autoplayTimeout: 5000,
                 responsive: {
                     0: {
                         items: 1,
@@ -53,8 +53,8 @@ jQuery( document ).ready(function( $ ) {
                 dots: true,
                 items: 3,
                 margin: 10,
-                autoplay: true,
-                smartSpeed: 300,
+                autoplay: false,
+                smartSpeed: 400,
                 autoplayTimeout: 5000,
                 responsive: {
                     0: {
