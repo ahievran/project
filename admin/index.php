@@ -227,7 +227,7 @@ include '../baglanti.php';
                         </div>
                         <div class="person-info">
                             <h3 class="full-name">Kutluhan Azaflı</h3>
-                            <span class="speciality">Web Developer</span>
+                            <span class="speciality">Software Developer</span>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@ include '../baglanti.php';
                         </div>
                         <div class="person-info">
                             <h3 class="full-name">Samet Adsan</h3>
-                            <span class="speciality">Web Developer</span>
+                            <span class="speciality">Software Developer</span>
                         </div>
                     </div>
                 </div>
@@ -259,7 +259,7 @@ include '../baglanti.php';
                         </div>
                         <div class="person-info">
                             <h3 class="full-name">Burak Kaynar</h3>
-                            <span class="speciality">Web Developer</span>
+                            <span class="speciality">Software Developer</span>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@ include '../baglanti.php';
                         </div>
                         <div class="person-info">
                             <h3 class="full-name">Cemre Yıldız</h3>
-                            <span class="speciality">Web Developer</span>
+                            <span class="speciality">Software Developer</span>
                         </div>
                     </div>
                 </div>

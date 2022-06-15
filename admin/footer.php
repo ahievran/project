@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer" style='margin-bottom:0px;'>
     <strong>Copyright &copy; 2022 <a href="#">Bilgisayar Mühendisliği</a></strong>
     <div class="float-right d-none d-sm-inline-block">
     </div>
