@@ -36,6 +36,7 @@ include 'header.php'; ?>
                                     <div class="mb-3"><label class="form-label" for="subject">Konu</label><input required class="form-control" type="text" id="subject"  name="subject"></div>
                                     <div class="mb-3"><label class="form-label" for="email">E-Mail</label><input required class="form-control" type="email" id="email" name="email"></div>
                                     <div class="mb-3"><label class="form-label" for="message">Mesaj</label><textarea required class="form-control" type="text" id="message"  name="message"></textarea></div>
+                                    <input type='hidden' name='tarih' value="<?php $date = date('d/m/Y H:i:s'); echo $date; ?>"/>
                                     <div class="mb-3"><button class="btn btn-success" value="send" name="send"  type="submit">Gönder</button></div>
                                 </form>
                             </div>
