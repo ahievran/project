@@ -17,7 +17,7 @@ jQuery( document ).ready(function( $ ) {
 
         if ($('.owl-clients').length) {
             $('.owl-clients').owlCarousel({
-                loop: false,
+                loop: true,
                 nav: false,
                 dots: true,
                 items: 1,
