@@ -23,7 +23,7 @@ if ($say == 0) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AEÜ Admin Panel</title>
+    <title>AEU-BM Admin Panel</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -60,7 +60,7 @@ if ($say == 0) {
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="index.php" class="nav-link">Home</a>
+                <a href="index.php" class="nav-link">AEU-MMF Computer Engineering Admin Control</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

@@ -210,17 +210,17 @@ include '../baglanti.php';
                 <div class="col-md-8 col-lg-6">
                     <div class="header-section">
                         <h3 class="small-title">Uzmanlarımız</h3>
-                        <h2 class="title">Takımımızdaki üyelerle tanışalım</h2>
+                        <h2 style='color:white;text-shadow: 5px 5px 5px black;' class="title">Geliştirme && Kontrol Ekibi :</h2>
                     </div>
                 </div>
             </div>
             <!-- / End Header Section -->
-            <div class="row">
+            <div class="row" style='margin-left:15%;'>
                 <!-- Start Single Person -->
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
+                            <img src="" alt="">
                             <span class="icon">
 								<i class="fab fa-php"></i>
 							</span>
@@ -236,7 +236,7 @@ include '../baglanti.php';
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
+                            <img src="sametadsan.jpg" alt="">
                             <span class="icon">
 								<i class="fab fa-php"></i>
 							</span>
@@ -252,7 +252,7 @@ include '../baglanti.php';
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
+                            <img src="" alt="">
                             <span class="icon">
 								<i class="fab fa-php"></i>
 							</span>
@@ -268,7 +268,7 @@ include '../baglanti.php';
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="https://i.ibb.co/w0ynr2Q/person4.jpg" alt="">
+                            <img src="" alt="">
                             <span class="icon">
 								<i class="fab fa-php"></i>
 							</span>
