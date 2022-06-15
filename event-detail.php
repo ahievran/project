@@ -2,10 +2,10 @@
 session_start();
 $_SESSION["sayfa"] = "etkinlikler";
 $_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Etkinlikler";
-$_SESSION["title"] = $_GET["etkinlik_baslik"];
 include 'header.php'; ?>
 
 <?php if (isset($_GET["see"])) {
+    $_SESSION["title"] = $_GET["etkinlik_baslik"];
     $etkinlik_id = $_GET["etkinlik_id"];
     $etkinlik_baslik = $_GET["etkinlik_baslik"];
     $etkinlik_icerik = $_GET["etkinlik_icerik"];
