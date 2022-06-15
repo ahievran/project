@@ -10,9 +10,7 @@ $message    = (trim($_POST['message']));
 if (isset($_POST['send'])) {
     if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
         if ($konu != "" and $ad != "" and $mail != "" and $message != "") {
-            $date = date('d/m/Y H:i:s');
-            $date = strval($date);
-            $dkayit = "INSERT INTO `mesaj` (`mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`,'mesaj_tarih') VALUES ('$ad', '$konu', '$mail', '$message','$date')";
+            $dkayit = "INSERT INTO `mesaj` (`mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`) VALUES ('$ad', '$konu', '$mail', '$message')";
             $dsonuc = mysqli_query($db, $dkayit);
             if (isset($dkayit)) {
                 $_SESSION["isim"] = $ad;
