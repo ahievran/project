@@ -4,32 +4,7 @@ $_SESSION["sayfa"] = "labs";
 $_SESSION["title"] = "Laboratuvarlarımız";
 $_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Laboratuvarlarımız";
 include 'header.php'; ?>
-<style>
-    .hoverImg {
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-    }
 
-    .hoverImg * {
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .hoverImg img {
-        max-width: 100%;
-        vertical-align: top;
-    }
-
-    .hoverImg:hover img,
-    .hoverImg.hover img {
-        -webkit-transform: scale(1.3) rotate(5deg);
-        transform: scale(1.3) rotate(5deg);
-    }
-
-</style>
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
             <section class="clean-block about-us mt-5">

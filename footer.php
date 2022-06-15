@@ -224,19 +224,6 @@
         }
     }
 
-    var snippet = [].slice.call(document.querySelectorAll(".hover")); // Resimlerin üzerine mouse götürülünce animasyon gerçekleşir
-    if (snippet.length) {
-        snippet.forEach(function (snippet) {
-            snippet.addEventListener("mouseout", function (event) {
-                if (event.target.parentNode.tagName === "img") {
-                    event.target.parentNode.classList.remove("hover");
-                } else {
-                    event.target.parentNode.classList.remove("hover");
-                }
-            });
-        });
-    }
-
 </script>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
