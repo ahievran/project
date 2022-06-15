@@ -23,7 +23,7 @@ include 'header.php'; ?>
                     <div class="container">
                         <div class="block-heading">
                             <div class="row">
-                                <div class="col-md-5 col-lg-4"><img src="assets/img/product-features.png" style="width: 100%;">
+                                <div class="col-md-6 col-lg-4"><img src="assets/img/product-features.png" style="width: 100%;box-shadow: 8px 8px 8px grey;border-radius:20px;">
                                 </div>
                                 <div class="col" style="padding-top: 27px;">
                                     <div class="row" style="width:90%; margin-left: 20px;">
