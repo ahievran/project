@@ -4,15 +4,15 @@ $_SESSION["sayfa"] = "etkinlikler";
 $_SESSION["description"] = "Kırşehir Ahi Evran Üniversitesi - Bilgisayar Mühendisliği Etkinlikler";
 include 'header.php'; ?>
 
-<?php if (isset($_POST["see"])) {
-    $_SESSION["title"] = $_POST["etkinlik_baslik"];
-    $etkinlik_id = $_POST["etkinlik_id"];
-    $etkinlik_baslik = $_POST["etkinlik_baslik"];
-    $etkinlik_icerik = $_POST["etkinlik_icerik"];
-    $etkinlik_text = $_POST["etkinlik_text"];
-    $etkinlik_resim = $_POST["etkinlik_resim"];
-    $etkinlik_link = $_POST["etkinlik_link"];
-    $etkinlik_tarih = $_POST["etkinlik_tarih"];
+<?php if (isset($_GET["see"])) {
+    $_SESSION["title"] = $_GET["etkinlik_baslik"];
+    $etkinlik_id = $_GET["etkinlik_id"];
+    $etkinlik_baslik = $_GET["etkinlik_baslik"];
+    $etkinlik_icerik = $_GET["etkinlik_icerik"];
+    $etkinlik_text = $_GET["etkinlik_text"];
+    $etkinlik_resim = $_GET["etkinlik_resim"];
+    $etkinlik_link = $_GET["etkinlik_link"];
+    $etkinlik_tarih = $_GET["etkinlik_tarih"];
     ?>
     <main class="page blog-post-list">
         <section class="clean-block clean-blog-list">
@@ -80,6 +80,5 @@ include 'header.php'; ?>
 </div>
     
 <?php } ?>
-
 
 <?php include 'footer.php'; ?>

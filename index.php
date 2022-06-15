@@ -71,7 +71,7 @@ include 'header.php'; ?>
                                 <li><a href="#">Bilgisayar Mühendisliği</a></li>
                             </ul>
                         </div>
-                        <form action="event-detail.php" method="post">
+                        <form action="event-detail.php" method="get">
                             <div class="post-options mt-3">
                                 <div class='row'>
                                     <div class="col-lg-12">
