@@ -32,29 +32,25 @@ include '../baglanti.php';
                                     <a href="#" class="btn btn-tool" title="Next"><i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
+                            <?php
+                            if(isset($_POST["message_see"])){
+                                $isim =$_POST["mesaj_isim"];
+                                $konu = $_POST["mesaj_konu"];
+                                $mesajTarihi = $_POST["mesaj_date"];
+                                $mesajIcerik = $_POST["mesaj_icerik"];
+                            ?>
                             <div class="card-body p-0">
                                 <div class="mailbox-read-info">
-                                    <h5>Mesajın Konusu</h5>
-                                    <h6>Kimden:
-                                        <span class="mailbox-read-time float-right">Gönderme Saati</span>
+                                    <h5>Mesajın Konusu : <?php echo $konu; ?></h5>
+                                    <h6>Kimden: <?php echo $isim; ?>
+                                        <span class="mailbox-read-time float-right">Gönderme Saati : <?php echo $mesajTarihi; ?></span>
                                     </h6>
                                 </div>
                                 <div class="mailbox-read-message">
-                                    <p>Keffiyeh blog actually fashion axe vegan, irony biodiesel. Cold-pressed hoodie
-                                        chillwave put a bird
-                                        on it aesthetic, bitters brunch meggings vegan iPhone. Dreamcatcher vegan
-                                        scenester mlkshk. Ethical
-                                        master cleanse Bushwick, occupy Thundercats banjo cliche ennui farm-to-table
-                                        mlkshk fanny pack
-                                        gluten-free. Marfa butcher vegan quinoa, bicycle rights disrupt tofu scenester
-                                        chillwave 3 wolf moon
-                                        asymmetrical taxidermy pour-over. Quinoa tote bag fashion axe, Godard disrupt
-                                        migas church-key tofu
-                                        blog locavore. Thundercats cronut polaroid Neutra tousled, meh food truck
-                                        selfies narwhal American
-                                        Apparel.</p>
+                                    <p><?php echo $mesajIcerik; ?></p>
                                 </div>
                             </div>
+                            <?php } ?>
                             <div class="card-footer">
                                 <button type="button" class="btn btn-default"><i class="far fa-trash-alt"></i> Sil
                                 </button>

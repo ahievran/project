@@ -66,19 +66,25 @@ include '../baglanti.php';
                                         $sql = "SELECT * FROM mesaj ORDER BY mesaj_id DESC";
                                         $result = $db->query($sql);
                                         while ($row = $result->fetch_array()) { ?>
+                                        <form method='post' action='read-mail.php'>
                                             <tr>
                                                 <td class="mailbox-name"><?php echo $row["mesaj_isim_soyisim"]; ?>
                                                 </td>
                                                 <td class="mailbox-subject"><b><?php echo $row["mesaj_konu"]; ?></b>
                                                 </td>
-                                                <td class="mailbox-date"><?php echo $row["mesaj_date"]; ?>
+                                                <td class="mailbox-date"><?php echo $row["mesaj_tarih"]; ?>
                                                 </td>
                                                 <td>
                                                     <a href="read-mail.php">
-                                                        <button class="btn btn-success">Görüntüle</button>
+                                                        <input type='hidden' name='mesaj_isim' value='<?php echo $row["mesaj_isim_soyisim"]; ?>'/>
+                                                        <input type='hidden' name='mesaj_konu' value='<?php echo $row["mesaj_konu"]; ?>'/>
+                                                        <input type='hidden' name='mesaj_date' value='<?php echo $row["mesaj_tarih"]; ?>'/>
+                                                        <input type='hidden' name='mesaj_icerik' value='<?php echo $row["mesaj_icerik"]; ?>'/>
+                                                        <button class="btn btn-success" name='message_see'>Görüntüle</button>
                                                     </a>
                                                 </td>
                                             </tr>
+                                        </form>
                                         <?php } ?>
                                         </tbody>
                                     </table>

@@ -40,6 +40,7 @@ if ($say == 0) {
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
+    <link href="https://mf.ahievran.edu.tr/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
@@ -47,6 +48,7 @@ if ($say == 0) {
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
     <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+    
 
 </head>
 
