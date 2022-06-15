@@ -38,15 +38,17 @@ include '../baglanti.php';
                                 $konu = $_POST["mesaj_konu"];
                                 $mesajTarihi = $_POST["mesaj_date"];
                                 $mesajIcerik = $_POST["mesaj_icerik"];
+                                $mail = $_POST["mesaj_mail"];
                             ?>
                             <div class="card-body p-0">
                                 <div class="mailbox-read-info">
                                     <h5>Mesajın Konusu : <?php echo $konu; ?></h5>
-                                    <h6>Kimden: <?php echo $isim; ?>
+                                    <h6>Kimden: <?php echo $isim."<br>Email Adresi :   ".$mail; ?>
                                         <span class="mailbox-read-time float-right">Gönderme Saati : <?php echo $mesajTarihi; ?></span>
                                     </h6>
                                 </div>
                                 <div class="mailbox-read-message">
+                                    <h5>Mesaj İçeriği :</h5>
                                     <p><?php echo $mesajIcerik; ?></p>
                                 </div>
                             </div>

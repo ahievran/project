@@ -56,6 +56,7 @@ include '../baglanti.php';
                                         <thead>
                                         <tr>
                                             <th>Gönderen</th>
+                                            <th>Email</th>
                                             <th>Konu</th>
                                             <th>Tarih</th>
                                             <th>Görüntüle</th>
@@ -70,6 +71,8 @@ include '../baglanti.php';
                                             <tr>
                                                 <td class="mailbox-name"><?php echo $row["mesaj_isim_soyisim"]; ?>
                                                 </td>
+                                                <td class="mailbox-name"><?php echo $row["mesaj_email"]; ?>
+                                                </td>
                                                 <td class="mailbox-subject"><b><?php echo $row["mesaj_konu"]; ?></b>
                                                 </td>
                                                 <td class="mailbox-date"><?php echo $row["mesaj_tarih"]; ?>
@@ -80,6 +83,7 @@ include '../baglanti.php';
                                                         <input type='hidden' name='mesaj_konu' value='<?php echo $row["mesaj_konu"]; ?>'/>
                                                         <input type='hidden' name='mesaj_date' value='<?php echo $row["mesaj_tarih"]; ?>'/>
                                                         <input type='hidden' name='mesaj_icerik' value='<?php echo $row["mesaj_icerik"]; ?>'/>
+                                                        <input type='hidden' name='mesaj_mail' value='<?php echo $row["mesaj_email"]; ?>'/>
                                                         <button class="btn btn-success" name='message_see'>Görüntüle</button>
                                                     </a>
                                                 </td>
