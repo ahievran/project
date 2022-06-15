@@ -1,3 +1,8 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ event-detail.php?etkinlik_baslik=$1 [QSA,L]
 ErrorDocument 404 https://computerengineering.herokuapp.com/404.php
 
 
