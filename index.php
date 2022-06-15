@@ -96,7 +96,6 @@ include 'header.php'; ?>
                     <div class='row'>
                         <div style='background-color:inherit; height:200px;margin-top:0px;padding-top:0px;'
                             class='col-md-12'>
-
                         </div>
                     </div>
                 </div>
