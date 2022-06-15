@@ -26,7 +26,7 @@ include '../baglanti.php';
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Duyurular</h3>
-                                <a href="duyuruadd.php">
+                                <a href="duyuruekle.php">
                                     <button style="float:right" class="btn btn-success ">Ekle</button>
                                 </a>
                             </div>
