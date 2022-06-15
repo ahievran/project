@@ -220,7 +220,7 @@ include '../baglanti.php';
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="" alt="">
+                            <img src="uploads/dev-team/kutluhanazafli.jpg" alt="Kutluhan Azaflı">
                             <span class="icon">
 								<i class="fab fa-php"></i>
 							</span>
