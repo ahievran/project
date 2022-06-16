@@ -8,7 +8,7 @@ include 'header.php'; ?>
     $_SESSION["title"] = $_GET["etkinlik_baslik"];
     $etkinlik_id = $_GET["etkinlik_id"];
     $etkinlik_baslik = $_GET["etkinlik_baslik"];
-    $sql = "SELECT * FROM etkinlikler ORDER BY etkinlik_id=$etkinlik_id";
+    $sql = "SELECT * FROM etkinlikler WHERE etkinlik_id=$etkinlik_id";
     $result = $db->query($sql);
     while ($row = $result->fetch_array()) { 
     ?>
