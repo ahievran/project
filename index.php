@@ -17,8 +17,8 @@ include 'header.php'; ?>
                 <div class="row justify-content-center justify-content-md-start">
                     <div class="col-10 col-md-6 static">
                         <div class="owl-slide-text">
-                            <h2 class="owl-slide-animated owl-slide-title" style='color:white;text-shadow:2px 2px 2px black;font-size:35px;'><?php echo $row["slider_ustmetin"] ?></h2>
-                            <div class="owl-slide-animated owl-slide-subtitle mb-3" style='color:white;text-shadow:2px 2px 2px black;font-size:20px;'>
+                            <h2 class="owl-slide-animated owl-slide-title" style='color:white;text-shadow:5px 5px 5px black;font-size:40px;'><?php echo $row["slider_ustmetin"] ?></h2>
+                            <div class="owl-slide-animated owl-slide-subtitle mb-3" style='color:white;text-shadow:5px 5px 5px black;font-size:28px;'>
                                 <?php echo $row["slider_altmetin"] ?>
                             </div>
                         </div>
@@ -85,11 +85,6 @@ include 'header.php'; ?>
                             </div>
                             <input type="hidden" name="etkinlik_id" value='<?php echo $row["etkinlik_id"] ?>'>
                             <input type="hidden" name="etkinlik_baslik" value='<?php echo $row["etkinlik_baslik"] ?>'>
-                            <input type="hidden" name="etkinlik_icerik" value='<?php echo $row["etkinlik_icerik"] ?>'>
-                            <input type="hidden" name="etkinlik_text" value='<?php echo $row["etkinlik_text"] ?>'>
-                            <input type="hidden" name="etkinlik_resim" value='<?php echo $row["etkinlik_resim"] ?>'>
-                            <input type="hidden" name="etkinlik_link" value='<?php echo $row["etkinlik_link"] ?>'>
-                            <input type="hidden" name="etkinlik_tarih" value='<?php echo $row["etkinlik_tarih"]?>'>
                         </form>
                     </div>
 

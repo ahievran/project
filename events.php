@@ -49,11 +49,6 @@ include 'header.php'; ?>
                                                         <form action="event-detail.php" method="get">
                                                         <input type="hidden" name="etkinlik_id" value='<?php echo $row["etkinlik_id"] ?>'>
                                                             <input type="hidden" name="etkinlik_baslik" value='<?php echo $row["etkinlik_baslik"] ?>'>
-                                                            <input type="hidden" name="etkinlik_icerik" value='<?php echo $row["etkinlik_icerik"] ?>'>
-                                                            <input type="hidden" name="etkinlik_text" value='<?php echo $row["etkinlik_text"] ?>'>
-                                                            <input type="hidden" name="etkinlik_resim" value='<?php echo $row["etkinlik_resim"] ?>'>
-                                                            <input type="hidden" name="etkinlik_link" value='<?php echo $row["etkinlik_link"] ?>'>
-                                                            <input type="hidden" name="etkinlik_tarih" value='<?php echo $row["etkinlik_tarih"]?>'>
                                                             <div class="post-options">
                                                                 <div class='row'>
                                                                     <div class="col-lg-12">
