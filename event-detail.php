@@ -37,7 +37,7 @@ include 'header.php'; ?>
                                 <div class="all-blog-posts">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <div class="blog-post">
+                                            <div class="blog-post" id='post'>
                                                 <div class="event-thumb">
                                                     <img src="admin/<?php echo $row["etkinlik_resim"]; ?>" alt="">
                                                 </div>
@@ -49,7 +49,7 @@ include 'header.php'; ?>
                                                         <li>Bilgisayar Mühendisliği</li>
                                                         <li><?php echo $row["etkinlik_tarih"]; ?></li>
                                                     </ul>
-                                                    <p><?php echo $row["etkinlik_text"] ?></p>
+                                                    <?php echo $row["etkinlik_text"] ?>
                                                 </div>
                                             </div>
                                         </div>
