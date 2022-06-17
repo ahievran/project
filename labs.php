@@ -7,7 +7,7 @@ include 'header.php'; ?>
 
     <main class="page testimonials">
         <section class="clean-block clean-testimonials dark">
-            <section class="clean-block about-us mt-5">
+            <section class="clean-block about-us">
                 <div class="heading-page header-text">
                     <section class="page-heading">
                         <div class="container">
