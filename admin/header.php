@@ -1,5 +1,6 @@
 <?php
 require_once 'connection.php';
+ob_start();
 session_start();
 
 
