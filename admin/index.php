@@ -283,6 +283,6 @@ include '../baglanti.php';
             </div>
         </div>
     </section>
-</div>
+
     <div style="margin-top:5vh"></div>
 <?php require_once 'footer.php'; ?>
