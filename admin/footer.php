@@ -10,6 +10,7 @@
 </aside>
 <!-- /.control-sidebar -->
 </div>
+</div>
 <!-- ./wrapper -->
 
 <!-- jQuery -->
