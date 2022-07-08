@@ -67,17 +67,17 @@ session_start();
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'index') {
                         echo 'active';
-                    } ?>" href="index.php">Ana Sayfa</a></li>
+                    } ?>" href="index">Ana Sayfa</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'hakkimizda') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'hakkimizda') {
                         echo 'active';
-                    } ?>" href="hakkimizda.php">Hakkımızda</a></li>
+                    } ?>" href="hakkimizda">Hakkımızda</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'hedeflerimiz') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'hedeflerimiz') {
                         echo 'active';
-                    } ?>" href="hedeflerimiz.php">hedeflerimiz</a></li>
+                    } ?>" href="hedeflerimiz">hedeflerimiz</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'what') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'what') {
@@ -87,27 +87,27 @@ session_start();
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'labs') {
                         echo 'active';
-                    } ?>" href="labs.php">Laboratuvarlarımız</a></li>
+                    } ?>" href="labs">Laboratuvarlarımız</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'akademik') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'akademik') {
                         echo 'active';
-                    } ?>" href="akademik.php">Akademik Personel</a></li>
+                    } ?>" href="akademik">Akademik Personel</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'etkinlikler') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'etkinlikler') {
                         echo 'active';
-                    } ?>" href="events.php">Etkinlikler</a></li>
+                    } ?>" href="events">Etkinlikler</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'galeri') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'galeri') {
                         echo 'active';
-                    } ?>" href="galeri.php">Galeri</a></li>
+                    } ?>" href="galeri">Galeri</a></li>
                 <li class="nav-item <?php if ($_SESSION["sayfa"] == 'iletisim') {
                     echo 'active';
                 } ?>"><a class="nav-link <?php if ($_SESSION["sayfa"] == 'iletisim') {
                         echo 'active';
-                    } ?>" href="iletisim.php">İletişim</a></li>
+                    } ?>" href="iletisim">İletişim</a></li>
             </ul>
         </div>
     </div>
