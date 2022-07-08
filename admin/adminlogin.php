@@ -19,7 +19,7 @@ if (isset($_POST['admin_login'])) {
     if ($say == 1) {
         $_SESSION['admin_kadi'] = $adminkadi;
         $_SESSION['admin_sifre'] = $adminsifre;
-        header("Location:index");
+        header("Location:index.php");
     } else {
         $hataligiris = $db1->prepare
         ("INSERT INTO hatali_giris SET 
@@ -37,7 +37,7 @@ if (isset($_POST['admin_login'])) {
 
             'admin_sifre' => $_POST["admin_sifre"]
         ));
-        header("Location:login?durum=no");
+        header("Location:login.php?durum=no");
     }
     exit;
 }
