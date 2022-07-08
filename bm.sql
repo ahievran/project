@@ -3,14 +3,14 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: bdevxikdmuguf3i0fs2i-mysql.services.clever-cloud.com:3306
--- Generation Time: Jul 08, 2022 at 09:17 AM
+-- Generation Time: Jul 08, 2022 at 10:16 AM
 -- Server version: 8.0.22-13
 -- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+03:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -94,7 +94,6 @@ CREATE TABLE `ders_icerik` (
 --
 
 INSERT INTO `ders_icerik` (`dersicerik_id`, `dersicerik_url`) VALUES
-(10, 'tesssst'),
 (11, 'https://drive.google.com/file/d/1Yb06Gk6EkdBtBqWi571LP36LchOooLb_/view');
 
 -- --------------------------------------------------------
@@ -177,7 +176,6 @@ INSERT INTO `galeri` (`galeri_id`, `galeri_resim`) VALUES
 
 CREATE TABLE `hakkimizda` (
   `hakkinda_id` int NOT NULL,
-  `hakkinda_baslik` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
   `hakkinda_icerik` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
@@ -185,15 +183,15 @@ CREATE TABLE `hakkimizda` (
 -- Dumping data for table `hakkimizda`
 --
 
-INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_baslik`, `hakkinda_icerik`) VALUES
-(1, '', '2018-2019 eğitim öğretim yılı güz döneminde, Mühendislik Mimarlık Fakültesi bünyesinde öğrenci alımına başlayan bölümümüz; 1 Doçent, 6 doktor öğretim üyesi ve 5 araştırma görevlisi ile eğitim öğretime devam etmektedir.'),
-(2, '', 'Bölümümüze öğrenci kabulü; Yükseköğretim Kurumu (YÖK) tarafından belirlenen yönetmelikler çerçevesinde, merkezi sınav sistemi ile yapılmaktadır. Öğrenciler, öğrenim görmek istedikleri program tercihlerini bildirdikten sonra bu sınavdan aldıkları puana göre ÖSYM tarafından ilgili programlara yerleştirilmektedir.'),
-(3, '', 'Bölümümüz 2 öğrenci okul birincisi kontenjanı olmak üzere toplam 62 öğrenci kontenjanına sahip olmakla birlikte açıldığı eğitim öğretim yılından bu yana %100 ilk yerleştirme oranına sahiptir. İlaveten bölümümüzde 2020-2021 eğitim öğretim yılı itibarıyla 222 öğrencimiz öğrenim görmektedir.'),
-(4, '', 'Bölümümüzü başarı ile tamamlayan öğrenciler Bilgisayar Mühendisliği alanında lisans derecesi almaya hak kazanmaktadırlar.'),
-(5, '', 'Öğrencilerimizin mezun olabilmeleri için asgari 240 AKTS’lik (4 yıl - 159 ulusal kredi) müfredatı, en az 2.00 ağırlıklı genel not ortalaması ile azami 7 yılda, 60 işgünü zorunlu staj ile birlikte tamamlamış olmaları gerekmektedir.'),
-(6, '', 'Öğrencilerimiz eğitim süreleri boyunca alacakları zorunlu derslerin yanında, 47 farklı seçmeli ders içerisinden seçecekleri dersler sayesinde yazılım geliştirme, elektronik, yapay zeka, siber güvenlik gibi birçok alanda uzmanlaşabileceklerdir.'),
-(7, '', 'Programımızdan mezun olacak bilgisayar mühendisleri, gerek kamu kurum ve kuruluşlarında, gerekse hem yurt içi hemde yurt dışında; mobil, web veya masaüstü uygulama geliştirme, sistem yöneticiliği, bilgi güvenliği gibi alanlarda görev alabilecek, ayrıca kendi bilişim firmalarını kurarak ülke ekonomisinin gelişmesinde aktif rol oynayabileceklerdir.'),
-(8, '', 'Bölümümüzden mezun olan öğrenciler, lisansüstü programlarda öğrenim görmek üzere başvuruda bulunabilirler.');
+INSERT INTO `hakkimizda` (`hakkinda_id`, `hakkinda_icerik`) VALUES
+(1, '2018-2019 eğitim öğretim yılı güz döneminde, Mühendislik Mimarlık Fakültesi bünyesinde öğrenci alımına başlayan bölümümüz; 1 Doçent, 6 doktor öğretim üyesi ve 5 araştırma görevlisi ile eğitim öğretime devam etmektedir.'),
+(2, 'Bölümümüze öğrenci kabulü; Yükseköğretim Kurumu (YÖK) tarafından belirlenen yönetmelikler çerçevesinde, merkezi sınav sistemi ile yapılmaktadır. Öğrenciler, öğrenim görmek istedikleri program tercihlerini bildirdikten sonra bu sınavdan aldıkları puana göre ÖSYM tarafından ilgili programlara yerleştirilmektedir.'),
+(3, 'Bölümümüz 2 öğrenci okul birincisi kontenjanı olmak üzere toplam 62 öğrenci kontenjanına sahip olmakla birlikte açıldığı eğitim öğretim yılından bu yana %100 ilk yerleştirme oranına sahiptir. İlaveten bölümümüzde 2020-2021 eğitim öğretim yılı itibarıyla 222 öğrencimiz öğrenim görmektedir.'),
+(4, 'Bölümümüzü başarı ile tamamlayan öğrenciler Bilgisayar Mühendisliği alanında lisans derecesi almaya hak kazanmaktadırlar.'),
+(5, 'Öğrencilerimizin mezun olabilmeleri için asgari 240 AKTS’lik (4 yıl - 159 ulusal kredi) müfredatı, en az 2.00 ağırlıklı genel not ortalaması ile azami 7 yılda, 60 işgünü zorunlu staj ile birlikte tamamlamış olmaları gerekmektedir.'),
+(6, 'Öğrencilerimiz eğitim süreleri boyunca alacakları zorunlu derslerin yanında, 47 farklı seçmeli ders içerisinden seçecekleri dersler sayesinde yazılım geliştirme, elektronik, yapay zeka, siber güvenlik gibi birçok alanda uzmanlaşabileceklerdir.'),
+(7, 'Programımızdan mezun olacak bilgisayar mühendisleri, gerek kamu kurum ve kuruluşlarında, gerekse hem yurt içi hemde yurt dışında; mobil, web veya masaüstü uygulama geliştirme, sistem yöneticiliği, bilgi güvenliği gibi alanlarda görev alabilecek, ayrıca kendi bilişim firmalarını kurarak ülke ekonomisinin gelişmesinde aktif rol oynayabileceklerdir.'),
+(8, 'Bölümümüzden mezun olan öğrenciler, lisansüstü programlarda öğrenim görmek üzere başvuruda bulunabilirler.');
 
 -- --------------------------------------------------------
 
@@ -237,7 +235,8 @@ INSERT INTO `hatali_giris` (`hatali_giris_id`, `hatali_giris_ip`, `hatali_giris_
 (22, '10.1.29.231', '26.05.2022 / 13:55:21', 'sasasa', 'sasasa'),
 (23, '::1', '20.06.2022 / 14:24:59', 'admin', '12345'),
 (24, '10.1.32.137', '01.07.2022 / 05:44:18', 'admin', '123'),
-(25, '10.1.13.135', '01.07.2022 / 06:44:04', 'admin', '1234567');
+(25, '10.1.13.135', '01.07.2022 / 06:44:04', 'admin', '1234567'),
+(26, '185.42.117.192', '08.07.2022 / 09:47:44', 'admin', '1234566');
 
 -- --------------------------------------------------------
 
@@ -247,7 +246,6 @@ INSERT INTO `hatali_giris` (`hatali_giris_id`, `hatali_giris_ip`, `hatali_giris_
 
 CREATE TABLE `hedeflerimiz` (
   `hedef_id` int NOT NULL,
-  `hedef_icon` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
   `hedef_icerik` text CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL,
   `hedef_baslik` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
@@ -256,11 +254,11 @@ CREATE TABLE `hedeflerimiz` (
 -- Dumping data for table `hedeflerimiz`
 --
 
-INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icon`, `hedef_icerik`, `hedef_baslik`) VALUES
-(1, '', 'Bilgisayar Mühendisliği alanında standartların oluşturulduğu ulusal ve uluslar arası çalışmalara katkı ve destek sağlamak.', 'Uluslararası Araştırmalar'),
-(2, '', 'Üniversite ve sanayi işbirliğini en üst seviyelere taşımak, sanayinin ve bilişim sektörünün ihtiyaçlarına göre araştırmalar yaparak projeler geliştirmek', 'Üniversite ve Sanayi İşbirliği'),
-(3, '', 'Gerek kamu kurum ve kuruluşlarında, gerekse yurt içi/ yurt dışı firmalarda; mobil, web veya masaüstü uygulama geliştirme, sistem yöneticiliği, bilgi güvenliği gibi alanlarda görev alabilecek yetenekli bilgisayar mühendisleri yetiştirmek.', 'Sektör İhtiyaçlarını Giderme'),
-(4, '', 'Programlama, yapay zeka, makine öğrenmesi, derin öğrenme, siber güvenlik gibi alanlarda yeterlilik sahibi bilgisayar mühendisleri yetiştirerek, farklı anabilim dallarının katılımı ile gerçekleştirilecek disiplinler arası birçok projede aktif olarak yer almalarını sağlamak.', 'Disiplinler Arası Çalışma');
+INSERT INTO `hedeflerimiz` (`hedef_id`, `hedef_icerik`, `hedef_baslik`) VALUES
+(1, 'Bilgisayar Mühendisliği alanında standartların oluşturulduğu ulusal ve uluslar arası çalışmalara katkı ve destek sağlamak.', 'Uluslararası Araştırmalar'),
+(2, 'Üniversite ve sanayi işbirliğini en üst seviyelere taşımak, sanayinin ve bilişim sektörünün ihtiyaçlarına göre araştırmalar yaparak projeler geliştirmek', 'Üniversite ve Sanayi İşbirliği'),
+(3, 'Gerek kamu kurum ve kuruluşlarında, gerekse yurt içi/ yurt dışı firmalarda; mobil, web veya masaüstü uygulama geliştirme, sistem yöneticiliği, bilgi güvenliği gibi alanlarda görev alabilecek yetenekli bilgisayar mühendisleri yetiştirmek.', 'Sektör İhtiyaçlarını Giderme'),
+(4, 'Programlama, yapay zeka, makine öğrenmesi, derin öğrenme, siber güvenlik gibi alanlarda yeterlilik sahibi bilgisayar mühendisleri yetiştirerek, farklı anabilim dallarının katılımı ile gerçekleştirilecek disiplinler arası birçok projede aktif olarak yer almalarını sağlamak.', 'Disiplinler Arası Çalışma');
 
 -- --------------------------------------------------------
 
@@ -330,7 +328,8 @@ CREATE TABLE `mesaj` (
 
 INSERT INTO `mesaj` (`mesaj_id`, `mesaj_isim_soyisim`, `mesaj_konu`, `mesaj_email`, `mesaj_icerik`) VALUES
 (16, 'Samet Adsan', 'İtiraz dilekçesi (1 adet dilekçe belgesi, 2 adet ek belge)', 'ogr.samet.adsan@ahievran.edu.tr', 'deneme mesajıdır test test test'),
-(17, 'Kutluhan Azaflı', 'test', 'test@test.com', 'selam');
+(17, 'Kutluhan Azaflı', 'test', 'test@test.com', 'selam'),
+(20, 'Samet Adsan', 'denemee', 'sametadsan40@gmail.com', 'sdadas');
 
 -- --------------------------------------------------------
 
@@ -525,19 +524,19 @@ ALTER TABLE `etkinlikler`
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `galeri_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `hakkimizda`
 --
 ALTER TABLE `hakkimizda`
-  MODIFY `hakkinda_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `hakkinda_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `hatali_giris`
 --
 ALTER TABLE `hatali_giris`
-  MODIFY `hatali_giris_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `hatali_giris_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `hedeflerimiz`
@@ -555,13 +554,13 @@ ALTER TABLE `iletisim`
 -- AUTO_INCREMENT for table `laboratuvar`
 --
 ALTER TABLE `laboratuvar`
-  MODIFY `lab_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `lab_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `mesaj`
 --
 ALTER TABLE `mesaj`
-  MODIFY `mesaj_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `mesaj_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `programlar`
