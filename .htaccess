@@ -21,3 +21,5 @@ Header set Cache-Control "max-age=172800, public, must-revalidate"
 <FilesMatch "\.(html|htm|php)$">
 Header set Cache-Control "max-age=7200, must-revalidate"
 </FilesMatch>
+
+RewriteRule ^haber-detay-([0-9a-zA-Z-_]+)  event.detail.php?sef=$1 [L,QSA]
